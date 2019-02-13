@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Buy } from './Components/Buy';
+import Buy from '../Buy/Buy';
 
 class App extends Component {
 
