@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Buy from '../Buy/Buy';
+import ProductList from '../ProductList/ProductList';
 
 class App extends Component {
   constructor() {
@@ -13,6 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <Buy coordinates={this.state.coordinates} />
+        <ProductList />
       </div>
     );
   }
