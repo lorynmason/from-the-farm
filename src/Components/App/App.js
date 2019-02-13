@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Buy from '../Buy/Buy';
-import ProductList from '../ProductList/ProductList';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
+import { Switch, Route, Redirect, withRouter } from 'react-router';
+import Profile from '../Profile/Profile'
 
 class App extends Component {
   constructor() {
@@ -16,8 +17,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Buy coordinates={this.state.coordinates} />
-        <ProductList />
+        <Switch>
+          <Route path="/buy" render={() => <Buy coordinates={this.state.coordinates} />}/>
+          <Route path="/profile" render={() => <Profile />}/>
+        </Switch>
       </div>
     );
   }

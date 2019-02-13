@@ -11,13 +11,19 @@ header {
     font-family: 'Advent Pro', sans-serif;
     width: 100px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
     margin-right: 35px;
-    text-shadow: -2px 2px whitesmoke;
+    text-shadow: -4px 4px #000;
+    color: whitesmoke;
     span {
       font-size: 3rem;
       display: block;
     }
+  }
+  i {
+    font-size: 3rem;
+    color: rgb(109, 3, 3);
+    margin-left: 500px;
   }
   #logo {
     width: 200px;
