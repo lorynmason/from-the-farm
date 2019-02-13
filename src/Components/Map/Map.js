@@ -5,6 +5,10 @@ import L from 'leaflet';
 export class Map extends Component {
 
   componentDidMount() {
+    this.createMap();
+  }
+
+  createMap = () => {
     const map = L.map('map').setView([39.750614, -104.996775], 9);
     const { coordinates } = this.props;
 
@@ -29,7 +33,7 @@ export class Map extends Component {
     }
 
     return (
-      <article id="map" style={dimensions}></article>
+      <section id="map" style={dimensions}></section>
     )
   }
 }
