@@ -27,13 +27,9 @@ export class Map extends Component {
   }
 
   render() {
-    const dimensions = {
-      height: '400px',
-      width: '400px'
-    }
 
     return (
-      <section id="map" style={dimensions}></section>
+      <section id="map"></section>
     )
   }
 }
