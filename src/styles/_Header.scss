@@ -1,0 +1,27 @@
+header {
+  width: 100vw;
+  height: 240px;
+  background: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(94, 93, 93, 0.514);
+  h1 {
+    font-size: 4.5rem;
+    font-family: 'Advent Pro', sans-serif;
+    width: 100px;
+    text-align: center;
+    font-weight: 500;
+    margin-right: 35px;
+    text-shadow: -2px 2px whitesmoke;
+    span {
+      font-size: 3rem;
+      display: block;
+    }
+  }
+  #logo {
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(-2px 2px whitesmoke);
+  }  
+}
