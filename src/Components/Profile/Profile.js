@@ -4,21 +4,24 @@ class Profile extends Component {
   constructor(){
     super()
     this.state = {
-      active: 'bio'
+      showBio: true
     }
   }
 
   toggleInfo = () => {
+    const { showBio } = this.state
     this.setState({
-      active: 'profile'
+      showBio: !showBio
     })
   }
 
   render(){
-    const { active } = this.state
+    const { showBio } = this.state
     let info
-    if ( active === 'bio') {
+    let button
+    if (showBio) {
       info =  <p>Catalyze, scalable social innovation social intrapreneurship social capital effective altruism thought leader. NGO circular social entrepreneurship inspire; shared unit of analysis revolutionary corporate social responsibility equal opportunity emerging. Strengthening infrastructure movements cultivate, save the world co-creation; milestones dynamic mobilize technology. Collaborate, think tank, resist; best practices, radical strategize sustainable. Rubric.</p>
+      button = 'Show Products'
     } else {
       info = <table>
           <tr>
@@ -40,13 +43,14 @@ class Profile extends Component {
             <td>Organic, pink lady</td>
           </tr>
       </table>
+      button = 'Show Bio'
     }
     return (
       <section className="profile">
         <h3>Mason Family Farm</h3>
         <h4>Hoodriver, OR</h4>
         <h4>masonfarm@gmail.com</h4>
-        <button onClick={this.toggleInfo}>Products</button>
+        <button onClick={this.toggleInfo}>{ button }</button>
         { info }
       </section>
     )
