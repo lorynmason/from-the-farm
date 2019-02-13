@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import accessToken from '../mapbox-accessToken.js';
+import accessToken from '../../mapbox-accessToken.js';
 import L from 'leaflet';
 
 export class Buy extends Component {
@@ -26,3 +26,5 @@ export class Buy extends Component {
     )
   }
 }
+
+export default Buy;

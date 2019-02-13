@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Buy } from './Components/Buy';
+import Buy from '../Buy/Buy';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
