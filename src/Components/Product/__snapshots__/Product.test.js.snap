@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Product
+    product={
+      Object {
+        "description": "Pueblo hot roasted",
+        "name": "chile pepper",
+        "price": 20,
+        "quantity": 1,
+        "unit": "bushel",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          chile pepper
+        </h2>,
+        <p>
+          Pueblo hot roasted
+        </p>,
+        <div
+          className="pricing-info"
+        >
+          <p>
+            20
+          </p>
+          <p>
+            1
+          </p>
+          <p>
+            bushel
+          </p>
+        </div>,
+      ],
+      "className": "product",
+      "style": Object {
+        "display": "flex",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "chile pepper",
+        },
+        "ref": null,
+        "rendered": "chile pepper",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Pueblo hot roasted",
+        },
+        "ref": null,
+        "rendered": "Pueblo hot roasted",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              20
+            </p>,
+            <p>
+              1
+            </p>,
+            <p>
+              bushel
+            </p>,
+          ],
+          "className": "pricing-info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 20,
+            },
+            "ref": null,
+            "rendered": 20,
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "bushel",
+            },
+            "ref": null,
+            "rendered": "bushel",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            chile pepper
+          </h2>,
+          <p>
+            Pueblo hot roasted
+          </p>,
+          <div
+            className="pricing-info"
+          >
+            <p>
+              20
+            </p>
+            <p>
+              1
+            </p>
+            <p>
+              bushel
+            </p>
+          </div>,
+        ],
+        "className": "product",
+        "style": Object {
+          "display": "flex",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "chile pepper",
+          },
+          "ref": null,
+          "rendered": "chile pepper",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Pueblo hot roasted",
+          },
+          "ref": null,
+          "rendered": "Pueblo hot roasted",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                20
+              </p>,
+              <p>
+                1
+              </p>,
+              <p>
+                bushel
+              </p>,
+            ],
+            "className": "pricing-info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 20,
+              },
+              "ref": null,
+              "rendered": 20,
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "bushel",
+              },
+              "ref": null,
+              "rendered": "bushel",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
