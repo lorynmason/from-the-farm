@@ -24,12 +24,15 @@ class Profile extends Component {
       button = 'Show Products'
     } else {
       info = <table>
+        <thead>
           <tr>
             <th>Product</th>
             <th>Price</th> 
             <th>Unit</th>
             <th>Details</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>Carrots</td>
             <td>5</td> 
@@ -42,6 +45,7 @@ class Profile extends Component {
             <td>lbs</td>
             <td>Organic, pink lady</td>
           </tr>
+        </tbody>
       </table>
       button = 'Show Bio'
     }
