@@ -28,7 +28,11 @@ const ProductList = () => {
   const productsToReturn = products.map((product) => {
     return <Product product={product} />
   })
-  return productsToReturn;
+  return (
+    <section className="product-list">
+      {productsToReturn}
+    </section>
+  )
 }
 
 export default ProductList;
