@@ -4,7 +4,11 @@ import { shallow } from 'enzyme'
 
 describe('Buy', () => {
   it('should match snapshot', () => {
-    let wrapper = shallow(<Buy />)
+    const state = {
+      vendors : [],
+      products: []
+    }
+    let wrapper = shallow(<Buy appState={state}/>)
     expect(wrapper).toMatchSnapshot()
   });
 })
