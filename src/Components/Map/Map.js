@@ -3,6 +3,9 @@ import accessToken from '../../mapbox-accessToken.js';
 import L from 'leaflet';
 
 export class Map extends Component {
+  // componentDidMount() {
+  //   this.createMap();
+  // }
 
   componentDidUpdate() {
     this.createMap();
@@ -16,7 +19,11 @@ export class Map extends Component {
       console.log(vendor)
       const location = [vendor.lat, vendor.long]
       const marker = L.marker(location).addTo(map);
-      marker.bindPopup(`<h4>${location}</h4>`)
+      const popup = `<h3>${vendor.name}</h3>
+                    <p>${vendor.address}</p>
+                    <p>${vendor.phone}</p>
+                    <p>${vendor.email}</p>`
+      marker.bindPopup(popup)
     });
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -28,12 +35,8 @@ export class Map extends Component {
   }
 
   render() {
-    const dimensions = {
-      height: '400px',
-      width: '400px'
-    }
     return (
-      <section id="map" style={dimensions}></section>
+      <section id="map"></section>
     )
   }
 }
