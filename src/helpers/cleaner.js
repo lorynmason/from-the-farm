@@ -13,12 +13,20 @@ export const cleanVendors = (vendors) => {
   })
 }
 
-export const cleanProducts = (products) => {
-  return products.map( product => {
-    const { name, products} = product.attributes
-    return {
-      vendor_name: name,
-      products
-    }
-  })
+export const cleanProducts = (vendors) => {
+  return vendors.reduce((productArr, vendor) => {
+    const { name, products } = vendor.attributes;
+    const productNames = products.reduce((obj, product) => {
+      const name = Object.keys(product)[0];
+
+      obj = {
+        name: Object.keys(product)[0],
+        ...product[name]
+      }
+      productArr.push(obj);
+      return obj
+    }, {})
+
+    return productArr;
+  }, [])
 }

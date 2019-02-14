@@ -3,9 +3,8 @@ import { Buy } from '../Buy/Buy';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
 import { Switch, Route } from 'react-router';
-import Profile from '../Profile/Profile'
-import Product from '../Product/Product';
-import * as cleaner from '../../helpers/cleaner'
+import Profile from '../Profile/Profile';
+import * as cleaner from '../../helpers/cleaner';
 
 class App extends Component {
   constructor() {
