@@ -19,18 +19,30 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          from
-          <span>
-            the
-          </span>
-          farm
-        </h1>,
-        <img
-          alt="from the farm cute pig logo"
-          id="logo"
-          src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
-        />,
+        <Link
+          replace={false}
+          to="/profile"
+        >
+          <i
+            className="fas fa-bacon"
+          />
+        </Link>,
+        <div
+          className="header-logo"
+        >
+          <h1>
+            from
+            <span>
+              the
+            </span>
+            farm
+          </h1>
+          <img
+            alt="from the farm cute pig logo"
+            id="logo"
+            src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
+          />
+        </div>,
       ],
     },
     "ref": null,
@@ -38,46 +50,97 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": Array [
-            "from",
-            <span>
-              the
-            </span>,
-            "farm",
-          ],
+          "children": <i
+            className="fas fa-bacon"
+          />,
+          "replace": false,
+          "to": "/profile",
         },
         "ref": null,
-        "rendered": Array [
-          "from",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "the",
-            },
-            "ref": null,
-            "rendered": "the",
-            "type": "span",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "fas fa-bacon",
           },
-          "farm",
-        ],
-        "type": "h1",
+          "ref": null,
+          "rendered": null,
+          "type": "i",
+        },
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "from the farm cute pig logo",
-          "id": "logo",
-          "src": "https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png",
+          "children": Array [
+            <h1>
+              from
+              <span>
+                the
+              </span>
+              farm
+            </h1>,
+            <img
+              alt="from the farm cute pig logo"
+              id="logo"
+              src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
+            />,
+          ],
+          "className": "header-logo",
         },
         "ref": null,
-        "rendered": null,
-        "type": "img",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "from",
+                <span>
+                  the
+                </span>,
+                "farm",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "from",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "the",
+                },
+                "ref": null,
+                "rendered": "the",
+                "type": "span",
+              },
+              "farm",
+            ],
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "from the farm cute pig logo",
+              "id": "logo",
+              "src": "https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "header",
@@ -89,18 +152,30 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            from
-            <span>
-              the
-            </span>
-            farm
-          </h1>,
-          <img
-            alt="from the farm cute pig logo"
-            id="logo"
-            src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
-          />,
+          <Link
+            replace={false}
+            to="/profile"
+          >
+            <i
+              className="fas fa-bacon"
+            />
+          </Link>,
+          <div
+            className="header-logo"
+          >
+            <h1>
+              from
+              <span>
+                the
+              </span>
+              farm
+            </h1>
+            <img
+              alt="from the farm cute pig logo"
+              id="logo"
+              src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
+            />
+          </div>,
         ],
       },
       "ref": null,
@@ -108,46 +183,97 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": Array [
-              "from",
-              <span>
-                the
-              </span>,
-              "farm",
-            ],
+            "children": <i
+              className="fas fa-bacon"
+            />,
+            "replace": false,
+            "to": "/profile",
           },
           "ref": null,
-          "rendered": Array [
-            "from",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "the",
-              },
-              "ref": null,
-              "rendered": "the",
-              "type": "span",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-bacon",
             },
-            "farm",
-          ],
-          "type": "h1",
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "from the farm cute pig logo",
-            "id": "logo",
-            "src": "https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png",
+            "children": Array [
+              <h1>
+                from
+                <span>
+                  the
+                </span>
+                farm
+              </h1>,
+              <img
+                alt="from the farm cute pig logo"
+                id="logo"
+                src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
+              />,
+            ],
+            "className": "header-logo",
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "from",
+                  <span>
+                    the
+                  </span>,
+                  "farm",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "from",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "the",
+                  },
+                  "ref": null,
+                  "rendered": "the",
+                  "type": "span",
+                },
+                "farm",
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "from the farm cute pig logo",
+                "id": "logo",
+                "src": "https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "header",

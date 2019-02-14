@@ -20,29 +20,16 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header />,
-        <Buy
-          coordinates={
-            Array [
-              Array [
-                39.7392,
-                -104.9903,
-              ],
-              Array [
-                40.015,
-                -105.2705,
-              ],
-              Array [
-                39.6133,
-                -105.0166,
-              ],
-              Array [
-                39.7294,
-                -104.8319,
-              ],
-            ]
-          }
-        />,
-        <ProductList />,
+        <Switch>
+          <Route
+            path="/buy"
+            render={[Function]}
+          />
+          <Route
+            path="/profile"
+            render={[Function]}
+          />
+        </Switch>,
       ],
       "className": "App",
     },
@@ -62,36 +49,44 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "coordinates": Array [
-            Array [
-              39.7392,
-              -104.9903,
-            ],
-            Array [
-              40.015,
-              -105.2705,
-            ],
-            Array [
-              39.6133,
-              -105.0166,
-            ],
-            Array [
-              39.7294,
-              -104.8319,
-            ],
+          "children": Array [
+            <Route
+              path="/buy"
+              render={[Function]}
+            />,
+            <Route
+              path="/profile"
+              render={[Function]}
+            />,
           ],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/buy",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/profile",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
     ],
@@ -105,29 +100,16 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header />,
-          <Buy
-            coordinates={
-              Array [
-                Array [
-                  39.7392,
-                  -104.9903,
-                ],
-                Array [
-                  40.015,
-                  -105.2705,
-                ],
-                Array [
-                  39.6133,
-                  -105.0166,
-                ],
-                Array [
-                  39.7294,
-                  -104.8319,
-                ],
-              ]
-            }
-          />,
-          <ProductList />,
+          <Switch>
+            <Route
+              path="/buy"
+              render={[Function]}
+            />
+            <Route
+              path="/profile"
+              render={[Function]}
+            />
+          </Switch>,
         ],
         "className": "App",
       },
@@ -147,36 +129,44 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "coordinates": Array [
-              Array [
-                39.7392,
-                -104.9903,
-              ],
-              Array [
-                40.015,
-                -105.2705,
-              ],
-              Array [
-                39.6133,
-                -105.0166,
-              ],
-              Array [
-                39.7294,
-                -104.8319,
-              ],
+            "children": Array [
+              <Route
+                path="/buy"
+                render={[Function]}
+              />,
+              <Route
+                path="/profile"
+                render={[Function]}
+              />,
             ],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/buy",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/profile",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],
