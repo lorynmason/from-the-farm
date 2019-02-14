@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Map from '../Map/Map';
 import ProductList from '../ProductList/ProductList';
 
-export class Buy extends Component {
-  render() {
+export const Buy = ({appState}) => {
+  const { vendors, products } = appState
+  console.log(vendors)
     return (
       <section className="buy">
-        <Map coordinates={this.props.coordinates} />
-        <ProductList />
+        <Map vendors={vendors} />
+        <ProductList products={products}/>
       </section>
     )
-  }
 }
 
-export default Buy;

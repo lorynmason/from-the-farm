@@ -1,16 +1,30 @@
 import React, { Component } from 'react';
-import Buy from '../Buy/Buy';
+import { Buy } from '../Buy/Buy';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
 import { Switch, Route } from 'react-router';
 import Profile from '../Profile/Profile'
+import Product from '../Product/Product';
+import * as cleaner from '../../helpers/cleaner'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      coordinates: [[39.7392, -104.9903], [40.0150, -105.2705], [39.6133, -105.0166], [39.7294, -104.8319]]
+      vendors: [],
+      products: []
     }
+  }
+
+  async componentDidMount(){
+    const response = await fetch('https://xpoll-be.herokuapp.com/api/v1/vendors')
+    const results = await response.json()
+    const vendors = cleaner.cleanVendors(results.data)
+    const products = cleaner.cleanProducts(results.data)
+    this.setState({
+      vendors,
+      products
+    })
   }
 
   render() {
@@ -18,7 +32,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/buy" render={() => <Buy coordinates={this.state.coordinates} />}/>
+          <Route path="/buy" render={() => <Buy appState={this.state} />}/>
           <Route path="/profile" render={() => <Profile />}/>
         </Switch>
       </div>

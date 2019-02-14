@@ -3,7 +3,14 @@
 exports[`Buy should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Buy />,
+  Symbol(enzyme.__unrendered__): <Buy
+    appState={
+      Object {
+        "products": Array [],
+        "vendors": Array [],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -19,8 +26,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Map />,
-        <ProductList />,
+        <Map
+          vendors={Array []}
+        />,
+        <ProductList
+          products={Array []}
+        />,
       ],
       "className": "buy",
     },
@@ -31,7 +42,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "coordinates": undefined,
+          "vendors": Array [],
         },
         "ref": null,
         "rendered": null,
@@ -41,7 +52,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "products": Array [],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -56,8 +69,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Map />,
-          <ProductList />,
+          <Map
+            vendors={Array []}
+          />,
+          <ProductList
+            products={Array []}
+          />,
         ],
         "className": "buy",
       },
@@ -68,7 +85,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "coordinates": undefined,
+            "vendors": Array [],
           },
           "ref": null,
           "rendered": null,
@@ -78,7 +95,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "products": Array [],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
