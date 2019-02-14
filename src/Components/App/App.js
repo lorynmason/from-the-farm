@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Buy from '../Buy/Buy';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
-import { Switch, Route, Redirect, withRouter } from 'react-router';
+import { Switch, Route } from 'react-router';
 import Profile from '../Profile/Profile'
 
 class App extends Component {
