@@ -40,7 +40,7 @@ ShallowWrapper {
           <img
             alt="from the farm cute pig logo"
             id="logo"
-            src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
+            src="pig-logo.png"
           />
         </div>,
       ],
@@ -88,7 +88,7 @@ ShallowWrapper {
             <img
               alt="from the farm cute pig logo"
               id="logo"
-              src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
+              src="pig-logo.png"
             />,
           ],
           "className": "header-logo",
@@ -133,7 +133,7 @@ ShallowWrapper {
             "props": Object {
               "alt": "from the farm cute pig logo",
               "id": "logo",
-              "src": "https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png",
+              "src": "pig-logo.png",
             },
             "ref": null,
             "rendered": null,
@@ -173,7 +173,7 @@ ShallowWrapper {
             <img
               alt="from the farm cute pig logo"
               id="logo"
-              src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
+              src="pig-logo.png"
             />
           </div>,
         ],
@@ -221,7 +221,7 @@ ShallowWrapper {
               <img
                 alt="from the farm cute pig logo"
                 id="logo"
-                src="https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png"
+                src="pig-logo.png"
               />,
             ],
             "className": "header-logo",
@@ -266,7 +266,7 @@ ShallowWrapper {
               "props": Object {
                 "alt": "from the farm cute pig logo",
                 "id": "logo",
-                "src": "https://www.shareicon.net/data/2016/06/18/596437_pig_512x512.png",
+                "src": "pig-logo.png",
               },
               "ref": null,
               "rendered": null,
