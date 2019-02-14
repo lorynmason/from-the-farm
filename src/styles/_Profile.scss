@@ -1,0 +1,59 @@
+.profile {
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 25px;
+  }
+  h4 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 15px;
+  }
+  button {
+    all: unset;
+    margin: 50px;
+    background: rgb(10, 151, 132);
+    padding: 15px;
+    font-size: 2rem;
+    color: whitesmoke;
+    box-shadow: -3px 3px 6px rgba(88, 88, 88, 0.664);
+    transition: all ease .5s;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+      background: purple;
+      transform: scale(1.08);
+    }
+  }
+  p {
+    font-size: 2rem;
+    text-align: start;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+  }
+  table {
+    border-collapse: collapse;
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 auto;
+    td, th {
+      border: 1px solid #999;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    thead {
+      tr { 
+        background: rgb(111, 243, 177); 
+      }
+    }
+    tbody {
+      tr:nth-child(1) { 
+        background: rgba(84, 171, 243, 0.568); 
+      }
+    }
+  }
+}
