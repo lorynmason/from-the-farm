@@ -18,12 +18,12 @@ class App extends Component {
   async componentDidMount(){
     const response = await fetch('https://xpoll-be.herokuapp.com/api/v1/vendors')
     const results = await response.json()
-    const vendors = await cleaner.cleanVendors(results.data)
-    console.log(vendors)
+    const vendors = cleaner.cleanVendors(results.data)
+    const products = cleaner.cleanProducts(results.data)
     this.setState({
-      vendors
+      vendors,
+      products
     })
-    console.log(this.state)
   }
 
   render() {

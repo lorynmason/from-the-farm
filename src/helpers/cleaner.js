@@ -7,11 +7,18 @@ export const cleanVendors = (vendors) => {
       phone,
       email,
       lat,
-      long
+      long, 
+      id: vendor.id
     }
   })
 }
 
-const cleanProducts = (products) => {
-
+export const cleanProducts = (products) => {
+  return products.map( product => {
+    const { name, products} = product.attributes
+    return {
+      vendor_name: name,
+      products
+    }
+  })
 }
