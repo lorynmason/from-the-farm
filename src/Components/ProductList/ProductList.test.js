@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 
 describe('ProductList', () => {
   it('should match snapshot', () => {
-    let wrapper = shallow(<ProductList />)
+    let wrapper = shallow(<ProductList products={[]} />)
     expect(wrapper).toMatchSnapshot()
   });
 })
