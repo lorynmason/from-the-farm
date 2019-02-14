@@ -3,16 +3,16 @@ import { Buy } from '../Buy/Buy';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
 import { Switch, Route } from 'react-router';
-import Profile from '../Profile/Profile'
-import Product from '../Product/Product';
-import * as cleaner from '../../helpers/cleaner'
+import Profile from '../Profile/Profile';
+import * as cleaner from '../../helpers/cleaner';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       vendors: [],
-      products: []
+      products: [],
+      user: {}
     }
   }
 
@@ -23,17 +23,24 @@ class App extends Component {
     const products = cleaner.cleanProducts(results.data)
     this.setState({
       vendors,
-      products
+      products,
+      user: vendors[5]
     })
   }
 
   render() {
+    const products = this.state.products.filter((product) => {
+      return product.user_id === this.state.user.id;
+    });
+
+    console.log(products)
+
     return (
       <div className="App">
         <Header />
         <Switch>
           <Route path="/buy" render={() => <Buy appState={this.state} />}/>
-          <Route path="/profile" render={() => <Profile />}/>
+          <Route path="/profile" render={() => <Profile user={this.state.user} products={products} />}/>
         </Switch>
       </div>
     );

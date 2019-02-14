@@ -3,7 +3,9 @@
 exports[`ProductList should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProductList />,
+  Symbol(enzyme.__unrendered__): <ProductList
+    products={Array []}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -18,97 +20,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <Product
-          product={
-            Object {
-              "description": "Pueblo hot roasted",
-              "name": "chile pepper",
-              "price": 20,
-              "quantity": 1,
-              "unit": "bushel",
-            }
-          }
-        />,
-        <Product
-          product={
-            Object {
-              "description": "mini washed",
-              "name": "carrot",
-              "price": 5,
-              "quantity": 10,
-              "unit": "lbs",
-            }
-          }
-        />,
-        <Product
-          product={
-            Object {
-              "description": "world famous Rocky Ford",
-              "name": "cantaloupe",
-              "price": 15,
-              "quantity": 70,
-              "unit": "lbs",
-            }
-          }
-        />,
-      ],
+      "children": Array [],
       "className": "product-list",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "product": Object {
-            "description": "Pueblo hot roasted",
-            "name": "chile pepper",
-            "price": 20,
-            "quantity": 1,
-            "unit": "bushel",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "product": Object {
-            "description": "mini washed",
-            "name": "carrot",
-            "price": 5,
-            "quantity": 10,
-            "unit": "lbs",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "product": Object {
-            "description": "world famous Rocky Ford",
-            "name": "cantaloupe",
-            "price": 15,
-            "quantity": 70,
-            "unit": "lbs",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
+    "rendered": Array [],
     "type": "section",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -117,97 +33,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <Product
-            product={
-              Object {
-                "description": "Pueblo hot roasted",
-                "name": "chile pepper",
-                "price": 20,
-                "quantity": 1,
-                "unit": "bushel",
-              }
-            }
-          />,
-          <Product
-            product={
-              Object {
-                "description": "mini washed",
-                "name": "carrot",
-                "price": 5,
-                "quantity": 10,
-                "unit": "lbs",
-              }
-            }
-          />,
-          <Product
-            product={
-              Object {
-                "description": "world famous Rocky Ford",
-                "name": "cantaloupe",
-                "price": 15,
-                "quantity": 70,
-                "unit": "lbs",
-              }
-            }
-          />,
-        ],
+        "children": Array [],
         "className": "product-list",
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "product": Object {
-              "description": "Pueblo hot roasted",
-              "name": "chile pepper",
-              "price": 20,
-              "quantity": 1,
-              "unit": "bushel",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "product": Object {
-              "description": "mini washed",
-              "name": "carrot",
-              "price": 5,
-              "quantity": 10,
-              "unit": "lbs",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "product": Object {
-              "description": "world famous Rocky Ford",
-              "name": "cantaloupe",
-              "price": 15,
-              "quantity": 70,
-              "unit": "lbs",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
+      "rendered": Array [],
       "type": "section",
     },
   ],

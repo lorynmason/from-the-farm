@@ -4,7 +4,6 @@ import ProductList from '../ProductList/ProductList';
 
 export const Buy = ({appState}) => {
   const { vendors, products } = appState
-  console.log(vendors)
     return (
       <section className="buy">
         <Map vendors={vendors} />

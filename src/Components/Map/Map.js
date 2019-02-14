@@ -14,9 +14,7 @@ export class Map extends Component {
   createMap = () => {
     const map = L.map('map').setView([39.750614, -104.996775], 11);
     const { vendors } = this.props;
-    console.log(this.props)
     vendors.forEach((vendor) => {
-      console.log(vendor)
       const location = [vendor.lat, vendor.long]
       const marker = L.marker(location).addTo(map);
       const popup = `<h3>${vendor.name}</h3>

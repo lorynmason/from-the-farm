@@ -3,15 +3,16 @@ import React, { Component } from 'react';
 class Product extends Component {
 
   render() {
-    const { name, price, unit, description, quantity } = this.props.product;
+    let { name, price, unit, description, vendorName } = this.props.product;
+    const newPrice = price/100;
+    price = `$${newPrice.toFixed(2)}`;
     return (
-      <article className="product" style={{display: 'flex'}}>
+      <article className="product">
         <h2>{name}</h2>
+        <p>{vendorName}</p>
         <p>{description}</p>
         <div className="pricing-info">
-          <p>{price}</p>
-          <p>{quantity}</p>
-          <p>{unit}</p>
+          <p>{price}/{unit}</p>
         </div>
       </article>
     )
