@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Product from '../Product/Product';
 
 class Profile extends Component {
   constructor(){
@@ -17,43 +18,23 @@ class Profile extends Component {
 
   render(){
     const { showBio } = this.state
+    const { name, bio, address, phone, email, city, state } = this.props.user
     let info
     let button
     if (showBio) {
-      info =  <p>Catalyze, scalable social innovation social intrapreneurship social capital effective altruism thought leader. NGO circular social entrepreneurship inspire; shared unit of analysis revolutionary corporate social responsibility equal opportunity emerging. Strengthening infrastructure movements cultivate, save the world co-creation; milestones dynamic mobilize technology. Collaborate, think tank, resist; best practices, radical strategize sustainable. Rubric.</p>
       button = 'Show Products'
+      info = <p>{bio}</p>;
     } else {
-      info = <table>
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Price</th> 
-            <th>Unit</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Carrots</td>
-            <td>5</td> 
-            <td>lbs</td>
-            <td>Organic, multi-color</td>
-          </tr>
-          <tr>
-            <td>Apples</td>
-            <td>5</td> 
-            <td>lbs</td>
-            <td>Organic, pink lady</td>
-          </tr>
-        </tbody>
-      </table>
-      button = 'Show Bio'
+      button = 'Show Bio';
+      info = this.props.products.map((product) => {
+        return <Product product={product} />
+      })
     }
     return (
       <section className="profile">
-        <h3>Mason Family Farm</h3>
-        <h4>Hoodriver, OR</h4>
-        <h4>masonfarm@gmail.com</h4>
+        <h3>{name}</h3>
+        <h4>{city}, {state}</h4>
+        <h4>{email}</h4>
         <button onClick={this.toggleInfo}>{ button }</button>
         { info }
       </section>

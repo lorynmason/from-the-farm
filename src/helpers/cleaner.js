@@ -1,27 +1,13 @@
-export const cleanVendors = (vendors) => {
-  return vendors.map( vendor => {
-    const { name, address, phone, email, lat, long } = vendor.attributes
-    return {
-      name,
-      address,
-      phone,
-      email,
-      lat,
-      long, 
-      id: vendor.id
-    }
-  })
-}
-
 export const cleanProducts = (vendors) => {
   return vendors.reduce((productArr, vendor) => {
     const { name, products } = vendor.attributes;
     const productNames = products.reduce((obj, product) => {
-      const name = Object.keys(product)[0];
+      const itemName = Object.keys(product)[0];
 
       obj = {
+        vendorName: name,
         name: Object.keys(product)[0],
-        ...product[name]
+        ...product[itemName]
       }
       productArr.push(obj);
       return obj
@@ -29,4 +15,22 @@ export const cleanProducts = (vendors) => {
 
     return productArr;
   }, [])
+}
+
+export const cleanVendors = (vendors) => {
+  return vendors.map( vendor => {
+    const { name, address, state, city, phone, email, lat, long, bio } = vendor.attributes
+    return {
+      name,
+      bio,
+      address,
+      state, 
+      city,
+      phone,
+      email,
+      lat,
+      long, 
+      id: parseInt(vendor.id)
+    }
+  })
 }
