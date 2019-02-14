@@ -3,27 +3,15 @@ import Product from '../Product/Product';
 
 const ProductList = ({ products }) => {
 
-//   const productsToReturn = products.reduce((productArray, product) => {
-//     productArray.push(product.vendor_name)
-//     product.products.forEach((stuff) => {
+  const productsToReturn = products.map((product) => {
+    return <Product product={product} />
+  })
 
-//     })
-
-
-//     return productArray;
-//   }, [])
-
-//   return (
-//     <section className="product-list">
-//       {productsToReturn}
-//     </section>
-//   )
-
-    return (
-      <div>
-        
-      </div>
-    )
+  return (
+    <section className="product-list">
+      {productsToReturn}
+    </section>
+  )
 }
 
 export default ProductList;
