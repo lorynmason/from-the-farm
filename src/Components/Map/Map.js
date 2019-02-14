@@ -4,16 +4,17 @@ import L from 'leaflet';
 
 export class Map extends Component {
 
-  componentDidMount() {
+  componentDidUpdate() {
     this.createMap();
   }
 
   createMap = () => {
-    const map = L.map('map').setView([39.750614, -104.996775], 9);
-    const { coordinates } = this.props;
-
-    coordinates.forEach((location) => {
-      console.log(location)
+    const map = L.map('map').setView([39.750614, -104.996775], 11);
+    const { vendors } = this.props;
+    console.log(this.props)
+    vendors.forEach((vendor) => {
+      console.log(vendor)
+      const location = [vendor.lat, vendor.long]
       const marker = L.marker(location).addTo(map);
       marker.bindPopup(`<h4>${location}</h4>`)
     });
@@ -21,7 +22,7 @@ export class Map extends Component {
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
-      id: 'mapbox.streets',
+      id: 'mapbox.dark',
       accessToken
     }).addTo(map);
   }

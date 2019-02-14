@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Buy from '../Buy/Buy';
+import { Buy } from '../Buy/Buy';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
 import { Switch, Route } from 'react-router';
@@ -11,7 +11,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      vendors: []
+      vendors: [],
+      products: []
     }
   }
 
@@ -31,7 +32,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/buy" render={() => <Buy coordinates={[]} />}/>
+          <Route path="/buy" render={() => <Buy appState={this.state} />}/>
           <Route path="/profile" render={() => <Profile />}/>
         </Switch>
       </div>
