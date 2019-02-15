@@ -33,14 +33,12 @@ class App extends Component {
       return product.user_id === this.state.user.id;
     });
 
-    console.log(products)
-
     return (
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/buy" render={() => <Buy appState={this.state} />}/>
-          <Route path="/profile" render={() => <Profile user={this.state.user} products={products} />}/>
+          <Route path="/buy" render={(match) => <Buy location={match.location} appState={this.state} />}/>
+          <Route path="/profile" render={(match) => <Profile user={this.state.user} products={products} location={match.location}/>}/>
         </Switch>
       </div>
     );

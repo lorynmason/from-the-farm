@@ -1,7 +1,7 @@
 export const cleanProducts = (vendors) => {
   return vendors.reduce((productArr, vendor) => {
     const { name, products } = vendor.attributes;
-    const productNames = products.reduce((obj, product) => {
+    products.reduce((obj, product) => {
       const itemName = Object.keys(product)[0];
 
       obj = {

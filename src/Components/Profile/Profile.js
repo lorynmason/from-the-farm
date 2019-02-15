@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Product from '../Product/Product';
+import Map from '../Map/Map';
 
 class Profile extends Component {
   constructor(){
@@ -32,9 +33,12 @@ class Profile extends Component {
     }
     return (
       <section className="profile">
+        {/* <Map user={this.props.user} location={this.props.location}/> */}
         <h3>{name}</h3>
+        <h4>{address}</h4>
         <h4>{city}, {state}</h4>
         <h4>{email}</h4>
+        <h4>{phone}</h4>
         <button onClick={this.toggleInfo}>{ button }</button>
         { info }
       </section>
