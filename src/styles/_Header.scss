@@ -1,10 +1,13 @@
 header {
   width: 100vw;
-  height: 220px;
+  height: 22vh;
   background: rgb(10, 151, 132);
   box-shadow: 5px 5px 10px rgba(94, 93, 93, 0.514);
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   .header-logo {
     display: flex;
     justify-content: center;
