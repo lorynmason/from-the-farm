@@ -36,32 +36,43 @@ ShallowWrapper {
             id="logo"
             src="pig-logo.png"
           />
-        </div>
-        <div
-          className="menu"
-        >
-          <Link
-            replace={false}
-            to="/buy"
+          <div
+            className="menu"
           >
-            <i
-              className="fas fa-carrot"
-            />
-          </Link>
-          <Link
-            replace={false}
-            to="/profile"
-          >
-            <i
-              className="fas fa-user-circle"
-            />
-          </Link>
-          <i
-            className="fas fa-plus-circle"
-          />
-          <i
-            className="fas fa-sign-out-alt"
-          />
+            <Link
+              replace={false}
+              to="/buy"
+            >
+              <i
+                className="fas fa-carrot"
+              />
+            </Link>
+            <Link
+              replace={false}
+              to="/profile"
+            >
+              <i
+                className="fas fa-user-circle"
+              />
+            </Link>
+            <Link
+              replace={false}
+              to="/"
+            >
+              <i
+                className="fas fa-plus-circle"
+              />
+               
+            </Link>
+            <Link
+              replace={false}
+              to="/"
+            >
+              <i
+                className="fas fa-sign-out-alt"
+              />
+            </Link>
+          </div>
         </div>
       </div>,
     },
@@ -71,23 +82,21 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <div
-            className="header-logo"
-          >
-            <h1>
-              from
-              <span>
-                the
-              </span>
-              farm
-            </h1>
-            <img
-              alt="from the farm cute pig logo"
-              id="logo"
-              src="pig-logo.png"
-            />
-          </div>,
+        "children": <div
+          className="header-logo"
+        >
+          <h1>
+            from
+            <span>
+              the
+            </span>
+            farm
+          </h1>
+          <img
+            alt="from the farm cute pig logo"
+            id="logo"
+            src="pig-logo.png"
+          />
           <div
             className="menu"
           >
@@ -107,253 +116,26 @@ ShallowWrapper {
                 className="fas fa-user-circle"
               />
             </Link>
-            <i
-              className="fas fa-plus-circle"
-            />
-            <i
-              className="fas fa-sign-out-alt"
-            />
-          </div>,
-        ],
-        "className": "container",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                from
-                <span>
-                  the
-                </span>
-                farm
-              </h1>,
-              <img
-                alt="from the farm cute pig logo"
-                id="logo"
-                src="pig-logo.png"
-              />,
-            ],
-            "className": "header-logo",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "from",
-                  <span>
-                    the
-                  </span>,
-                  "farm",
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                "from",
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "the",
-                  },
-                  "ref": null,
-                  "rendered": "the",
-                  "type": "span",
-                },
-                "farm",
-              ],
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": "from the farm cute pig logo",
-                "id": "logo",
-                "src": "pig-logo.png",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "img",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/buy"
-              >
-                <i
-                  className="fas fa-carrot"
-                />
-              </Link>,
-              <Link
-                replace={false}
-                to="/profile"
-              >
-                <i
-                  className="fas fa-user-circle"
-                />
-              </Link>,
+            <Link
+              replace={false}
+              to="/"
+            >
               <i
                 className="fas fa-plus-circle"
-              />,
+              />
+               
+            </Link>
+            <Link
+              replace={false}
+              to="/"
+            >
               <i
                 className="fas fa-sign-out-alt"
-              />,
-            ],
-            "className": "menu",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <i
-                  className="fas fa-carrot"
-                />,
-                "replace": false,
-                "to": "/buy",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "fas fa-carrot",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "i",
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <i
-                  className="fas fa-user-circle"
-                />,
-                "replace": false,
-                "to": "/profile",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "fas fa-user-circle",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "i",
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "fas fa-plus-circle",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "i",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "fas fa-sign-out-alt",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "i",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-    "type": "header",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          className="container"
-        >
-          <div
-            className="header-logo"
-          >
-            <h1>
-              from
-              <span>
-                the
-              </span>
-              farm
-            </h1>
-            <img
-              alt="from the farm cute pig logo"
-              id="logo"
-              src="pig-logo.png"
-            />
-          </div>
-          <div
-            className="menu"
-          >
-            <Link
-              replace={false}
-              to="/buy"
-            >
-              <i
-                className="fas fa-carrot"
               />
             </Link>
-            <Link
-              replace={false}
-              to="/profile"
-            >
-              <i
-                className="fas fa-user-circle"
-              />
-            </Link>
-            <i
-              className="fas fa-plus-circle"
-            />
-            <i
-              className="fas fa-sign-out-alt"
-            />
           </div>
         </div>,
+        "className": "container",
       },
       "ref": null,
       "rendered": Object {
@@ -362,22 +144,18 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
-              className="header-logo"
-            >
-              <h1>
-                from
-                <span>
-                  the
-                </span>
-                farm
-              </h1>
-              <img
-                alt="from the farm cute pig logo"
-                id="logo"
-                src="pig-logo.png"
-              />
-            </div>,
+            <h1>
+              from
+              <span>
+                the
+              </span>
+              farm
+            </h1>,
+            <img
+              alt="from the farm cute pig logo"
+              id="logo"
+              src="pig-logo.png"
+            />,
             <div
               className="menu"
             >
@@ -397,15 +175,26 @@ ShallowWrapper {
                   className="fas fa-user-circle"
                 />
               </Link>
-              <i
-                className="fas fa-plus-circle"
-              />
-              <i
-                className="fas fa-sign-out-alt"
-              />
+              <Link
+                replace={false}
+                to="/"
+              >
+                <i
+                  className="fas fa-plus-circle"
+                />
+                 
+              </Link>
+              <Link
+                replace={false}
+                to="/"
+              >
+                <i
+                  className="fas fa-sign-out-alt"
+                />
+              </Link>
             </div>,
           ],
-          "className": "container",
+          "className": "header-logo",
         },
         "ref": null,
         "rendered": Array [
@@ -415,69 +204,43 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <h1>
-                  from
-                  <span>
-                    the
-                  </span>
-                  farm
-                </h1>,
-                <img
-                  alt="from the farm cute pig logo"
-                  id="logo"
-                  src="pig-logo.png"
-                />,
+                "from",
+                <span>
+                  the
+                </span>,
+                "farm",
               ],
-              "className": "header-logo",
             },
             "ref": null,
             "rendered": Array [
+              "from",
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    "from",
-                    <span>
-                      the
-                    </span>,
-                    "farm",
-                  ],
+                  "children": "the",
                 },
                 "ref": null,
-                "rendered": Array [
-                  "from",
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "the",
-                    },
-                    "ref": null,
-                    "rendered": "the",
-                    "type": "span",
-                  },
-                  "farm",
-                ],
-                "type": "h1",
+                "rendered": "the",
+                "type": "span",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "from the farm cute pig logo",
-                  "id": "logo",
-                  "src": "pig-logo.png",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
+              "farm",
             ],
-            "type": "div",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "from the farm cute pig logo",
+              "id": "logo",
+              "src": "pig-logo.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
           },
           Object {
             "instance": null,
@@ -501,12 +264,23 @@ ShallowWrapper {
                     className="fas fa-user-circle"
                   />
                 </Link>,
-                <i
-                  className="fas fa-plus-circle"
-                />,
-                <i
-                  className="fas fa-sign-out-alt"
-                />,
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <i
+                    className="fas fa-plus-circle"
+                  />
+                   
+                </Link>,
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <i
+                    className="fas fa-sign-out-alt"
+                  />
+                </Link>,
               ],
               "className": "menu",
             },
@@ -565,29 +339,455 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "className": "fas fa-plus-circle",
+                  "children": Array [
+                    <i
+                      className="fas fa-plus-circle"
+                    />,
+                    " ",
+                  ],
+                  "replace": false,
+                  "to": "/",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "i",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-plus-circle",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  " ",
+                ],
+                "type": [Function],
               },
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "className": "fas fa-sign-out-alt",
+                  "children": <i
+                    className="fas fa-sign-out-alt"
+                  />,
+                  "replace": false,
+                  "to": "/",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "i",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-sign-out-alt",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": [Function],
               },
             ],
             "type": "div",
           },
         ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="container"
+        >
+          <div
+            className="header-logo"
+          >
+            <h1>
+              from
+              <span>
+                the
+              </span>
+              farm
+            </h1>
+            <img
+              alt="from the farm cute pig logo"
+              id="logo"
+              src="pig-logo.png"
+            />
+            <div
+              className="menu"
+            >
+              <Link
+                replace={false}
+                to="/buy"
+              >
+                <i
+                  className="fas fa-carrot"
+                />
+              </Link>
+              <Link
+                replace={false}
+                to="/profile"
+              >
+                <i
+                  className="fas fa-user-circle"
+                />
+              </Link>
+              <Link
+                replace={false}
+                to="/"
+              >
+                <i
+                  className="fas fa-plus-circle"
+                />
+                 
+              </Link>
+              <Link
+                replace={false}
+                to="/"
+              >
+                <i
+                  className="fas fa-sign-out-alt"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="header-logo"
+          >
+            <h1>
+              from
+              <span>
+                the
+              </span>
+              farm
+            </h1>
+            <img
+              alt="from the farm cute pig logo"
+              id="logo"
+              src="pig-logo.png"
+            />
+            <div
+              className="menu"
+            >
+              <Link
+                replace={false}
+                to="/buy"
+              >
+                <i
+                  className="fas fa-carrot"
+                />
+              </Link>
+              <Link
+                replace={false}
+                to="/profile"
+              >
+                <i
+                  className="fas fa-user-circle"
+                />
+              </Link>
+              <Link
+                replace={false}
+                to="/"
+              >
+                <i
+                  className="fas fa-plus-circle"
+                />
+                 
+              </Link>
+              <Link
+                replace={false}
+                to="/"
+              >
+                <i
+                  className="fas fa-sign-out-alt"
+                />
+              </Link>
+            </div>
+          </div>,
+          "className": "container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                from
+                <span>
+                  the
+                </span>
+                farm
+              </h1>,
+              <img
+                alt="from the farm cute pig logo"
+                id="logo"
+                src="pig-logo.png"
+              />,
+              <div
+                className="menu"
+              >
+                <Link
+                  replace={false}
+                  to="/buy"
+                >
+                  <i
+                    className="fas fa-carrot"
+                  />
+                </Link>
+                <Link
+                  replace={false}
+                  to="/profile"
+                >
+                  <i
+                    className="fas fa-user-circle"
+                  />
+                </Link>
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <i
+                    className="fas fa-plus-circle"
+                  />
+                   
+                </Link>
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <i
+                    className="fas fa-sign-out-alt"
+                  />
+                </Link>
+              </div>,
+            ],
+            "className": "header-logo",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "from",
+                  <span>
+                    the
+                  </span>,
+                  "farm",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "from",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "the",
+                  },
+                  "ref": null,
+                  "rendered": "the",
+                  "type": "span",
+                },
+                "farm",
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "from the farm cute pig logo",
+                "id": "logo",
+                "src": "pig-logo.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    replace={false}
+                    to="/buy"
+                  >
+                    <i
+                      className="fas fa-carrot"
+                    />
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/profile"
+                  >
+                    <i
+                      className="fas fa-user-circle"
+                    />
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/"
+                  >
+                    <i
+                      className="fas fa-plus-circle"
+                    />
+                     
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/"
+                  >
+                    <i
+                      className="fas fa-sign-out-alt"
+                    />
+                  </Link>,
+                ],
+                "className": "menu",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <i
+                      className="fas fa-carrot"
+                    />,
+                    "replace": false,
+                    "to": "/buy",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-carrot",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <i
+                      className="fas fa-user-circle"
+                    />,
+                    "replace": false,
+                    "to": "/profile",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-user-circle",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <i
+                        className="fas fa-plus-circle"
+                      />,
+                      " ",
+                    ],
+                    "replace": false,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fas fa-plus-circle",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "i",
+                    },
+                    " ",
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <i
+                      className="fas fa-sign-out-alt"
+                    />,
+                    "replace": false,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-sign-out-alt",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
         "type": "div",
       },
       "type": "header",
