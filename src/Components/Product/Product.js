@@ -7,14 +7,12 @@ class Product extends Component {
     const newPrice = price/100;
     price = `$${newPrice.toFixed(2)}`;
     return (
-      <article key={item_id}className="product">
-        <h2>{name}</h2>
-        <p>{vendorName}</p>
-        <p>{description}</p>
-        <div className="pricing-info">
-          <p>{price}/{unit}</p>
-        </div>
-      </article>
+      <tr key={item_id}className="product">
+        <td>{name}</td>
+        <td>{vendorName}</td>
+        <td>{description}</td>
+        <td>{price}/{unit}</td>
+      </tr>
     )
   }
 }

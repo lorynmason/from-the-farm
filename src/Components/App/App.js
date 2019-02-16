@@ -16,7 +16,7 @@ class App extends Component {
     }
   }
 
-  async componentDidMount(){
+  async componentDidMount() {
     const response = await fetch('https://xpoll-be.herokuapp.com/api/v1/vendors')
     const results = await response.json()
     const vendors = cleaner.cleanVendors(results.data)
@@ -37,8 +37,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/buy" render={(match) => <Buy location={match.location} appState={this.state} />}/>
-          <Route path="/profile" render={(match) => <Profile user={this.state.user} products={products} location={match.location}/>}/>
+          <Route path="/buy" render={() => <Buy appState={this.state} />}/>
+          <Route path="/profile" render={() => <Profile user={this.state.user} products={products} />}/>
         </Switch>
       </div>
     );

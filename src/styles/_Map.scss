@@ -11,9 +11,8 @@
     margin: 0;
   }
 }
+
 .buy {
-  width: 100vw;
-  margin-top: 22vh;
   #map {
     height: 78vh;
     width: 50vw;
@@ -26,5 +25,6 @@
     height: 400px;
     width: 400px;
     margin: 0 auto;
+    z-index: 1;
   }
 }

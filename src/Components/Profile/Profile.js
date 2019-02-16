@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Product from '../Product/Product';
-import Map from '../Map/Map';
+import { Redirect } from 'react-router'
 
 class Profile extends Component {
   constructor(){
@@ -17,11 +17,12 @@ class Profile extends Component {
     })
   }
 
-  render(){
+  render() {
     const { showBio } = this.state
     const { name, bio, address, phone, email, city, state } = this.props.user
     let info
     let button
+    let redirect
     if (showBio) {
       button = 'Show Products'
       info = <p>{bio}</p>;
@@ -31,9 +32,11 @@ class Profile extends Component {
         return <Product product={product} />
       })
     }
+    if (!name) {
+      redirect = <Redirect to="/buy"/>
+    } 
     return (
       <section className="profile">
-        {/* <Map user={this.props.user} location={this.props.location}/> */}
         <h3>{name}</h3>
         <h4>{address}</h4>
         <h4>{city}, {state}</h4>
@@ -41,6 +44,7 @@ class Profile extends Component {
         <h4>{phone}</h4>
         <button onClick={this.toggleInfo}>{ button }</button>
         { info }
+        { redirect }
       </section>
     )
   }
