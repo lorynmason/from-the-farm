@@ -13,10 +13,9 @@ export const Header = () => {
           <img id="logo" src={image} alt="from the farm cute pig logo"/>
         </div>
         <div className="menu">
-          <i className="fas fa-carrot"></i>
-          <i className="fas fa-user-circle"></i>
+          <Link to="/buy"><i className="fas fa-carrot"></i></Link>
+          <Link to="/profile"><i className="fas fa-user-circle"></i></Link>
           <i className="fas fa-plus-circle"></i>
-          <i className="fas fa-leaf"></i>
           <i className="fas fa-sign-out-alt"></i>
         </div>
       </div>

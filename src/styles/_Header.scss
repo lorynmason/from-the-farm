@@ -96,13 +96,17 @@ header {
     align-items: center;
     transition: ease all 1s;    
     .menu {
+      a {
+        all: unset;
+      }
       margin: 225px auto 0;
       // display: none;
       color: transparent;
-      transition: color 1s ease-in-out;    
+      transition: color .7s ease-in;    
       i {    
         font-size: 3rem;
         padding: 0 10px;
+        cursor: pointer;
       }
     }
     &:hover {
