@@ -4,6 +4,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ease all 1s;
   .header-logo {
     display: flex;
     justify-content: center;
@@ -89,4 +90,26 @@ header {
     transform: translate(-15px, -10px);
     background: #000;
   }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease all 1s;    
+    .menu {
+      margin: 225px auto 0;
+      // display: none;
+      color: transparent;
+      transition: color 1s ease-in-out;    
+      i {    
+        font-size: 3rem;
+        padding: 0 10px;
+      }
+    }
+    &:hover {
+      .menu {
+        color: #000;
+        // display: block;
+      }
+    }
+  } 
 }
