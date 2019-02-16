@@ -1,5 +1,10 @@
 .buy {
   width: 100vw;
-  // margin-top: 22vh;
-  display: flex;
+  margin-top: 22vh;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 200px auto;
+  grid-template-areas: 
+    "search table"
+    "map table";
 }
