@@ -1,37 +1,60 @@
 .profile {
-  // margin: 22vh auto 0;
+  display: grid;
+  width: 100vw;
   font-family: 'Advent Pro', sans-serif;
-  text-align: center;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 80px 300px auto;
+  grid-template-areas: 
+    "title tille"
+    "info table"
+    "bio table";
+    @media screen and (max-width: 1250px) {
+      grid-template-rows: 80px 430px auto;   
+    }
+  .vender-info {
+    grid-area: info;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    @media screen and (max-width: 1250px) {
+      flex-direction: column;
+      text-align: center;        
+    }
+    #farm {
+      width: 300px;
+    }
+    .contact-info {
+      margin-left: 50px;
+      @media screen and (min-width: 1190px) {
+        margin-left: 0px;        
+      }
+      @media screen and (max-width: 1250px) {
+        margin-left: 0px;                       
+      }
+    }
+  }
   h3 {
     font-size: 4rem;
     font-weight: 500;
-    margin: 25px;
+    grid-area: title;
+    text-align: center;
+    width: 200%;
   }
   h4 {
-    font-size: 3rem;
-    font-weight: 400;
-    margin: 15px;
-  }
-  button {
-    all: unset;
-    margin: 50px;
-    background: rgb(10, 151, 132);
-    padding: 15px;
     font-size: 2rem;
-    color: whitesmoke;
-    box-shadow: -3px 3px 6px rgba(88, 88, 88, 0.764);
-    transition: all ease .5s;
-    border-radius: 5px;
-    &:hover {
-      cursor: pointer;
-      background: purple;
-      transform: scale(1.08);
-    }
+    font-weight: 400;
+    margin: 15px 0;
   }
   p {
+    grid-area: bio;
     font-size: 2rem;
     text-align: start;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
+    text-align: center;
+  }
+  .vender-products {
+    grid-area: table;
   }
 }

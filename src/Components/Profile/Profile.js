@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Product from '../Product/Product';
-import { Redirect } from 'react-router'
+import { Redirect } from 'react-router';
+import ProductList from '../ProductList/ProductList'
+import farmImage from '../../styles/images/farm.jpeg'
 
 class Profile extends Component {
   constructor(){
@@ -19,20 +21,11 @@ class Profile extends Component {
 
   render() {
     const { showBio } = this.state
-    const { name, bio, address, phone, email, city, state } = this.props.user
-    let info
-    let button
+    const { name, bio, address, phone, email, city, state, id } = this.props.user
+    const products = this.props.products.filter((product) => {
+      return product.user_id === id;
+    });
     let redirect
-    
-    if (showBio) {
-      button = 'Show Products'
-      info = <p>{bio}</p>;
-    } else {
-      button = 'Show Bio';
-      info = this.props.products.map((product) => {
-        return <Product product={product} />
-      })
-    }
 
     if (!name) {
       redirect = <Redirect to="/buy"/>
@@ -41,12 +34,21 @@ class Profile extends Component {
     return (
       <section className="profile">
         <h3>{name}</h3>
-        <h4>{address}</h4>
-        <h4>{city}, {state}</h4>
-        <h4>{email}</h4>
-        <h4>{phone}</h4>
-        <button onClick={this.toggleInfo}>{ button }</button>
-        { info }
+          <section className="vender-info">
+            <div className="img-container">
+              <img id="farm" src={farmImage} alt="Farm"/>
+            </div>
+            <div className="contact-info">
+              <h4>{address}</h4>
+              <h4>{city}, {state}</h4>
+              <h4>{email}</h4>
+              <h4>{phone}</h4>
+            </div>
+          </section>
+          <p>{bio}</p>
+          <section className="vender-products">
+          <ProductList products={products} />
+          </section>
         { redirect }
       </section>
     )
