@@ -1,4 +1,4 @@
-const user = (state = {}, action) => {
+export const user = (state = {}, action) => {
   switch(action.type) {
     case 'ADD_USER':
       return action.user;
@@ -9,4 +9,20 @@ const user = (state = {}, action) => {
   }
 }
 
-export default user;
+export const isLoading = (state = false, action) => {
+  switch(action.type) {
+    case 'IS_LOADING':
+      return action.bool;
+    default:
+      return state;
+  }
+}
+
+export const hasErrored = (state = '', action) => {
+  switch(action.type) {
+    case 'HAS_ERRORED':
+      return action.message;
+    default:
+      return state;
+  }
+}

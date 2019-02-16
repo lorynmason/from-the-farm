@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
-import userReducer from './user-reducer';
+import * as userReducer from './user-reducer';
 import vendorReducer from './vendor-reducer';
 import productsReducer from './products-reducer';
 
 const rootReducer = combineReducers({
-  userReducer,
-  vendorReducer,
-  productsReducer
+  user: userReducer.user,
+  vendors: vendorReducer,
+  products: productsReducer,
+  isLoadingReducer: userReducer.isLoading,
+  hasErroredReducer: userReducer.hasErrored
 });
 
 export default rootReducer;
