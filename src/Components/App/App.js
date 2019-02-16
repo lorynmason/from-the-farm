@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { Buy } from '../Buy/Buy';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
-import { Switch, Route } from 'react-router';
+import { Switch, Route, withRouter } from 'react-router';
 import Profile from '../Profile/Profile';
 import * as cleaner from '../../helpers/cleaner';
 import { createBrowserHistory } from 'history';
+import { connect } from 'react-redux';
+import { addUser, removeUser } from '../../actions';
 
 class App extends Component {
   constructor() {
@@ -21,6 +23,7 @@ class App extends Component {
     const response = await fetch('https://xpoll-be.herokuapp.com/api/v1/vendors')
     const results = await response.json()
     this.cleanResults(results)
+    
   }
 
   search = async({ product, location, range }) => {
@@ -33,10 +36,10 @@ class App extends Component {
   cleanResults = (results) => {
     const vendors = cleaner.cleanVendors(results.data)
     const products = cleaner.cleanProducts(results.data)
+    this.props.addUser(vendors[2]);
     this.setState({
       vendors,
-      products,
-      user: vendors[2]
+      products
     })
   }
 
@@ -69,4 +72,12 @@ class App extends Component {
   }
 }
 
-export default App;
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    addUser: (user) => {
+      dispatch(addUser(user));
+    }
+  }
+}
+
+export default withRouter(connect(null, mapDispatchToProps)(App));

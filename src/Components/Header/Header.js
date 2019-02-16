@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import image from '../../styles/images/pig-logo.png'
 
-
 export const Header = () => {
   return (
     <header>
