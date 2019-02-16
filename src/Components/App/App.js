@@ -12,8 +12,20 @@ import { fetchVendors } from '../../thunks/fetchVendors';
 
 class App extends Component {
 
-  componentDidMount() {
-    this.props.fetchVendors();  
+  async componentDidMount() {
+    this.props.fetchVendors();
+    this.props.addUserToStore({
+      address: "85 Hooker St",
+      bio: "Orange You Glad You Didn't Say Bananas",
+      city: "denver",
+      email: "ruffnbuff@example.com",
+      id: 6,
+      lat: 39.717646,
+      long: -105.029438,
+      name: "Oranges 4 Eva",
+      phone: 2313414141,
+      state: "CO"
+    })
   }
 
   search = async({ product, location, range }) => {
@@ -26,11 +38,6 @@ class App extends Component {
   cleanResults = (results) => {
     const vendors = cleaner.cleanVendors(results.data)
     const products = cleaner.cleanProducts(results.data)
-    this.props.addUser(vendors[2]);
-    this.setState({
-      vendors,
-      products
-    })
   }
 
   filterProducts = (id) => {
@@ -44,7 +51,7 @@ class App extends Component {
   }
 
   render() {
-    const history = createBrowserHistory()
+    const history = createBrowserHistory();
     return (
       <div className="App">
         <Header />
