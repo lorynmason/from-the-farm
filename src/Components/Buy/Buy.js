@@ -7,7 +7,7 @@ export const Buy = (props) => {
   const { vendors, products } = props.appState
     return (
       <section className="buy">
-        <Search products={products}/>
+        <Search products={products} search={props.search}/>
         <Map vendors={vendors} history={props.history}/>
         <ProductList products={products}/>
       </section>

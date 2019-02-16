@@ -20,28 +20,49 @@ class App extends Component {
   async componentDidMount() {
     const response = await fetch('https://xpoll-be.herokuapp.com/api/v1/vendors')
     const results = await response.json()
+    this.cleanResults(results)
+  }
+
+  search = async({ product, location, range }) => {
+    const response = await fetch(`https://xpoll-be.herokuapp.com/api/v1/search?loc=${location}&range=${range}&item=${product}`)
+    const results = await response.json()
+    this.cleanResults(results)
+    this.filterProducts(product)
+  }
+
+  cleanResults = (results) => {
     const vendors = cleaner.cleanVendors(results.data)
     const products = cleaner.cleanProducts(results.data)
     this.setState({
       vendors,
       products,
-      user: vendors[5]
+      user: vendors[2]
+    })
+  }
+
+  filterProducts = (id) => {
+    const newProducts = this.state.products.filter( product => {
+      id = parseInt(id)
+      return product.item_id === id
+    })
+    this.setState({
+      products: newProducts
     })
   }
 
   render() {
-    const products = this.state.products.filter((product) => {
-      return product.user_id === this.state.user.id;
-    });
+    // const products = this.state.products.filter((product) => {
+    //   return product.user_id === this.state.user.id;
+    // });
 
     const history = createBrowserHistory()
-
+    console.log(this.state.products)
     return (
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/buy" render={({ match }) => <Buy appState={this.state} match={match} history={history} />}/>
-          <Route path="/profile" render={() => <Profile user={this.state.user} products={products} />}/>
+          <Route path="/buy" render={({ match }) => <Buy appState={this.state} match={match} history={history} search={this.search}/>}/>
+          <Route path="/profile" render={() => <Profile user={this.state.user} products={this.state.products} />}/>
         </Switch>
       </div>
     );
