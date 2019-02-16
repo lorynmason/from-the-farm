@@ -1,6 +1,5 @@
 .profile {
-  width: 800px;
-  margin: 0 auto;
+  margin: 22vh auto 0;
   font-family: 'Advent Pro', sans-serif;
   text-align: center;
   h3 {
@@ -34,26 +33,5 @@
     text-align: start;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-  }
-  table {
-    border-collapse: collapse;
-    font-size: 2rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0 auto;
-    td, th {
-      border: 1px solid #999;
-      padding: 0.5rem;
-      text-align: left;
-    }
-    thead {
-      tr { 
-        background: rgb(111, 243, 177); 
-      }
-    }
-    tbody {
-      tr:nth-child(1) { 
-        background: rgba(84, 171, 243, 0.568); 
-      }
-    }
   }
 }

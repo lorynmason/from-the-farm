@@ -12,8 +12,19 @@
   }
 }
 
-#map {
-  margin: 1px;
-  height: 500px;
-  width: 100vw;
+.buy {
+  #map {
+    height: 78vh;
+    width: 50vw;
+    z-index: 1;
+  }
+}
+
+.profile {
+  #map {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    z-index: 1;
+  }
 }

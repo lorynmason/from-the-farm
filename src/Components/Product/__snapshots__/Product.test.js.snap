@@ -29,22 +29,18 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
+        <td>
           chile pepper
-        </h2>,
-        <p />,
-        <p>
+        </td>,
+        <td />,
+        <td>
           Pueblo hot roasted
-        </p>,
-        <div
-          className="pricing-info"
-        >
-          <p>
-            $0.20
-            /
-            bushel
-          </p>
-        </div>,
+        </td>,
+        <td>
+          $0.20
+          /
+          bushel
+        </td>,
       ],
       "className": "product",
     },
@@ -59,7 +55,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": "chile pepper",
-        "type": "h2",
+        "type": "td",
       },
       Object {
         "instance": null,
@@ -70,7 +66,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": null,
-        "type": "p",
+        "type": "td",
       },
       Object {
         "instance": null,
@@ -81,22 +77,88 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": "Pueblo hot roasted",
-        "type": "p",
+        "type": "td",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <p>
+          "children": Array [
+            "$0.20",
+            "/",
+            "bushel",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "$0.20",
+          "/",
+          "bushel",
+        ],
+        "type": "td",
+      },
+    ],
+    "type": "tr",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <td>
+            chile pepper
+          </td>,
+          <td />,
+          <td>
+            Pueblo hot roasted
+          </td>,
+          <td>
             $0.20
             /
             bushel
-          </p>,
-          "className": "pricing-info",
+          </td>,
+        ],
+        "className": "product",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "chile pepper",
+          },
+          "ref": null,
+          "rendered": "chile pepper",
+          "type": "td",
         },
-        "ref": null,
-        "rendered": Object {
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "td",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Pueblo hot roasted",
+          },
+          "ref": null,
+          "rendered": "Pueblo hot roasted",
+          "type": "td",
+        },
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
@@ -113,110 +175,10 @@ ShallowWrapper {
             "/",
             "bushel",
           ],
-          "type": "p",
-        },
-        "type": "div",
-      },
-    ],
-    "type": "article",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <h2>
-            chile pepper
-          </h2>,
-          <p />,
-          <p>
-            Pueblo hot roasted
-          </p>,
-          <div
-            className="pricing-info"
-          >
-            <p>
-              $0.20
-              /
-              bushel
-            </p>
-          </div>,
-        ],
-        "className": "product",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "chile pepper",
-          },
-          "ref": null,
-          "rendered": "chile pepper",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Pueblo hot roasted",
-          },
-          "ref": null,
-          "rendered": "Pueblo hot roasted",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <p>
-              $0.20
-              /
-              bushel
-            </p>,
-            "className": "pricing-info",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "$0.20",
-                "/",
-                "bushel",
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "$0.20",
-              "/",
-              "bushel",
-            ],
-            "type": "p",
-          },
-          "type": "div",
+          "type": "td",
         },
       ],
-      "type": "article",
+      "type": "tr",
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -16,7 +16,7 @@ class App extends Component {
     }
   }
 
-  async componentDidMount(){
+  async componentDidMount() {
     const response = await fetch('https://xpoll-be.herokuapp.com/api/v1/vendors')
     const results = await response.json()
     const vendors = cleaner.cleanVendors(results.data)
@@ -32,8 +32,6 @@ class App extends Component {
     const products = this.state.products.filter((product) => {
       return product.user_id === this.state.user.id;
     });
-
-    console.log(products)
 
     return (
       <div className="App">

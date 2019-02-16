@@ -8,8 +8,23 @@ const ProductList = ({ products }) => {
   })
 
   return (
-    <section className="product-list">
-      {productsToReturn}
+    <section className="table-container">
+      <table className="product-list">
+        <thead className="product product-list-header">
+          <tr>
+            <th>Product</th>
+            <th>Vendor</th>
+            <th>Description</th>
+            <th>$Price/Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+          </tr>
+          {productsToReturn}
+        </tbody>
+      </table>
     </section>
   )
 }
