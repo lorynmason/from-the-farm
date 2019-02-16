@@ -8,7 +8,10 @@ export class Map extends Component {
   }
 
   createMap = () => {
-
+    const container = L.DomUtil.get('map');
+    if (container != null) {
+      container._leaflet_id = null;
+    }
     const map = L.map('map').setView([39.750614, -104.996775], 11);
     const { vendors } = this.props;
     vendors.forEach((vendor) => {
@@ -32,10 +35,6 @@ export class Map extends Component {
   render() {
     this.props.history.listen((location, action) => {
       if (location.pathname === '/buy') {
-        var container = L.DomUtil.get('map');
-        if (container != null) {
-          container._leaflet_id = null;
-        }
         this.createMap();
       }
     })

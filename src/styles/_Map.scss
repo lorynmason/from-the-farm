@@ -14,17 +14,18 @@
 
 .buy {
   #map {
-    height: 78vh;
+    height: calc(78vh-200px);
     width: 50vw;
     z-index: 1;
+    grid-area: map;
   }
 }
 
-.profile {
-  #map {
-    height: 400px;
-    width: 400px;
-    margin: 0 auto;
-    z-index: 1;
-  }
-}
+// .profile {
+//   #map {
+//     height: 400px;
+//     width: 400px;
+//     margin: 0 auto;
+//     z-index: 1;
+//   }
+// }

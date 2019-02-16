@@ -1,12 +1,14 @@
 import React from 'react';
 import Map from '../Map/Map';
 import ProductList from '../ProductList/ProductList';
+import { Search } from '../Search/Search'
 
 export const Buy = (props) => {
   const { vendors, products } = props.appState
     return (
       <section className="buy">
-        <Map vendors={vendors} history={props.history} />
+        <Search products={products} search={props.search}/>
+        <Map vendors={vendors} history={props.history}/>
         <ProductList products={products}/>
       </section>
     )
