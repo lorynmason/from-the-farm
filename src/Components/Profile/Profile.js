@@ -23,6 +23,7 @@ class Profile extends Component {
     let info
     let button
     let redirect
+    
     if (showBio) {
       button = 'Show Products'
       info = <p>{bio}</p>;
@@ -32,9 +33,11 @@ class Profile extends Component {
         return <Product product={product} />
       })
     }
+
     if (!name) {
       redirect = <Redirect to="/buy"/>
     } 
+
     return (
       <section className="profile">
         <h3>{name}</h3>
