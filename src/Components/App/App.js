@@ -8,7 +8,9 @@ import { createBrowserHistory } from 'history';
 import { connect } from 'react-redux';
 import { addUser, removeUser, addProducts, addMessage } from '../../actions';
 import { fetchVendors } from '../../thunks/fetchVendors';
+import { Loading } from '../Loading/Loading'
 import Message from '../Message/Message';
+
 
 class App extends Component {
 
@@ -68,6 +70,7 @@ class App extends Component {
         <Header />
         <Message />
         <Switch>
+          <Route path="/loading" render={() => <Loading />}/>
           <Route path="/buy" render={() => <Buy history={history} search={this.search}/>}/>
           <Route path="/profile" render={() => <Profile user={this.props.user} products={this.props.products} />}/>
         </Switch>
