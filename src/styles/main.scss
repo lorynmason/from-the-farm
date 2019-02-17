@@ -31,10 +31,6 @@ $mainFont: 'Source Sans Pro', sans-serif;
 $accent1: rgb(2, 150, 150);
 $accent2: rgb(12, 192, 177);
 
-body {
-  overflow-y: hidden;
-}
-
 @import "Reset";
 @import "Header"; 
 @import "Profile";

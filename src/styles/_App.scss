@@ -1,4 +1,5 @@
 .App {
   @include flexin();  
   flex-direction: column;
+  background: whitesmoke;
 }

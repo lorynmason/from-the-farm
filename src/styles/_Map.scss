@@ -14,9 +14,11 @@
 
 .buy {
   #map {
-    height: calc(78vh-200px);
-    width: 50vw;
+    height: calc(70vh-100px);
+    margin: 0 0 0 50px;
+    width: 45vw;
     z-index: 1;
     grid-area: map;
+    box-shadow: -5px 5px 10px rgb(124, 124, 124);
   }
 }

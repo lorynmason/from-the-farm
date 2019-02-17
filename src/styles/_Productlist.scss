@@ -1,14 +1,16 @@
 .table-container {
   overflow: scroll;
-  height: 78vh;
-  width: 50vw;
+  height: 60vh;
+  width: 43vw;
   grid-area: table;
+  margin: 0 20px 0 50px;
+  box-shadow: -5px 5px 10px rgb(124, 124, 124);
 }
 
 .product-list {
   width: 100%;
   border-collapse: collapse;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: $mainFont;
   margin: 0 auto;
   tr {
@@ -22,7 +24,7 @@
   thead {
     tr { 
       position: fixed;
-      width: 50vw; 
+      width: 43vw; 
       background: rgb(39, 39, 39);
       color: whitesmoke;
       font-weight: bold;

@@ -5,7 +5,7 @@ header {
   transition: ease all 1s;
   .header-logo {
     @include flexin();
-    padding-left: 110px;
+    padding-left: 100px;
   }
   .header-logo {
     position: absolute;
@@ -77,12 +77,12 @@ header {
       @include flexin();
       flex-direction: column;
       color: transparent;
-      transition: color .5s ease-in; 
+      transition: color .3s ease-in; 
       margin-top: 20px;   
       i {    
         font-size: 3rem;
         cursor: pointer;
-        transition: all ease .5s;
+        transition: all ease .3s;
         &:hover {
           color: rgb(31, 143, 12);
         }
