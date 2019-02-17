@@ -1,5 +1,35 @@
+///fonts
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
+$titleFont: 'Advent Pro', sans-serif;
+$mainFont: 'Source Sans Pro', sans-serif;
+
+///mixins
+@mixin psuedo ($z, $t1, $t2, $a) {
+  position: absolute;
+  z-index: $z;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 600px;
+  height: 200px;
+  transform: translate($t1, $t2);
+  transition: all .5s ease-in-out;
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,$a);
+}
+
+@mixin flexin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//colors
+
+$accent1: rgb(2, 150, 150);
+$accent2: rgb(12, 192, 177);
 
 body {
   overflow-y: hidden;
