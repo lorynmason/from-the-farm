@@ -4,7 +4,7 @@ import { Redirect } from 'react-router';
 import ProductList from '../ProductList/ProductList'
 import farmImage from '../../styles/images/farm.jpeg'
 
-class Profile extends Component {
+export class Profile extends Component {
   constructor(){
     super()
     this.state = {

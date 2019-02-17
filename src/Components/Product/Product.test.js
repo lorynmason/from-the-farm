@@ -13,4 +13,4 @@ describe('Product', () => {
     }} />)
     expect(wrapper).toMatchSnapshot()
   });
-})
+});

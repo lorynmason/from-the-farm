@@ -13,7 +13,7 @@ class Product extends Component {
         <td>{description}</td>
         <td>{price}/{unit}</td>
       </tr>
-    )
+    );
   }
 }
 

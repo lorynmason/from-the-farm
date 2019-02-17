@@ -1,0 +1,1138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile should match the snapshot with no products 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Profile
+    products={Array []}
+    user={
+      Object {
+        "address": "1234 Here St.",
+        "bio": "A common pants wearer",
+        "city": "City",
+        "email": "me@here.com",
+        "id": 2,
+        "name": "Mike",
+        "phone": "1234567",
+        "state": "St",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Mike
+        </h3>,
+        <section
+          className="vender-info"
+        >
+          <div
+            className="img-container"
+          >
+            <img
+              alt="Farm"
+              id="farm"
+              src="farm.jpeg"
+            />
+          </div>
+          <div
+            className="contact-info"
+          >
+            <h4>
+              1234 Here St.
+            </h4>
+            <h4>
+              City
+              , 
+              St
+            </h4>
+            <h4>
+              me@here.com
+            </h4>
+            <h4>
+              1234567
+            </h4>
+          </div>
+        </section>,
+        <p>
+          A common pants wearer
+        </p>,
+        <section
+          className="vender-products"
+        >
+          <Connect(ProductList)
+            products={Array []}
+          />
+        </section>,
+        undefined,
+      ],
+      "className": "profile",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Mike",
+        },
+        "ref": null,
+        "rendered": "Mike",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="img-container"
+            >
+              <img
+                alt="Farm"
+                id="farm"
+                src="farm.jpeg"
+              />
+            </div>,
+            <div
+              className="contact-info"
+            >
+              <h4>
+                1234 Here St.
+              </h4>
+              <h4>
+                City
+                , 
+                St
+              </h4>
+              <h4>
+                me@here.com
+              </h4>
+              <h4>
+                1234567
+              </h4>
+            </div>,
+          ],
+          "className": "vender-info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="Farm"
+                id="farm"
+                src="farm.jpeg"
+              />,
+              "className": "img-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Farm",
+                "id": "farm",
+                "src": "farm.jpeg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  1234 Here St.
+                </h4>,
+                <h4>
+                  City
+                  , 
+                  St
+                </h4>,
+                <h4>
+                  me@here.com
+                </h4>,
+                <h4>
+                  1234567
+                </h4>,
+              ],
+              "className": "contact-info",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1234 Here St.",
+                },
+                "ref": null,
+                "rendered": "1234 Here St.",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "City",
+                    ", ",
+                    "St",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "City",
+                  ", ",
+                  "St",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "me@here.com",
+                },
+                "ref": null,
+                "rendered": "me@here.com",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1234567",
+                },
+                "ref": null,
+                "rendered": "1234567",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "A common pants wearer",
+        },
+        "ref": null,
+        "rendered": "A common pants wearer",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Connect(ProductList)
+            products={Array []}
+          />,
+          "className": "vender-products",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "products": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "section",
+      },
+      undefined,
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Mike
+          </h3>,
+          <section
+            className="vender-info"
+          >
+            <div
+              className="img-container"
+            >
+              <img
+                alt="Farm"
+                id="farm"
+                src="farm.jpeg"
+              />
+            </div>
+            <div
+              className="contact-info"
+            >
+              <h4>
+                1234 Here St.
+              </h4>
+              <h4>
+                City
+                , 
+                St
+              </h4>
+              <h4>
+                me@here.com
+              </h4>
+              <h4>
+                1234567
+              </h4>
+            </div>
+          </section>,
+          <p>
+            A common pants wearer
+          </p>,
+          <section
+            className="vender-products"
+          >
+            <Connect(ProductList)
+              products={Array []}
+            />
+          </section>,
+          undefined,
+        ],
+        "className": "profile",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Mike",
+          },
+          "ref": null,
+          "rendered": "Mike",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="img-container"
+              >
+                <img
+                  alt="Farm"
+                  id="farm"
+                  src="farm.jpeg"
+                />
+              </div>,
+              <div
+                className="contact-info"
+              >
+                <h4>
+                  1234 Here St.
+                </h4>
+                <h4>
+                  City
+                  , 
+                  St
+                </h4>
+                <h4>
+                  me@here.com
+                </h4>
+                <h4>
+                  1234567
+                </h4>
+              </div>,
+            ],
+            "className": "vender-info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="Farm"
+                  id="farm"
+                  src="farm.jpeg"
+                />,
+                "className": "img-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Farm",
+                  "id": "farm",
+                  "src": "farm.jpeg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    1234 Here St.
+                  </h4>,
+                  <h4>
+                    City
+                    , 
+                    St
+                  </h4>,
+                  <h4>
+                    me@here.com
+                  </h4>,
+                  <h4>
+                    1234567
+                  </h4>,
+                ],
+                "className": "contact-info",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "1234 Here St.",
+                  },
+                  "ref": null,
+                  "rendered": "1234 Here St.",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "City",
+                      ", ",
+                      "St",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "City",
+                    ", ",
+                    "St",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "me@here.com",
+                  },
+                  "ref": null,
+                  "rendered": "me@here.com",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "1234567",
+                  },
+                  "ref": null,
+                  "rendered": "1234567",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A common pants wearer",
+          },
+          "ref": null,
+          "rendered": "A common pants wearer",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Connect(ProductList)
+              products={Array []}
+            />,
+            "className": "vender-products",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "products": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "section",
+        },
+        undefined,
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Profile should match the snapshot with products 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Profile
+    products={
+      Array [
+        Object {
+          "id": 2,
+          "name": "carrots",
+        },
+        Object {
+          "id": 5,
+          "name": "lettuce",
+        },
+      ]
+    }
+    user={
+      Object {
+        "address": "1234 Here St.",
+        "bio": "A common pants wearer",
+        "city": "City",
+        "email": "me@here.com",
+        "id": 2,
+        "name": "Mike",
+        "phone": "1234567",
+        "state": "St",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Mike
+        </h3>,
+        <section
+          className="vender-info"
+        >
+          <div
+            className="img-container"
+          >
+            <img
+              alt="Farm"
+              id="farm"
+              src="farm.jpeg"
+            />
+          </div>
+          <div
+            className="contact-info"
+          >
+            <h4>
+              1234 Here St.
+            </h4>
+            <h4>
+              City
+              , 
+              St
+            </h4>
+            <h4>
+              me@here.com
+            </h4>
+            <h4>
+              1234567
+            </h4>
+          </div>
+        </section>,
+        <p>
+          A common pants wearer
+        </p>,
+        <section
+          className="vender-products"
+        >
+          <Connect(ProductList)
+            products={Array []}
+          />
+        </section>,
+        undefined,
+      ],
+      "className": "profile",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Mike",
+        },
+        "ref": null,
+        "rendered": "Mike",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="img-container"
+            >
+              <img
+                alt="Farm"
+                id="farm"
+                src="farm.jpeg"
+              />
+            </div>,
+            <div
+              className="contact-info"
+            >
+              <h4>
+                1234 Here St.
+              </h4>
+              <h4>
+                City
+                , 
+                St
+              </h4>
+              <h4>
+                me@here.com
+              </h4>
+              <h4>
+                1234567
+              </h4>
+            </div>,
+          ],
+          "className": "vender-info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="Farm"
+                id="farm"
+                src="farm.jpeg"
+              />,
+              "className": "img-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Farm",
+                "id": "farm",
+                "src": "farm.jpeg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4>
+                  1234 Here St.
+                </h4>,
+                <h4>
+                  City
+                  , 
+                  St
+                </h4>,
+                <h4>
+                  me@here.com
+                </h4>,
+                <h4>
+                  1234567
+                </h4>,
+              ],
+              "className": "contact-info",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1234 Here St.",
+                },
+                "ref": null,
+                "rendered": "1234 Here St.",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "City",
+                    ", ",
+                    "St",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "City",
+                  ", ",
+                  "St",
+                ],
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "me@here.com",
+                },
+                "ref": null,
+                "rendered": "me@here.com",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1234567",
+                },
+                "ref": null,
+                "rendered": "1234567",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "A common pants wearer",
+        },
+        "ref": null,
+        "rendered": "A common pants wearer",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Connect(ProductList)
+            products={Array []}
+          />,
+          "className": "vender-products",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "products": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "section",
+      },
+      undefined,
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Mike
+          </h3>,
+          <section
+            className="vender-info"
+          >
+            <div
+              className="img-container"
+            >
+              <img
+                alt="Farm"
+                id="farm"
+                src="farm.jpeg"
+              />
+            </div>
+            <div
+              className="contact-info"
+            >
+              <h4>
+                1234 Here St.
+              </h4>
+              <h4>
+                City
+                , 
+                St
+              </h4>
+              <h4>
+                me@here.com
+              </h4>
+              <h4>
+                1234567
+              </h4>
+            </div>
+          </section>,
+          <p>
+            A common pants wearer
+          </p>,
+          <section
+            className="vender-products"
+          >
+            <Connect(ProductList)
+              products={Array []}
+            />
+          </section>,
+          undefined,
+        ],
+        "className": "profile",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Mike",
+          },
+          "ref": null,
+          "rendered": "Mike",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="img-container"
+              >
+                <img
+                  alt="Farm"
+                  id="farm"
+                  src="farm.jpeg"
+                />
+              </div>,
+              <div
+                className="contact-info"
+              >
+                <h4>
+                  1234 Here St.
+                </h4>
+                <h4>
+                  City
+                  , 
+                  St
+                </h4>
+                <h4>
+                  me@here.com
+                </h4>
+                <h4>
+                  1234567
+                </h4>
+              </div>,
+            ],
+            "className": "vender-info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="Farm"
+                  id="farm"
+                  src="farm.jpeg"
+                />,
+                "className": "img-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Farm",
+                  "id": "farm",
+                  "src": "farm.jpeg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4>
+                    1234 Here St.
+                  </h4>,
+                  <h4>
+                    City
+                    , 
+                    St
+                  </h4>,
+                  <h4>
+                    me@here.com
+                  </h4>,
+                  <h4>
+                    1234567
+                  </h4>,
+                ],
+                "className": "contact-info",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "1234 Here St.",
+                  },
+                  "ref": null,
+                  "rendered": "1234 Here St.",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "City",
+                      ", ",
+                      "St",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "City",
+                    ", ",
+                    "St",
+                  ],
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "me@here.com",
+                  },
+                  "ref": null,
+                  "rendered": "me@here.com",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "1234567",
+                  },
+                  "ref": null,
+                  "rendered": "1234567",
+                  "type": "h4",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A common pants wearer",
+          },
+          "ref": null,
+          "rendered": "A common pants wearer",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Connect(ProductList)
+              products={Array []}
+            />,
+            "className": "vender-products",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "products": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "section",
+        },
+        undefined,
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

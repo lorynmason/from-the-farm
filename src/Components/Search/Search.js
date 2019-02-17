@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addProducts } from '../../actions';
 
-class Search extends Component {
+export class Search extends Component {
   constructor(){
     super()
     this.state = {
