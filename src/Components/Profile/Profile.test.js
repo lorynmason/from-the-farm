@@ -18,7 +18,7 @@ describe('Profile', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should matcht the snapshot with products', () => {
+  it('should match the snapshot with products', () => {
     const mockProducts = [
       {name: 'carrots', id: 2},
       {name: 'lettuce', id: 5}

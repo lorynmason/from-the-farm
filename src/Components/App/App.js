@@ -54,8 +54,8 @@ class App extends Component {
 
   filterProducts = (id, response) => {
     if (id) {
+      id = parseInt(id)
       const newProducts = this.props.products.filter( product => {
-        id = parseInt(id)
         return product.item_id === id
       });
       

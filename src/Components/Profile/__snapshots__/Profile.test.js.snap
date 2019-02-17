@@ -563,7 +563,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`Profile should matcht the snapshot with products 1`] = `
+exports[`Profile should match the snapshot with products 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Profile
