@@ -1,0 +1,596 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search
+    products={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Narrow Your Search
+        </h3>,
+        <select
+          id="product-options"
+          name="productId"
+        >
+          <option
+            value=""
+          >
+            select a product
+          </option>
+        </select>,
+        <input
+          name="location"
+          placeholder="location, address, zipcode"
+        />,
+        <select
+          id="radius-options"
+          name="range"
+        >
+          <option
+            value="50"
+          >
+            50 mile radius
+          </option>
+          <option
+            value="100"
+          >
+            100 mile radius
+          </option>
+          <option
+            value="150"
+          >
+            150 mile radius
+          </option>
+          <option
+            value="200"
+          >
+            200 mile radius
+          </option>
+          <option
+            value="250"
+          >
+            250 mile radius
+          </option>
+          <option
+            value="300"
+          >
+            300 mile radius
+          </option>
+          <option
+            value="500"
+          >
+            500 mile radius
+          </option>
+        </select>,
+        <button>
+          Search
+        </button>,
+      ],
+      "className": "search",
+      "onChange": [Function],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Narrow Your Search",
+        },
+        "ref": null,
+        "rendered": "Narrow Your Search",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value=""
+            >
+              select a product
+            </option>,
+            Array [],
+          ],
+          "id": "product-options",
+          "name": "productId",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "select a product",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": "select a product",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "location",
+          "placeholder": "location, address, zipcode",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="50"
+            >
+              50 mile radius
+            </option>,
+            <option
+              value="100"
+            >
+              100 mile radius
+            </option>,
+            <option
+              value="150"
+            >
+              150 mile radius
+            </option>,
+            <option
+              value="200"
+            >
+              200 mile radius
+            </option>,
+            <option
+              value="250"
+            >
+              250 mile radius
+            </option>,
+            <option
+              value="300"
+            >
+              300 mile radius
+            </option>,
+            <option
+              value="500"
+            >
+              500 mile radius
+            </option>,
+          ],
+          "id": "radius-options",
+          "name": "range",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "50 mile radius",
+              "value": "50",
+            },
+            "ref": null,
+            "rendered": "50 mile radius",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "100 mile radius",
+              "value": "100",
+            },
+            "ref": null,
+            "rendered": "100 mile radius",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "150 mile radius",
+              "value": "150",
+            },
+            "ref": null,
+            "rendered": "150 mile radius",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "200 mile radius",
+              "value": "200",
+            },
+            "ref": null,
+            "rendered": "200 mile radius",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "250 mile radius",
+              "value": "250",
+            },
+            "ref": null,
+            "rendered": "250 mile radius",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "300 mile radius",
+              "value": "300",
+            },
+            "ref": null,
+            "rendered": "300 mile radius",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "500 mile radius",
+              "value": "500",
+            },
+            "ref": null,
+            "rendered": "500 mile radius",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Search",
+        },
+        "ref": null,
+        "rendered": "Search",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Narrow Your Search
+          </h3>,
+          <select
+            id="product-options"
+            name="productId"
+          >
+            <option
+              value=""
+            >
+              select a product
+            </option>
+          </select>,
+          <input
+            name="location"
+            placeholder="location, address, zipcode"
+          />,
+          <select
+            id="radius-options"
+            name="range"
+          >
+            <option
+              value="50"
+            >
+              50 mile radius
+            </option>
+            <option
+              value="100"
+            >
+              100 mile radius
+            </option>
+            <option
+              value="150"
+            >
+              150 mile radius
+            </option>
+            <option
+              value="200"
+            >
+              200 mile radius
+            </option>
+            <option
+              value="250"
+            >
+              250 mile radius
+            </option>
+            <option
+              value="300"
+            >
+              300 mile radius
+            </option>
+            <option
+              value="500"
+            >
+              500 mile radius
+            </option>
+          </select>,
+          <button>
+            Search
+          </button>,
+        ],
+        "className": "search",
+        "onChange": [Function],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Narrow Your Search",
+          },
+          "ref": null,
+          "rendered": "Narrow Your Search",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value=""
+              >
+                select a product
+              </option>,
+              Array [],
+            ],
+            "id": "product-options",
+            "name": "productId",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "select a product",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": "select a product",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "location",
+            "placeholder": "location, address, zipcode",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="50"
+              >
+                50 mile radius
+              </option>,
+              <option
+                value="100"
+              >
+                100 mile radius
+              </option>,
+              <option
+                value="150"
+              >
+                150 mile radius
+              </option>,
+              <option
+                value="200"
+              >
+                200 mile radius
+              </option>,
+              <option
+                value="250"
+              >
+                250 mile radius
+              </option>,
+              <option
+                value="300"
+              >
+                300 mile radius
+              </option>,
+              <option
+                value="500"
+              >
+                500 mile radius
+              </option>,
+            ],
+            "id": "radius-options",
+            "name": "range",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "50 mile radius",
+                "value": "50",
+              },
+              "ref": null,
+              "rendered": "50 mile radius",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "100 mile radius",
+                "value": "100",
+              },
+              "ref": null,
+              "rendered": "100 mile radius",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "150 mile radius",
+                "value": "150",
+              },
+              "ref": null,
+              "rendered": "150 mile radius",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "200 mile radius",
+                "value": "200",
+              },
+              "ref": null,
+              "rendered": "200 mile radius",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "250 mile radius",
+                "value": "250",
+              },
+              "ref": null,
+              "rendered": "250 mile radius",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "300 mile radius",
+                "value": "300",
+              },
+              "ref": null,
+              "rendered": "300 mile radius",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "500 mile radius",
+                "value": "500",
+              },
+              "ref": null,
+              "rendered": "500 mile radius",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Search",
+          },
+          "ref": null,
+          "rendered": "Search",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

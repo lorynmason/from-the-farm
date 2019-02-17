@@ -4,7 +4,7 @@ export class Search extends Component {
   constructor(){
     super()
     this.state = {
-      product: '',
+      productId: '',
       location: '',
       range: ''
     }
@@ -17,6 +17,7 @@ export class Search extends Component {
 
   sendSearch = (e) => {
     e.preventDefault()
+    console.log(this.state.productId)
     this.props.search(this.state)
   }
 
@@ -39,7 +40,7 @@ export class Search extends Component {
     return (
       <form className="search" onSubmit={this.sendSearch} onChange={this.handleChange}>
         <h3>Narrow Your Search</h3>
-        <select id="product-options" name="product">
+        <select id="product-options" name="productId">
         <option value="">select a product</option>
           { productOptions }
         </select>
