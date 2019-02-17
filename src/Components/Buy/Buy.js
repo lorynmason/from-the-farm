@@ -4,7 +4,6 @@ import ProductList from '../ProductList/ProductList';
 import Search from '../Search/Search'
 
 export const Buy = (props) => {
-  const { vendors, products } = props.appState;
   return (
     <section className="buy">
       <Search search={props.search}/>
