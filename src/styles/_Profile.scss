@@ -1,7 +1,7 @@
 .profile {
   display: grid;
   width: 100vw;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: $titleFont;
   grid-template-columns: 50vw 50vw;
   grid-template-rows: 80px 300px auto;
   grid-template-areas: 
@@ -14,9 +14,7 @@
   .vender-info {
     grid-area: info;
     width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include flexin();
     @media screen and (max-width: 1250px) {
       flex-direction: column;
       text-align: center;        
@@ -50,7 +48,7 @@
     grid-area: bio;
     font-size: 2rem;
     text-align: start;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $mainFont;
     font-weight: 300;
     text-align: center;
   }
