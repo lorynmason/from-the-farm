@@ -22,7 +22,7 @@ class App extends Component {
       lat: 39.717646,
       long: -105.029438,
       name: "Oranges 4 Eva",
-      phone: 2313414141,
+      phone: "(231) 341-4141",
       state: "CO"
     })
   }
