@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addProducts } from '../../actions';
 
-export class Search extends Component {
+class Search extends Component {
   constructor(){
     super()
     this.state = {
-      product: '',
+      productId: '',
       location: '',
       range: ''
     }
   }
+
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
@@ -26,26 +29,29 @@ export class Search extends Component {
         arr.push(product.name)
       }
       return arr     
-    },[])
+    },[]);
+
     const productOptionsIds = this.props.products.reduce((arr, product) => {
       if(!arr.includes(product.item_id)) {
         arr.push(product.item_id)
       }
       return arr     
-    },[])
+    },[]);
+
     const productOptions = productOptionsNames.map((product, i) => {
-        return <option value={productOptionsIds[i]}>{product}</option>
-    })
+        return <option value={productOptionsIds[i]} key={productOptionsIds[i]}>{product}</option>
+    });
+
     return (
       <form className="search" onSubmit={this.sendSearch} onChange={this.handleChange}>
         <h3>Narrow Your Search</h3>
-        <select id="product-options" name="product">
+        <select id="product-options" name="productId">
         <option value="">select a product</option>
           { productOptions }
         </select>
         <input placeholder="location, address, zipcode" name="location"/>
         <select id="radius-options" name="range">
-        <option value="50">50 mile radius</option>
+          <option value="50">50 mile radius</option>
           <option value="100">100 mile radius</option>
           <option value="150">150 mile radius</option>
           <option value="200">200 mile radius</option>
@@ -58,3 +64,15 @@ export class Search extends Component {
     )
   }
 }
+
+export const mapStateToProps = (state) => ({
+  products: state.products
+});
+
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    addProductsToStore: (products) => dispatch(addProducts(products))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Search);

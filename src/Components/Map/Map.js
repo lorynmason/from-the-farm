@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import accessToken from '../../mapbox-accessToken.js';
 import L from 'leaflet';
+import { connect } from 'react-redux';
 
 export class Map extends Component {
   componentDidUpdate() {
@@ -9,9 +10,11 @@ export class Map extends Component {
 
   createMap = () => {
     const container = L.DomUtil.get('map');
-    if (container != null) {
+
+    if (container !== null) {
       container._leaflet_id = null;
     }
+
     const map = L.map('map').setView([39.750614, -104.996775], 11);
     const { vendors } = this.props;
     vendors.forEach((vendor) => {
@@ -37,12 +40,16 @@ export class Map extends Component {
       if (location.pathname === '/buy') {
         this.createMap();
       }
-    })
+    });
 
     return (
       <section id="map"></section>
-    )
+    );
   }
 }
 
-export default Map;
+const mapStateToProps = (state) => ({
+  vendors: state.vendors
+});
+
+export default connect(mapStateToProps)(Map);

@@ -1,11 +1,12 @@
 import React from 'react';
 import Product from '../Product/Product';
+import { connect } from 'react-redux';
 
 const ProductList = ({ products }) => {
 
   const productsToReturn = products.map((product) => {
     return <Product product={product} key={product.id} />
-  })
+  });
 
   return (
     <section className="table-container">
@@ -29,4 +30,8 @@ const ProductList = ({ products }) => {
   )
 }
 
-export default ProductList;
+export const mapStateToProps = (state) => ({
+  products: state.products
+});
+
+export default connect(mapStateToProps)(ProductList);
