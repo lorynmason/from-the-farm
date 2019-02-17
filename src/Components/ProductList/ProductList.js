@@ -6,7 +6,7 @@ const ProductList = ({ products }) => {
 
   const productsToReturn = products.map((product) => {
     return <Product product={product} key={product.id} />
-  })
+  });
 
   return (
     <section className="table-container">

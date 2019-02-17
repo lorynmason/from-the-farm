@@ -53,7 +53,8 @@ class App extends Component {
       const newProducts = this.props.products.filter( product => {
         id = parseInt(id)
         return product.item_id === id
-      })
+      });
+      
       this.props.addProductsToStore(newProducts);
     }
   }

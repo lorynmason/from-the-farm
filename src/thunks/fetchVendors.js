@@ -13,7 +13,6 @@ export const fetchVendors = (url) => {
       const results = await response.json();
       const vendors = cleanVendors(results.data);
       const products = cleanProducts(results.data);
-      console.log(results.data)
       dispatch(addVendors(vendors));
       dispatch(addProducts(products));
     } catch (error) {

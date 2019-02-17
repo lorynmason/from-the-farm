@@ -39,7 +39,7 @@ class Search extends Component {
     },[]);
 
     const productOptions = productOptionsNames.map((product, i) => {
-        return <option value={productOptionsIds[i]}>{product}</option>
+        return <option value={productOptionsIds[i]} key={productOptionsIds[i]}>{product}</option>
     });
 
     return (

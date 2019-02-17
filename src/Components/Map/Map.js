@@ -40,11 +40,11 @@ export class Map extends Component {
       if (location.pathname === '/buy') {
         this.createMap();
       }
-    })
+    });
 
     return (
       <section id="map"></section>
-    )
+    );
   }
 }
 
