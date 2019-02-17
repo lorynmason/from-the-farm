@@ -1,12 +1,12 @@
 .leaflet-popup-content-wrapper {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: $titleFont;
   h3 {
     font-size: 1.5rem;
     font-weight: bold;
     color: teal;    
   }
   p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $mainFont;
     font-size: 1rem;
     margin: 0;
   }
@@ -20,12 +20,3 @@
     grid-area: map;
   }
 }
-
-// .profile {
-//   #map {
-//     height: 400px;
-//     width: 400px;
-//     margin: 0 auto;
-//     z-index: 1;
-//   }
-// }
