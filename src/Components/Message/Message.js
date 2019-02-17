@@ -1,24 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { addUser, removeUser, addProducts } from '../../actions';
+import { addMessage } from '../../actions';
 
+export const Message = ({ message, addMessage}) => {
+  setTimeout(() => {
+    addMessage('')
+  }, 5000);
 
-export const Message = () => {
-  
+  if(message) {
+    return (
+      <div className="message-container">
+        <p>
+          {message}
+        </p>
+      </div>
+    )
+  }
+  return (
+    <div className="blah">
+
+    </div>
+  )
 }
 
 export const mapStateToProps = (state) => ({
-  vendors: state.vendors,
-  products: state.products,
-  user: state.user
+  message: state.message
 });
 
-export const mapDispatchToProps = (dispatch) => {
-  return {
-    addUserToStore: (user) => dispatch(addUser(user)),
-    fetchVendors: (url) => dispatch(fetchVendors(url)),
-    addProductsToStore: (products) => dispatch(addProducts(products))
-  } 
-}
+export const mapDispatchToProps = (dispatch) => ({
+  addMessage: (message) => dispatch(addMessage(message))
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Message);

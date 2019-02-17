@@ -6,8 +6,9 @@ import { Switch, Route, withRouter } from 'react-router';
 import Profile from '../Profile/Profile';
 import { createBrowserHistory } from 'history';
 import { connect } from 'react-redux';
-import { addUser, removeUser, addProducts } from '../../actions';
+import { addUser, removeUser, addProducts, addMessage } from '../../actions';
 import { fetchVendors } from '../../thunks/fetchVendors';
+import Message from '../Message/Message';
 
 class App extends Component {
 
@@ -32,6 +33,7 @@ class App extends Component {
     let path;
     if (!location) {
       console.log('error: please enter a search location')
+      this.props.addMessage('error: please enter a search location')
     } 
     
     if (!range) {
@@ -64,6 +66,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Message />
         <Switch>
           <Route path="/buy" render={() => <Buy history={history} search={this.search}/>}/>
           <Route path="/profile" render={() => <Profile user={this.props.user} products={this.props.products} />}/>
@@ -83,7 +86,8 @@ export const mapDispatchToProps = (dispatch) => {
   return {
     addUserToStore: (user) => dispatch(addUser(user)),
     fetchVendors: (url) => dispatch(fetchVendors(url)),
-    addProductsToStore: (products) => dispatch(addProducts(products))
+    addProductsToStore: (products) => dispatch(addProducts(products)),
+    addMessage: (message) => dispatch(addMessage(message))
   } 
 }
 
