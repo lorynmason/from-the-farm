@@ -64,7 +64,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/buy" render={({ match }) => <Buy appState={this.props} history={history} search={this.search}/>}/>
+          <Route path="/buy" render={() => <Buy appState={this.props} history={history} search={this.search}/>}/>
           <Route path="/profile" render={() => <Profile user={this.props.user} products={this.props.products} />}/>
         </Switch>
       </div>
