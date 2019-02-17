@@ -1,3 +1,8 @@
+const formatPhoneNumber = (num) => {
+  const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  return num.toString().replace(phoneRegex, "($1) $2-$3")
+}
+
 export const cleanProducts = (vendors) => {
   return vendors.reduce((productArr, vendor) => {
     const { name, products } = vendor.attributes;
@@ -20,13 +25,14 @@ export const cleanProducts = (vendors) => {
 export const cleanVendors = (vendors) => {
   return vendors.map( vendor => {
     const { name, address, state, city, phone, email, lat, long, bio } = vendor.attributes
+    const formattedNum = formatPhoneNumber(phone)
     return {
       name,
       bio,
       address,
       state, 
       city,
-      phone,
+      phone: formattedNum,
       email,
       lat,
       long, 
@@ -34,3 +40,4 @@ export const cleanVendors = (vendors) => {
     }
   })
 }
+
