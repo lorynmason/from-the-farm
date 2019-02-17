@@ -8,6 +8,7 @@ import { createBrowserHistory } from 'history';
 import { connect } from 'react-redux';
 import { addUser, removeUser, addProducts } from '../../actions';
 import { fetchVendors } from '../../thunks/fetchVendors';
+import { Loading } from '../Loading/Loading'
 
 class App extends Component {
 
@@ -65,6 +66,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Switch>
+          <Route path="/loading" render={() => <Loading />}/>
           <Route path="/buy" render={() => <Buy history={history} search={this.search}/>}/>
           <Route path="/profile" render={() => <Profile user={this.props.user} products={this.props.products} />}/>
         </Switch>

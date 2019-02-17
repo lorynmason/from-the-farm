@@ -1,0 +1,45 @@
+.loader {
+  color: whitesmoke;
+  margin: 5px;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 100px auto 100px;
+  background: linear-gradient(#d4d3d3de, #1d1d1dce);
+  font-family: 'Advent Pro', sans-serif;
+  width: 600px;
+}
+
+.loader .line {
+  width: 50px;
+  background: rgb(22, 202, 187);
+  font-size: 4rem;
+  margin: 5px;
+  display: inline-block;
+  animation: opacity 1000ms infinite ease-in-out;
+}
+
+.loader .line-1 { animation-delay: 800ms; }
+.loader .line-2 { animation-delay: 600ms; }
+.loader .line-3 { animation-delay: 400ms; }
+.loader .line-4 { animation-delay: 200ms; }
+.loader .line-6 { animation-delay: 200ms; }
+.loader .line-7 { animation-delay: 400ms; }
+.loader .line-8 { animation-delay: 600ms; }
+.loader .line-9 { animation-delay: 800ms; }
+
+@keyframes opacity { 
+  0% { 
+    opacity: 1;
+    height: 50px;
+  }
+  50% { 
+    opacity: 0;
+    height: 45px;
+  }
+  100% { 
+    opacity: 1;
+    height: 50px;
+  }  
+}
