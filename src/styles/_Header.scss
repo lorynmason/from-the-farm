@@ -1,6 +1,6 @@
 header {
   width: 100vw;
-  height: 300px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,11 +9,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 110px;
   }
   .header-logo {
     position: absolute;
     z-index: 2;
-    width: 500px;
+    width: 600px;
     height: 200px;
     top: 20px;
     line-height: 60px;
@@ -48,7 +49,7 @@ header {
     left: 0;
     content: '';
     display: block;
-    width: 500px;
+    width: 600px;
     height: 200px;
     background: #000;
     transform: translate(0, 0);
@@ -63,7 +64,7 @@ header {
     left: 0;
     content: '';
     display: block;
-    width: 500px;
+    width: 600px;
     height: 200px;
     background: teal;
     transform: translate(13px, 12px);
@@ -92,27 +93,30 @@ header {
   }
   .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: ease all 1s;    
+    margin-left: 46.5px;    
     .menu {
       a {
         all: unset;
       }
-      margin: 225px auto 0;
-      // display: none;
+      padding-left: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       color: transparent;
-      transition: color .7s ease-in;    
+      transition: color .5s ease-in; 
+      margin-top: 20px;   
       i {    
         font-size: 3rem;
-        padding: 0 10px;
         cursor: pointer;
       }
     }
     &:hover {
       .menu {
         color: #000;
-        // display: block;
       }
     }
   } 

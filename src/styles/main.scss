@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 
 body {
-  // overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 @import "Reset";
@@ -13,4 +13,4 @@ body {
 @import "Product";
 @import "Buy";
 @import "Productlist";
-// @import "Search";
+@import "Search";
