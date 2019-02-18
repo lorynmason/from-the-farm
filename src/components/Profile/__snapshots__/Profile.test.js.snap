@@ -33,6 +33,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        undefined,
         <h3>
           Mike
         </h3>,
@@ -73,16 +74,14 @@ ShallowWrapper {
         <section
           className="vender-products"
         >
-          <Connect(ProductList)
-            products={Array []}
-          />
+          <ProductList />
         </section>,
-        undefined,
       ],
       "className": "profile",
     },
     "ref": null,
     "rendered": Array [
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -259,18 +258,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Connect(ProductList)
-            products={Array []}
-          />,
+          "children": <ProductList />,
           "className": "vender-products",
         },
         "ref": null,
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "products": Array [],
+            "products": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -278,7 +275,6 @@ ShallowWrapper {
         },
         "type": "section",
       },
-      undefined,
     ],
     "type": "section",
   },
@@ -289,6 +285,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          undefined,
           <h3>
             Mike
           </h3>,
@@ -329,16 +326,14 @@ ShallowWrapper {
           <section
             className="vender-products"
           >
-            <Connect(ProductList)
-              products={Array []}
-            />
+            <ProductList />
           </section>,
-          undefined,
         ],
         "className": "profile",
       },
       "ref": null,
       "rendered": Array [
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
@@ -515,18 +510,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Connect(ProductList)
-              products={Array []}
-            />,
+            "children": <ProductList />,
             "className": "vender-products",
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
-              "products": Array [],
+              "products": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -534,7 +527,6 @@ ShallowWrapper {
           },
           "type": "section",
         },
-        undefined,
       ],
       "type": "section",
     },
@@ -607,6 +599,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        undefined,
         <h3>
           Mike
         </h3>,
@@ -647,16 +640,14 @@ ShallowWrapper {
         <section
           className="vender-products"
         >
-          <Connect(ProductList)
-            products={Array []}
-          />
+          <ProductList />
         </section>,
-        undefined,
       ],
       "className": "profile",
     },
     "ref": null,
     "rendered": Array [
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -833,18 +824,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Connect(ProductList)
-            products={Array []}
-          />,
+          "children": <ProductList />,
           "className": "vender-products",
         },
         "ref": null,
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "products": Array [],
+            "products": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -852,7 +841,6 @@ ShallowWrapper {
         },
         "type": "section",
       },
-      undefined,
     ],
     "type": "section",
   },
@@ -863,6 +851,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          undefined,
           <h3>
             Mike
           </h3>,
@@ -903,16 +892,14 @@ ShallowWrapper {
           <section
             className="vender-products"
           >
-            <Connect(ProductList)
-              products={Array []}
-            />
+            <ProductList />
           </section>,
-          undefined,
         ],
         "className": "profile",
       },
       "ref": null,
       "rendered": Array [
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
@@ -1089,18 +1076,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Connect(ProductList)
-              products={Array []}
-            />,
+            "children": <ProductList />,
             "className": "vender-products",
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
-              "products": Array [],
+              "products": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -1108,7 +1093,6 @@ ShallowWrapper {
           },
           "type": "section",
         },
-        undefined,
       ],
       "type": "section",
     },
