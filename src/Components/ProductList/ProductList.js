@@ -2,7 +2,7 @@ import React from 'react';
 import Product from '../Product/Product';
 import { connect } from 'react-redux';
 
-const ProductList = ({ products }) => {
+export const ProductList = ({ products }) => {
 
   const productsToReturn = products.map((product) => {
     return <Product product={product} key={product.id} />

@@ -1,4 +1,4 @@
-const formatPhoneNumber = (num) => {
+export const formatPhoneNumber = (num) => {
   const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
   return num.toString().replace(phoneRegex, "($1) $2-$3")
 }
