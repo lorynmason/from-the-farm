@@ -24,22 +24,8 @@ export class Search extends Component {
   }
 
   render() {
-    const productOptionsNames = this.props.products.reduce((arr, product) => {
-      if(!arr.includes(product.name)) {
-        arr.push(product.name)
-      }
-      return arr     
-    },[]);
-
-    const productOptionsIds = this.props.products.reduce((arr, product) => {
-      if(!arr.includes(product.item_id)) {
-        arr.push(product.item_id)
-      }
-      return arr     
-    },[]);
-
-    const productOptions = productOptionsNames.map((product, i) => {
-        return <option value={productOptionsIds[i]} key={productOptionsIds[i]}>{product}</option>
+    const productOptions = this.props.items.map((item) => {
+      return <option value={item.id} key={item.id}>{item.name}</option>
     });
 
     return (
@@ -70,7 +56,8 @@ export class Search extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  products: state.products
+  products: state.products,
+  items: state.items
 });
 
 export const mapDispatchToProps = (dispatch) => {
