@@ -4,11 +4,8 @@ header {
   @include flexin();
   transition: ease all 1s;
   .header-logo {
-    @include flexin();
-    padding-left: 100px;
-  }
-  .header-logo {
     position: absolute;
+    padding-left: 100px;
     z-index: 2;
     width: 600px;
     height: 200px;
@@ -29,10 +26,18 @@ header {
         font-size: 3rem;
         display: block;
       }
-}
+    }
     img {
       height: 200px;
       filter: invert(95%);
+      margin-right: -40px;
+    }
+    p {
+      color: whitesmoke;
+      margin:-160px -200px 0 100px;
+      font-family: $titleFont;
+      font-size: 1.2rem;
+      letter-spacing: 5px;
     }
   }
 
@@ -73,7 +78,7 @@ header {
       a {
         all: unset;
       }
-      padding-left: 140px;
+      padding-left: 240px;
       @include flexin();
       flex-direction: column;
       color: transparent;
