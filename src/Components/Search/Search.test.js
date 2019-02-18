@@ -18,9 +18,9 @@ describe('Search', () => {
         range: ''
       });
 
-      wrapper.find('.search').simulate('change', {'target': {name: 'productId', value: '1'}});
-      wrapper.find('.search').simulate('change', {'target': {name: 'location', value: '80219'}});
-      wrapper.find('.search').simulate('change', {'target': {name: 'range', value: '50'}});
+      wrapper.find('.search-form').simulate('change', {'target': {name: 'productId', value: '1'}});
+      wrapper.find('.search-form').simulate('change', {'target': {name: 'location', value: '80219'}});
+      wrapper.find('.search-form').simulate('change', {'target': {name: 'range', value: '50'}});
 
       expect(wrapper.state()).toEqual({
         productId: '1',
@@ -36,7 +36,7 @@ describe('Search', () => {
       wrapper.setProps({search: jest.fn()});
 
       const { search } = wrapper.instance().props
-      wrapper.find('.search').simulate('submit', {preventDefault: jest.fn()});
+      wrapper.find('.search-form').simulate('submit', {preventDefault: jest.fn()});
 
       const expected = {
         productId: '',

@@ -45,7 +45,7 @@ export class Search extends Component {
     return (
       <section className="search">
         <h3>Narrow Your Search</h3>
-        <form onSubmit={this.sendSearch} onChange={this.handleChange}>
+        <form className="search-form" onSubmit={this.sendSearch} onChange={this.handleChange}>
           <div className="search-options">
             <select id="product-options" name="productId">
             <option value="">select a product</option>
