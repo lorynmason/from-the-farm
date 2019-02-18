@@ -41,11 +41,7 @@ ShallowWrapper {
             </th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td />
-          </tr>
-        </tbody>
+        <tbody />
       </table>,
       "className": "table-container",
     },
@@ -74,11 +70,7 @@ ShallowWrapper {
               </th>
             </tr>
           </thead>,
-          <tbody>
-            <tr>
-              <td />
-            </tr>
-          </tbody>,
+          <tbody />,
         ],
         "className": "product-list",
       },
@@ -182,35 +174,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <tr>
-                <td />
-              </tr>,
-              Array [],
-            ],
+            "children": Array [],
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <td />,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {},
-                "ref": null,
-                "rendered": null,
-                "type": "td",
-              },
-              "type": "tr",
-            },
-          ],
+          "rendered": Array [],
           "type": "tbody",
         },
       ],
@@ -245,11 +212,7 @@ ShallowWrapper {
               </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td />
-            </tr>
-          </tbody>
+          <tbody />
         </table>,
         "className": "table-container",
       },
@@ -278,11 +241,7 @@ ShallowWrapper {
                 </th>
               </tr>
             </thead>,
-            <tbody>
-              <tr>
-                <td />
-              </tr>
-            </tbody>,
+            <tbody />,
           ],
           "className": "product-list",
         },
@@ -386,35 +345,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <tr>
-                  <td />
-                </tr>,
-                Array [],
-              ],
+              "children": Array [],
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <td />,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {},
-                  "ref": null,
-                  "rendered": null,
-                  "type": "td",
-                },
-                "type": "tr",
-              },
-            ],
+            "rendered": Array [],
             "type": "tbody",
           },
         ],
@@ -500,9 +434,6 @@ ShallowWrapper {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td />
-          </tr>
           <Product
             product={
               Object {
@@ -549,9 +480,6 @@ ShallowWrapper {
             </tr>
           </thead>,
           <tbody>
-            <tr>
-              <td />
-            </tr>
             <Product
               product={
                 Object {
@@ -673,50 +601,26 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <tr>
-                <td />
-              </tr>,
-              Array [
-                <Product
-                  product={
-                    Object {
-                      "id": 2,
-                      "name": "carrots",
-                    }
+              <Product
+                product={
+                  Object {
+                    "id": 2,
+                    "name": "carrots",
                   }
-                />,
-                <Product
-                  product={
-                    Object {
-                      "id": 5,
-                      "name": "lettuce",
-                    }
+                }
+              />,
+              <Product
+                product={
+                  Object {
+                    "id": 5,
+                    "name": "lettuce",
                   }
-                />,
-              ],
+                }
+              />,
             ],
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <td />,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {},
-                "ref": null,
-                "rendered": null,
-                "type": "td",
-              },
-              "type": "tr",
-            },
             Object {
               "instance": null,
               "key": "2",
@@ -781,9 +685,6 @@ ShallowWrapper {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td />
-            </tr>
             <Product
               product={
                 Object {
@@ -830,9 +731,6 @@ ShallowWrapper {
               </tr>
             </thead>,
             <tbody>
-              <tr>
-                <td />
-              </tr>
               <Product
                 product={
                   Object {
@@ -954,50 +852,26 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <tr>
-                  <td />
-                </tr>,
-                Array [
-                  <Product
-                    product={
-                      Object {
-                        "id": 2,
-                        "name": "carrots",
-                      }
+                <Product
+                  product={
+                    Object {
+                      "id": 2,
+                      "name": "carrots",
                     }
-                  />,
-                  <Product
-                    product={
-                      Object {
-                        "id": 5,
-                        "name": "lettuce",
-                      }
+                  }
+                />,
+                <Product
+                  product={
+                    Object {
+                      "id": 5,
+                      "name": "lettuce",
                     }
-                  />,
-                ],
+                  }
+                />,
               ],
             },
             "ref": null,
             "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <td />,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {},
-                  "ref": null,
-                  "rendered": null,
-                  "type": "td",
-                },
-                "type": "tr",
-              },
               Object {
                 "instance": null,
                 "key": "2",
