@@ -36,11 +36,11 @@ export class Map extends Component {
   }
 
   render() {
-    this.props.history.listen((location, action) => {
-      if (location.pathname === '/buy') {
-        this.createMap();
-      }
-    });
+    // this.props.history.listen((location, action) => {
+    //   if (location.pathname === '/buy') {
+    //     this.createMap();
+    //   }
+    // });
 
     return (
       <section id="map"></section>
