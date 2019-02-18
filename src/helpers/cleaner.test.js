@@ -56,4 +56,3 @@ describe('cleanVendors', () => {
     expect(result).toEqual(expected);
   });
 });
-

@@ -41,7 +41,15 @@ ShallowWrapper {
             </th>
           </tr>
         </thead>
+<<<<<<< HEAD
         <tbody />
+=======
+        <tbody>
+          <tr>
+            <td />
+          </tr>
+        </tbody>
+>>>>>>> Cleaner testing
       </table>,
       "className": "table-container",
     },
@@ -70,7 +78,15 @@ ShallowWrapper {
               </th>
             </tr>
           </thead>,
+<<<<<<< HEAD
           <tbody />,
+=======
+          <tbody>
+            <tr>
+              <td />
+            </tr>
+          </tbody>,
+>>>>>>> Cleaner testing
         ],
         "className": "product-list",
       },
@@ -174,10 +190,42 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+<<<<<<< HEAD
             "children": Array [],
           },
           "ref": null,
           "rendered": Array [],
+=======
+            "children": Array [
+              <tr>
+                <td />
+              </tr>,
+              Array [],
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <td />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "td",
+              },
+              "type": "tr",
+            },
+          ],
+>>>>>>> Cleaner testing
           "type": "tbody",
         },
       ],
@@ -212,7 +260,15 @@ ShallowWrapper {
               </th>
             </tr>
           </thead>
+<<<<<<< HEAD
           <tbody />
+=======
+          <tbody>
+            <tr>
+              <td />
+            </tr>
+          </tbody>
+>>>>>>> Cleaner testing
         </table>,
         "className": "table-container",
       },
@@ -241,7 +297,15 @@ ShallowWrapper {
                 </th>
               </tr>
             </thead>,
+<<<<<<< HEAD
             <tbody />,
+=======
+            <tbody>
+              <tr>
+                <td />
+              </tr>
+            </tbody>,
+>>>>>>> Cleaner testing
           ],
           "className": "product-list",
         },
@@ -345,10 +409,42 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+<<<<<<< HEAD
               "children": Array [],
             },
             "ref": null,
             "rendered": Array [],
+=======
+              "children": Array [
+                <tr>
+                  <td />
+                </tr>,
+                Array [],
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <td />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "td",
+                },
+                "type": "tr",
+              },
+            ],
+>>>>>>> Cleaner testing
             "type": "tbody",
           },
         ],
@@ -434,6 +530,12 @@ ShallowWrapper {
           </tr>
         </thead>
         <tbody>
+<<<<<<< HEAD
+=======
+          <tr>
+            <td />
+          </tr>
+>>>>>>> Cleaner testing
           <Product
             product={
               Object {
@@ -480,6 +582,12 @@ ShallowWrapper {
             </tr>
           </thead>,
           <tbody>
+<<<<<<< HEAD
+=======
+            <tr>
+              <td />
+            </tr>
+>>>>>>> Cleaner testing
             <Product
               product={
                 Object {
@@ -601,6 +709,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+<<<<<<< HEAD
               <Product
                 product={
                   Object {
@@ -617,12 +726,57 @@ ShallowWrapper {
                   }
                 }
               />,
+=======
+              <tr>
+                <td />
+              </tr>,
+              Array [
+                <Product
+                  product={
+                    Object {
+                      "id": 2,
+                      "name": "carrots",
+                    }
+                  }
+                />,
+                <Product
+                  product={
+                    Object {
+                      "id": 5,
+                      "name": "lettuce",
+                    }
+                  }
+                />,
+              ],
+>>>>>>> Cleaner testing
             ],
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
+<<<<<<< HEAD
+=======
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <td />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "td",
+              },
+              "type": "tr",
+            },
+            Object {
+              "instance": null,
+>>>>>>> Cleaner testing
               "key": "2",
               "nodeType": "class",
               "props": Object {
@@ -685,6 +839,12 @@ ShallowWrapper {
             </tr>
           </thead>
           <tbody>
+<<<<<<< HEAD
+=======
+            <tr>
+              <td />
+            </tr>
+>>>>>>> Cleaner testing
             <Product
               product={
                 Object {
@@ -731,6 +891,12 @@ ShallowWrapper {
               </tr>
             </thead>,
             <tbody>
+<<<<<<< HEAD
+=======
+              <tr>
+                <td />
+              </tr>
+>>>>>>> Cleaner testing
               <Product
                 product={
                   Object {
@@ -852,6 +1018,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+<<<<<<< HEAD
                 <Product
                   product={
                     Object {
@@ -868,12 +1035,57 @@ ShallowWrapper {
                     }
                   }
                 />,
+=======
+                <tr>
+                  <td />
+                </tr>,
+                Array [
+                  <Product
+                    product={
+                      Object {
+                        "id": 2,
+                        "name": "carrots",
+                      }
+                    }
+                  />,
+                  <Product
+                    product={
+                      Object {
+                        "id": 5,
+                        "name": "lettuce",
+                      }
+                    }
+                  />,
+                ],
+>>>>>>> Cleaner testing
               ],
             },
             "ref": null,
             "rendered": Array [
               Object {
                 "instance": null,
+<<<<<<< HEAD
+=======
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <td />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "td",
+                },
+                "type": "tr",
+              },
+              Object {
+                "instance": null,
+>>>>>>> Cleaner testing
                 "key": "2",
                 "nodeType": "class",
                 "props": Object {
