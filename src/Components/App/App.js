@@ -15,7 +15,6 @@ import Login from '../../containers/Login/Login'
 
 
 class App extends Component {
-
   async componentDidMount() {
     this.props.fetchVendors('https://xpoll-be.herokuapp.com/api/v1/vendors');
     this.props.addUserToStore({
