@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Buy } from '../Buy/Buy';
+import Buy from '../Buy/Buy';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
 import { Switch, Route, withRouter } from 'react-router';
