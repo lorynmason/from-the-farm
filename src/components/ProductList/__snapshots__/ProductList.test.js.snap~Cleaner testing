@@ -42,6 +42,7 @@ ShallowWrapper {
           </tr>
         </thead>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <tbody />
 =======
         <tbody>
@@ -50,6 +51,9 @@ ShallowWrapper {
           </tr>
         </tbody>
 >>>>>>> Cleaner testing
+=======
+        <tbody />
+>>>>>>> Update snapshots
       </table>,
       "className": "table-container",
     },
@@ -79,6 +83,7 @@ ShallowWrapper {
             </tr>
           </thead>,
 <<<<<<< HEAD
+<<<<<<< HEAD
           <tbody />,
 =======
           <tbody>
@@ -87,6 +92,9 @@ ShallowWrapper {
             </tr>
           </tbody>,
 >>>>>>> Cleaner testing
+=======
+          <tbody />,
+>>>>>>> Update snapshots
         ],
         "className": "product-list",
       },
@@ -191,6 +199,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "children": Array [],
           },
           "ref": null,
@@ -226,6 +235,12 @@ ShallowWrapper {
             },
           ],
 >>>>>>> Cleaner testing
+=======
+            "children": Array [],
+          },
+          "ref": null,
+          "rendered": Array [],
+>>>>>>> Update snapshots
           "type": "tbody",
         },
       ],
@@ -261,6 +276,7 @@ ShallowWrapper {
             </tr>
           </thead>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <tbody />
 =======
           <tbody>
@@ -269,6 +285,9 @@ ShallowWrapper {
             </tr>
           </tbody>
 >>>>>>> Cleaner testing
+=======
+          <tbody />
+>>>>>>> Update snapshots
         </table>,
         "className": "table-container",
       },
@@ -298,6 +317,7 @@ ShallowWrapper {
               </tr>
             </thead>,
 <<<<<<< HEAD
+<<<<<<< HEAD
             <tbody />,
 =======
             <tbody>
@@ -306,6 +326,9 @@ ShallowWrapper {
               </tr>
             </tbody>,
 >>>>>>> Cleaner testing
+=======
+            <tbody />,
+>>>>>>> Update snapshots
           ],
           "className": "product-list",
         },
@@ -410,6 +433,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "children": Array [],
             },
             "ref": null,
@@ -445,6 +469,12 @@ ShallowWrapper {
               },
             ],
 >>>>>>> Cleaner testing
+=======
+              "children": Array [],
+            },
+            "ref": null,
+            "rendered": Array [],
+>>>>>>> Update snapshots
             "type": "tbody",
           },
         ],
@@ -531,11 +561,14 @@ ShallowWrapper {
         </thead>
         <tbody>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
           <tr>
             <td />
           </tr>
 >>>>>>> Cleaner testing
+=======
+>>>>>>> Update snapshots
           <Product
             product={
               Object {
@@ -583,11 +616,14 @@ ShallowWrapper {
           </thead>,
           <tbody>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             <tr>
               <td />
             </tr>
 >>>>>>> Cleaner testing
+=======
+>>>>>>> Update snapshots
             <Product
               product={
                 Object {
@@ -710,11 +746,15 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Update snapshots
               <Product
                 product={
                   Object {
                     "id": 2,
                     "name": "carrots",
+<<<<<<< HEAD
                   }
                 }
               />,
@@ -737,24 +777,32 @@ ShallowWrapper {
                       "id": 2,
                       "name": "carrots",
                     }
+=======
+>>>>>>> Update snapshots
                   }
-                />,
-                <Product
-                  product={
-                    Object {
-                      "id": 5,
-                      "name": "lettuce",
-                    }
+                }
+              />,
+              <Product
+                product={
+                  Object {
+                    "id": 5,
+                    "name": "lettuce",
                   }
+<<<<<<< HEAD
                 />,
               ],
 >>>>>>> Cleaner testing
+=======
+                }
+              />,
+>>>>>>> Update snapshots
             ],
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
               "key": undefined,
@@ -777,6 +825,8 @@ ShallowWrapper {
             Object {
               "instance": null,
 >>>>>>> Cleaner testing
+=======
+>>>>>>> Update snapshots
               "key": "2",
               "nodeType": "class",
               "props": Object {
@@ -840,11 +890,14 @@ ShallowWrapper {
           </thead>
           <tbody>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             <tr>
               <td />
             </tr>
 >>>>>>> Cleaner testing
+=======
+>>>>>>> Update snapshots
             <Product
               product={
                 Object {
@@ -892,11 +945,14 @@ ShallowWrapper {
             </thead>,
             <tbody>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
               <tr>
                 <td />
               </tr>
 >>>>>>> Cleaner testing
+=======
+>>>>>>> Update snapshots
               <Product
                 product={
                   Object {
@@ -1019,11 +1075,15 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Update snapshots
                 <Product
                   product={
                     Object {
                       "id": 2,
                       "name": "carrots",
+<<<<<<< HEAD
                     }
                   }
                 />,
@@ -1046,24 +1106,32 @@ ShallowWrapper {
                         "id": 2,
                         "name": "carrots",
                       }
+=======
+>>>>>>> Update snapshots
                     }
-                  />,
-                  <Product
-                    product={
-                      Object {
-                        "id": 5,
-                        "name": "lettuce",
-                      }
+                  }
+                />,
+                <Product
+                  product={
+                    Object {
+                      "id": 5,
+                      "name": "lettuce",
                     }
+<<<<<<< HEAD
                   />,
                 ],
 >>>>>>> Cleaner testing
+=======
+                  }
+                />,
+>>>>>>> Update snapshots
               ],
             },
             "ref": null,
             "rendered": Array [
               Object {
                 "instance": null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 "key": undefined,
@@ -1086,6 +1154,8 @@ ShallowWrapper {
               Object {
                 "instance": null,
 >>>>>>> Cleaner testing
+=======
+>>>>>>> Update snapshots
                 "key": "2",
                 "nodeType": "class",
                 "props": Object {
