@@ -1,26 +1,11 @@
 import React, { Component } from 'react';
-import Product from '../Product/Product';
 import { Redirect } from 'react-router';
 import ProductList from '../ProductList/ProductList'
 import farmImage from '../../styles/images/farm.jpeg'
 
 export class Profile extends Component {
-  constructor(){
-    super()
-    this.state = {
-      showBio: true
-    }
-  }
-
-  toggleInfo = () => {
-    const { showBio } = this.state
-    this.setState({
-      showBio: !showBio
-    })
-  }
 
   render() {
-    const { showBio } = this.state
     const { name, bio, address, phone, email, city, state, id } = this.props.user
     const products = this.props.products.filter((product) => {
       return product.user_id === id;

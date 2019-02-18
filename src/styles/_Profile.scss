@@ -3,13 +3,13 @@
   width: 100vw;
   font-family: $titleFont;
   grid-template-columns: 50vw 50vw;
-  grid-template-rows: 80px 300px auto;
+  grid-template-rows: 60px 300px auto;
   grid-template-areas: 
-    "title tille"
+    "title table"
     "info table"
     "bio table";
     @media screen and (max-width: 1250px) {
-      grid-template-rows: 80px 430px auto;   
+      grid-template-rows: 60px 430px auto;
     }
   .vender-info {
     grid-area: info;
@@ -17,27 +17,27 @@
     @include flexin();
     @media screen and (max-width: 1250px) {
       flex-direction: column;
-      text-align: center;        
+      text-align: center;
+      .contact-info {
+        margin-left: 0;
+      }        
     }
     #farm {
       width: 300px;
     }
     .contact-info {
       margin-left: 50px;
-      @media screen and (min-width: 1190px) {
-        margin-left: 0px;        
-      }
       @media screen and (max-width: 1250px) {
-        margin-left: 0px;                       
+        margin-left: 0;     
       }
     }
   }
   h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
     grid-area: title;
     text-align: center;
-    width: 200%;
+    width: 100%;
   }
   h4 {
     font-size: 2rem;
