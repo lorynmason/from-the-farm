@@ -1,6 +1,8 @@
 .App {
-  display: flex;
+  @include flexin();  
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+body {
+  background: whitesmoke;
 }

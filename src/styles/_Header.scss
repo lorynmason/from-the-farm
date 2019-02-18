@@ -1,15 +1,11 @@
 header {
   width: 100vw;
   height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexin();
   transition: ease all 1s;
   .header-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 110px;
+    @include flexin();
+    padding-left: 100px;
   }
   .header-logo {
     position: absolute;
@@ -19,18 +15,16 @@ header {
     top: 20px;
     line-height: 60px;
     transition: all .3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     h1 {
+    @include flexin();
+    h1 {
       font-size: 4.5rem;
-      font-family: 'Advent Pro', sans-serif;
+      font-family: $titleFont;
       width: 100px;
       text-align: center;
       font-weight: 400;
       margin-right: 35px;
       text-shadow: -4px 4px #000;
-      color: rgb(22, 202, 187);
+      color: $accent2;
       span {
         font-size: 3rem;
         display: block;
@@ -43,33 +37,13 @@ header {
   }
 
   .header-logo:before {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    content: '';
-    display: block;
-    width: 600px;
-    height: 200px;
+    @include psuedo (-1, 0, 0, 0.1);
     background: rgb(0, 0, 0);
-    transform: translate(0, 0);
-    transition: all .5s ease-in-out;
-    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
   }
 
   .header-logo:after {
-    position: absolute;
-    z-index: -2;
-    top: 0;
-    left: 0;
-    content: '';
-    display: block;
-    width: 600px;
-    height: 200px;
-    background: rgb(12, 192, 177);
-    transform: translate(13px, 12px);
-    transition: all .5s ease-in-out;
-    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    @include psuedo (-2, 13px, 12px, 0.2);
+    background: $accent2;
   }
 
   .header-logo:hover {
@@ -83,7 +57,7 @@ header {
   }
 
   .header-logo:hover:before {
-    background: teal;
+    background: $accent1;
     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
   }
 
@@ -92,26 +66,26 @@ header {
     background: #000;
   }
   .container {
-    display: flex;
+    @include flexin();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-left: 46.5px;    
     .menu {
       a {
         all: unset;
       }
       padding-left: 140px;
-      display: flex;
+      @include flexin();
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       color: transparent;
-      transition: color .5s ease-in; 
+      transition: color .3s ease-in; 
       margin-top: 20px;   
       i {    
         font-size: 3rem;
         cursor: pointer;
+        transition: all ease .3s;
+        &:hover {
+          color: rgb(31, 143, 12);
+        }
       }
     }
     &:hover {

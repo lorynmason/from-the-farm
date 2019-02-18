@@ -1,31 +1,27 @@
 .leaflet-popup-content-wrapper {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: $titleFont;
   h3 {
     font-size: 1.5rem;
     font-weight: bold;
     color: teal;    
   }
   p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $mainFont;
     font-size: 1rem;
     margin: 0;
   }
 }
+.leaflet-touch .leaflet-control-attribution {
+  display: none;
+}
 
 .buy {
   #map {
-    height: calc(78vh-200px);
-    width: 50vw;
+    height: 46vh;
+    margin: 0 0 0 50px;
+    width: 45vw;
     z-index: 1;
     grid-area: map;
+    box-shadow: -5px 5px 10px rgb(124, 124, 124);
   }
 }
-
-// .profile {
-//   #map {
-//     height: 400px;
-//     width: 400px;
-//     margin: 0 auto;
-//     z-index: 1;
-//   }
-// }

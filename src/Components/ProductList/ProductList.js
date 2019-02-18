@@ -20,9 +20,6 @@ const ProductList = ({ products }) => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-          </tr>
           {productsToReturn}
         </tbody>
       </table>
