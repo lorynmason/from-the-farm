@@ -46,3 +46,10 @@ export const addMessage = (message) => {
     message
   }
 }
+
+export const addItemList = (items) => {
+  return {
+    type: 'ADD_ITEM_LIST',
+    items
+  }
+}

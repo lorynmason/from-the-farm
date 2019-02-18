@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Buy from '../Buy/Buy';
+import AddProductForm from '../AddProductForm/AddProductForm';
 import { Header } from '../Header/Header';
 import '../../styles/main.scss';
-import { Switch, Route, withRouter } from 'react-router';
+import { Switch, Route, withRouter, Redirect } from 'react-router';
 import Profile from '../Profile/Profile';
 import { createBrowserHistory } from 'history';
 import { connect } from 'react-redux';
@@ -17,18 +18,6 @@ import Login from '../../containers/Login/Login'
 class App extends Component {
   async componentDidMount() {
     this.props.fetchVendors('https://xpoll-be.herokuapp.com/api/v1/vendors');
-    // this.props.addUserToStore({
-    //   address: "85 Hooker St",
-    //   bio: "Orange You Glad You Didn't Say Bananas",
-    //   city: "denver",
-    //   email: "ruffnbuff@example.com",
-    //   id: 6,
-    //   lat: 39.717646,
-    //   long: -105.029438,
-    //   name: "Oranges 4 Eva",
-    //   phone: "(231) 341-4141",
-    //   state: "CO"
-    // })
   }
 
   search = async({ productId, location, range }) => {
@@ -71,11 +60,13 @@ class App extends Component {
         <Header />
         <Message />
         <Switch>
+          <Route exact path="/" component={Buy} />
           <Route path="/loading" component={Loading}/>
           <Route path="/about" component={About}/>
           <Route path="/login" component={Login}/>
-          <Route path="/buy" render={() => <Buy />} />
-          <Route path="/profile" component={Profile}/>
+          <Route path="/buy" component={Buy} />
+          <Route path="/add-product" component={AddProductForm} />
+          <Route path="/profile" render={() => this.props.user.name ? (<Profile />) : (<Redirect to="/login" />)} />
         </Switch>
       </div>
     );

@@ -1,5 +1,5 @@
-import { isLoading, hasErrored, addVendors, addProducts } from '../actions';
-import { cleanVendors, cleanProducts } from '../helpers/cleaner';
+import { isLoading, hasErrored, addVendors, addProducts, addItemList } from '../actions';
+import { cleanVendors, cleanProducts, cleanItems } from '../helpers/cleaner';
 
 export const fetchVendors = (url) => {
   return async (dispatch) => {
@@ -13,8 +13,10 @@ export const fetchVendors = (url) => {
       const results = await response.json();
       const vendors = cleanVendors(results.data);
       const products = cleanProducts(results.data);
+      const itemList = cleanItems(products);
       dispatch(addVendors(vendors));
       dispatch(addProducts(products));
+      dispatch(addItemList(itemList));
     } catch (error) {
       dispatch(hasErrored(error.message));
     }

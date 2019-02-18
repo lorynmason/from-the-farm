@@ -12,7 +12,7 @@ export const Header = () => {
           <div className="menu">
             <Link to="/buy"><i className="fas fa-carrot"></i></Link>
             <Link to="/profile"><i className="fas fa-user-circle"></i></Link>
-            <Link to="/"><i className="fas fa-plus-circle"></i> </Link>
+            <Link to="/add-product"><i className="fas fa-plus-circle"></i> </Link>
             <Link to="/"><i className="fas fa-sign-out-alt"></i></Link>
           </div>
         </div>
