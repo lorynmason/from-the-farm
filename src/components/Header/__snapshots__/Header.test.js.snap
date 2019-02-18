@@ -57,7 +57,7 @@ ShallowWrapper {
             </Link>
             <Link
               replace={false}
-              to="/"
+              to="/add-product"
             >
               <i
                 className="fas fa-plus-circle"
@@ -118,7 +118,7 @@ ShallowWrapper {
             </Link>
             <Link
               replace={false}
-              to="/"
+              to="/add-product"
             >
               <i
                 className="fas fa-plus-circle"
@@ -177,7 +177,7 @@ ShallowWrapper {
               </Link>
               <Link
                 replace={false}
-                to="/"
+                to="/add-product"
               >
                 <i
                   className="fas fa-plus-circle"
@@ -266,7 +266,7 @@ ShallowWrapper {
                 </Link>,
                 <Link
                   replace={false}
-                  to="/"
+                  to="/add-product"
                 >
                   <i
                     className="fas fa-plus-circle"
@@ -348,7 +348,7 @@ ShallowWrapper {
                     " ",
                   ],
                   "replace": false,
-                  "to": "/",
+                  "to": "/add-product",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -447,7 +447,7 @@ ShallowWrapper {
               </Link>
               <Link
                 replace={false}
-                to="/"
+                to="/add-product"
               >
                 <i
                   className="fas fa-plus-circle"
@@ -508,7 +508,7 @@ ShallowWrapper {
               </Link>
               <Link
                 replace={false}
-                to="/"
+                to="/add-product"
               >
                 <i
                   className="fas fa-plus-circle"
@@ -567,7 +567,7 @@ ShallowWrapper {
                 </Link>
                 <Link
                   replace={false}
-                  to="/"
+                  to="/add-product"
                 >
                   <i
                     className="fas fa-plus-circle"
@@ -656,7 +656,7 @@ ShallowWrapper {
                   </Link>,
                   <Link
                     replace={false}
-                    to="/"
+                    to="/add-product"
                   >
                     <i
                       className="fas fa-plus-circle"
@@ -738,7 +738,7 @@ ShallowWrapper {
                       " ",
                     ],
                     "replace": false,
-                    "to": "/",
+                    "to": "/add-product",
                   },
                   "ref": null,
                   "rendered": Array [
