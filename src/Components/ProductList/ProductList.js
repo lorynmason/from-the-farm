@@ -1,9 +1,7 @@
 import React from 'react';
 import Product from '../Product/Product';
-import { connect } from 'react-redux';
 
 export const ProductList = ({ products }) => {
-
   const productsToReturn = products.map((product) => {
     return <Product product={product} key={product.id} />
   });
@@ -27,8 +25,4 @@ export const ProductList = ({ products }) => {
   )
 }
 
-export const mapStateToProps = (state) => ({
-  products: state.products
-});
-
-export default connect(mapStateToProps)(ProductList);
+export default ProductList;
