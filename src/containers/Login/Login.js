@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addUser } from '../../actions';
-import { loginUser } from '../../thunks/loginUser'
+import { loginUser } from '../../thunks/loginUser';
+import { Redirect } from 'react-router';
 
 export class Login extends Component {
   constructor(){
@@ -24,22 +24,28 @@ export class Login extends Component {
   }
 
   render() {
+    let page;
+    if (this.props.user.name) {
+      page = <Redirect to='/profile' />
+    }
+
     return (
       <form className="login" onChange={this.handleChange} onSubmit={this.sendLogin}>
         <h3>Login</h3>
         <input placeholder="username" name="email"/>
         <input placeholder="password" name="password"/>        
         <button>Login</button>
+        {page}
       </form>
     )
   }
 }
 
 export const mapStateToProps = (state) => ({
+  user: state.user
 });
 
-export const mapDispatchToProps = (dispatch) => (
-{
+export const mapDispatchToProps = (dispatch) => ({
   loginUser: (url, state) => dispatch(loginUser(url, state))
 })
 

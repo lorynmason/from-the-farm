@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
-import ProductList from '../ProductList/ProductList'
-import farmImage from '../../styles/images/farm.jpeg'
+import ProductList from '../ProductList/ProductList';
+import farmImage from '../../styles/images/farm.jpeg';
+import { connect } from 'react-redux';
 
 export class Profile extends Component {
 
   render() {
-    const { name, bio, address, phone, email, city, state, id } = this.props.user
-    const products = this.props.products.filter((product) => {
-      return product.user_id === id;
-    });
+    const { name, bio, address, phone, email, city, state, id, products } = this.props.user
     let redirect
-
+    
     if (!name) {
-      redirect = <Redirect to="/buy"/>
+      redirect = <Redirect to="/login"/>
     } 
-
+    
     return (
       <section className="profile">
+        { redirect }
         <h3>{name}</h3>
           <section className="vender-info">
             <div className="img-container">
@@ -32,12 +31,15 @@ export class Profile extends Component {
           </section>
           <p>{bio}</p>
           <section className="vender-products">
-          <ProductList products={products} />
+            <ProductList products={products} />
           </section>
-        { redirect }
       </section>
     )
   }
 }
 
-export default Profile;
+export const mapStateToProps = (state) => ({
+  user: state.user
+});
+
+export default connect(mapStateToProps)(Profile);
