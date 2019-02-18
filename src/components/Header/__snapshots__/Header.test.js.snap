@@ -36,6 +36,12 @@ ShallowWrapper {
             id="logo"
             src="pig-logo.png"
           />
+          <p>
+            menu
+            <i
+              className="fas fa-caret-right"
+            />
+          </p>
           <div
             className="menu"
           >
@@ -97,6 +103,12 @@ ShallowWrapper {
             id="logo"
             src="pig-logo.png"
           />
+          <p>
+            menu
+            <i
+              className="fas fa-caret-right"
+            />
+          </p>
           <div
             className="menu"
           >
@@ -156,6 +168,12 @@ ShallowWrapper {
               id="logo"
               src="pig-logo.png"
             />,
+            <p>
+              menu
+              <i
+                className="fas fa-caret-right"
+              />
+            </p>,
             <div
               className="menu"
             >
@@ -241,6 +259,35 @@ ShallowWrapper {
             "ref": null,
             "rendered": null,
             "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "menu",
+                <i
+                  className="fas fa-caret-right"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "menu",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-caret-right",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+            ],
+            "type": "p",
           },
           Object {
             "instance": null,
@@ -426,6 +473,12 @@ ShallowWrapper {
               id="logo"
               src="pig-logo.png"
             />
+            <p>
+              menu
+              <i
+                className="fas fa-caret-right"
+              />
+            </p>
             <div
               className="menu"
             >
@@ -487,6 +540,12 @@ ShallowWrapper {
               id="logo"
               src="pig-logo.png"
             />
+            <p>
+              menu
+              <i
+                className="fas fa-caret-right"
+              />
+            </p>
             <div
               className="menu"
             >
@@ -546,6 +605,12 @@ ShallowWrapper {
                 id="logo"
                 src="pig-logo.png"
               />,
+              <p>
+                menu
+                <i
+                  className="fas fa-caret-right"
+                />
+              </p>,
               <div
                 className="menu"
               >
@@ -631,6 +696,35 @@ ShallowWrapper {
               "ref": null,
               "rendered": null,
               "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "menu",
+                  <i
+                    className="fas fa-caret-right"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "menu",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-caret-right",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "p",
             },
             Object {
               "instance": null,
