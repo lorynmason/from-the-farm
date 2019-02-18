@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { addUser } from '../../actions';
+import { loginUser } from '../../thunks/loginUser'
 
 export class Login extends Component {
   constructor(){
     super()
     this.state = {
-      username: '',
+      email: '',
       password: '',
     }
   }
@@ -16,17 +18,18 @@ export class Login extends Component {
     })
   }
 
-  sendSearch = (e) => {
+  sendLogin = (e) => {
     e.preventDefault()
+    this.props.loginUser('https://xpoll-be.herokuapp.com/api/v1/authentication', this.state)
   }
 
   render() {
     return (
-      <form className="login" onChange={this.handleChange}>
+      <form className="login" onChange={this.handleChange} onSubmit={this.sendLogin}>
         <h3>Login</h3>
-        <input placeholder="username" name="username"/>
+        <input placeholder="username" name="email"/>
         <input placeholder="password" name="password"/>        
-        <button>Search</button>
+        <button>Login</button>
       </form>
     )
   }
@@ -35,7 +38,9 @@ export class Login extends Component {
 export const mapStateToProps = (state) => ({
 });
 
-export const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => (
+{
+  loginUser: (url, state) => dispatch(loginUser(url, state))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);

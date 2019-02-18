@@ -41,3 +41,38 @@ export const cleanVendors = (vendors) => {
   })
 }
 
+export const cleanUser = (data, token) => {
+  const products = cleanUserProducts(data.attributes.products)
+  console.log(products)
+  const { name, email, address, phone, bio, lat, long, city, state, zip, img_url } = data.attributes
+  return {
+    name, 
+    email, 
+    address, 
+    phone: formatPhoneNumber(phone), 
+    bio, 
+    lat, 
+    long, 
+    city, 
+    state, 
+    zip, 
+    img_url,
+    products, 
+    token
+  }
+}
+
+export const cleanUserProducts = (products) => {
+  const productArr = []
+  products.reduce((obj, product) => {
+    const itemName = Object.keys(product)[0];
+    obj = {
+      name: Object.keys(product)[0],
+      ...product[itemName]
+    }
+    productArr.push(obj);
+    return obj
+  }, {})
+  return productArr
+}
+
