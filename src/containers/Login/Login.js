@@ -22,7 +22,7 @@ export class Login extends Component {
 
   render() {
     return (
-      <form className="search" onChange={this.handleChange}>
+      <form className="login" onChange={this.handleChange}>
         <h3>Login</h3>
         <input placeholder="username" name="username"/>
         <input placeholder="password" name="password"/>        

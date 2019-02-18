@@ -10,7 +10,7 @@ import { addUser, removeUser, addProducts, addMessage } from '../../actions';
 import { fetchVendors } from '../../thunks/fetchVendors';
 import { Loading } from '../Loading/Loading'
 import Message from '../Message/Message';
-import Login from '../Login/Login'
+import Login from '../../containers/Login/Login'
 
 
 class App extends Component {
