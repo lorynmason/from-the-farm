@@ -11,10 +11,13 @@
     margin: 0;
   }
 }
+.leaflet-touch .leaflet-control-attribution {
+  display: none;
+}
 
 .buy {
   #map {
-    height: calc(70vh-100px);
+    height: 46vh;
     margin: 0 0 0 50px;
     width: 45vw;
     z-index: 1;

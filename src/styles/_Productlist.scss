@@ -1,46 +1,46 @@
 .table-container {
-  overflow: scroll;
-  height: 60vh;
   width: 43vw;
   grid-area: table;
-  margin: 0 20px 0 50px;
+  margin: 10px 20px 0 50px;
   box-shadow: -5px 5px 10px rgb(124, 124, 124);
 }
 
-.product-list {
+table {
   width: 100%;
-  border-collapse: collapse;
+  table-layout: fixed;
   font-size: 1.2rem;
-  font-family: $mainFont;
-  margin: 0 auto;
-  tr {
-    height: 50px;
+  font-family: $titleFont;
+  tbody {
+    font-family: $mainFont;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    height: 57vh;
+  }
+
+  thead tr {
+    display: block;
+    background: rgb(39, 39, 39);
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+  thead {
+    background: black;
+    color:#fff;
+  }
+
+  th, td {
+    padding: 5px;
+    width: calc(43vw/4);
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  tr:nth-child(even) { 
+    background: rgba(0, 128, 128, 0.082); 
   }
   td {
-    vertical-align: middle;
-    padding: 0 5px;
-    text-align: center;
-  }
-  thead {
-    tr { 
-      position: fixed;
-      width: 43vw; 
-      background: rgb(39, 39, 39);
-      color: whitesmoke;
-      font-weight: bold;
-      display: flex;
-      justify-content: space-around;
-      th {
-        padding: 12px 0;
-      }
-    }
-  }
-  tbody {
-    td {
-      border: .5px solid rgba(228, 227, 227, 0.363);
-    }
-    tr:nth-child(even) { 
-      background: rgba(0, 128, 128, 0.082); 
-    }
+    border: .5px solid rgba(228, 227, 227, 0.363);
   }
 }

@@ -43,24 +43,28 @@ export class Search extends Component {
     });
 
     return (
-      <form className="search" onSubmit={this.sendSearch} onChange={this.handleChange}>
+      <section className="search">
         <h3>Narrow Your Search</h3>
-        <select id="product-options" name="productId">
-        <option value="">select a product</option>
-          { productOptions }
-        </select>
-        <input placeholder="location, address, zipcode" name="location"/>
-        <select id="radius-options" name="range">
-          <option value="50">50 mile radius</option>
-          <option value="100">100 mile radius</option>
-          <option value="150">150 mile radius</option>
-          <option value="200">200 mile radius</option>
-          <option value="250">250 mile radius</option>
-          <option value="300">300 mile radius</option>
-          <option value="500">500 mile radius</option>
-        </select>
-        <button>Search</button>
-      </form>
+        <form onSubmit={this.sendSearch} onChange={this.handleChange}>
+          <div className="search-options">
+            <select id="product-options" name="productId">
+            <option value="">select a product</option>
+              { productOptions }
+            </select>
+            <input placeholder="location, address, zipcode" name="location"/>
+            <select id="radius-options" name="range">
+              <option value="50">50 mile radius</option>
+              <option value="100">100 mile radius</option>
+              <option value="150">150 mile radius</option>
+              <option value="200">200 mile radius</option>
+              <option value="250">250 mile radius</option>
+              <option value="300">300 mile radius</option>
+              <option value="500">500 mile radius</option>
+            </select>
+          </div>
+          <button>Search</button>
+        </form>
+      </section>
     )
   }
 }
