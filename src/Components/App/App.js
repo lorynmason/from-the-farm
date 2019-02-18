@@ -11,6 +11,7 @@ import { fetchVendors } from '../../thunks/fetchVendors';
 import { Loading } from '../Loading/Loading'
 import Message from '../Message/Message';
 import { About } from '../About/About'
+import Login from '../../containers/Login/Login'
 
 
 class App extends Component {
@@ -73,6 +74,7 @@ class App extends Component {
         <Switch>
           <Route path="/loading" render={() => <Loading />}/>
           <Route path="/about" render={() => <About />}/>
+          <Route path="/login" render={() => <Login />}/>
           <Route path="/buy" render={() => <Buy history={history} search={this.search}/>}/>
           <Route path="/profile" render={() => <Profile user={this.props.user} products={this.props.products} />}/>
         </Switch>
