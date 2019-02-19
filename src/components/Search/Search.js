@@ -36,8 +36,10 @@ export class Search extends Component {
     } else {
       path = `?loc=${location}&range=${newRange}&item=${productId}`
     }
-    console.log(productId)
     this.props.searchVendors(baseUrl + path, productId)
+    this.setState({
+      location: ''
+    })
   }
 
   render() {
@@ -54,7 +56,7 @@ export class Search extends Component {
             <option value="">select a product</option>
               { productOptions }
             </select>
-            <input placeholder="location, address, zipcode" name="location"/>
+            <input placeholder="location, address, zipcode" name="location" value={this.state.location}/>
             <select id="radius-options" name="range">
               <option value="50">50 mile radius</option>
               <option value="100">100 mile radius</option>
