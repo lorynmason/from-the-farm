@@ -83,7 +83,6 @@ ShallowWrapper {
                
             </Link>
             <Link
-              onClick={[Function]}
               replace={false}
               to="/"
             >
@@ -167,7 +166,6 @@ ShallowWrapper {
                
             </Link>
             <Link
-              onClick={[Function]}
               replace={false}
               to="/"
             >
@@ -249,7 +247,6 @@ ShallowWrapper {
                  
               </Link>
               <Link
-                onClick={[Function]}
                 replace={false}
                 to="/"
               >
@@ -384,7 +381,6 @@ ShallowWrapper {
                    
                 </Link>,
                 <Link
-                  onClick={[Function]}
                   replace={false}
                   to="/"
                 >
@@ -545,7 +541,6 @@ ShallowWrapper {
                       sign out
                     </p>
                   </i>,
-                  "onClick": [Function],
                   "replace": false,
                   "to": "/",
                 },
@@ -657,7 +652,6 @@ ShallowWrapper {
                  
               </Link>
               <Link
-                onClick={[Function]}
                 replace={false}
                 to="/"
               >
@@ -741,7 +735,6 @@ ShallowWrapper {
                  
               </Link>
               <Link
-                onClick={[Function]}
                 replace={false}
                 to="/"
               >
@@ -823,7 +816,6 @@ ShallowWrapper {
                    
                 </Link>
                 <Link
-                  onClick={[Function]}
                   replace={false}
                   to="/"
                 >
@@ -958,7 +950,6 @@ ShallowWrapper {
                      
                   </Link>,
                   <Link
-                    onClick={[Function]}
                     replace={false}
                     to="/"
                   >
@@ -1119,7 +1110,6 @@ ShallowWrapper {
                         sign out
                       </p>
                     </i>,
-                    "onClick": [Function],
                     "replace": false,
                     "to": "/",
                   },
