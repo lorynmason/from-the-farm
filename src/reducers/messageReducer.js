@@ -1,4 +1,4 @@
-const message = (state = '', action) => {
+export const messageReducer = (state = '', action) => {
   switch(action.type) {
     case 'ADD_MESSAGE':
       return action.message;
@@ -6,5 +6,3 @@ const message = (state = '', action) => {
       return state;
   }
 }
-
-export default message;
