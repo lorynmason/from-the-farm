@@ -77,7 +77,6 @@ export const cleanUserProducts = (products) => {
 }
 
 export const cleanItems = (products) => {
-  console.log(products)
   const productNames = products.reduce((arr, product) => {
     if(!arr.includes(product.name)) {
       arr.push(product.name)
@@ -86,8 +85,8 @@ export const cleanItems = (products) => {
   },[]);
 
   const productIds = products.reduce((arr, product, i) => {
-    if(!arr.includes(product.item_id)) {
-      arr.push(product.item_id)
+    if(!arr.includes(product.id)) {
+      arr.push(product.id)
     }
     return arr     
   },[]);

@@ -10,6 +10,7 @@ ShallowWrapper {
         "vendors": Array [],
       }
     }
+    productSearchResults={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

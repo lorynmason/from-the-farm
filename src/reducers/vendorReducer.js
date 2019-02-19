@@ -1,4 +1,4 @@
-const vendors = (state = [], action) => {
+export const vendorReducer = (state = [], action) => {
   switch(action.type) {
     case 'ADD_VENDORS':
       return action.vendors;
@@ -6,5 +6,3 @@ const vendors = (state = [], action) => {
       return state;
   }
 }
-
-export default vendors;

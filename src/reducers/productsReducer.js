@@ -1,4 +1,4 @@
-const products = (state = [], action) => {
+export const productsReducer = (state = [], action) => {
   switch(action.type) {
     case 'ADD_PRODUCTS':
       return action.products;
@@ -6,5 +6,3 @@ const products = (state = [], action) => {
       return state;
   }
 }
-
-export default products;
