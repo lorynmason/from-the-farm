@@ -20,13 +20,13 @@ table {
 
   thead tr {
     display: block;
-    background: rgb(39, 39, 39);
+    background: $accent2;
     color: whitesmoke;
     font-weight: bold;
   }
 
   thead {
-    background: black;
+    background: $accent2;
     color:#fff;
   }
 
@@ -38,7 +38,7 @@ table {
     vertical-align: middle;
   }
   tr:nth-child(even) { 
-    background: rgba(0, 128, 128, 0.082); 
+    background: rgba(48, 139, 36, 0.288); 
   }
   td {
     border: .5px solid rgba(228, 227, 227, 0.363);

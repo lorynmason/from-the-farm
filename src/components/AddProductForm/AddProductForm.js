@@ -42,19 +42,22 @@ export class AddProductForm extends Component {
     });
 
     return (
-      <section>
+      <section className="add-product">
         <form className="add-product-form" onChange={this.handleChange} onSubmit={this.handleSubmit}>
-          <select name="item_id" id="">
+          <h3>Add to Your Inventory</h3>
+          <p>Add a Product <select name="item_id" id="">
             <option value="">select a product</option>
             {productOptions}
-          </select>
-          <input type="text" name="description" placeholder="description" />
-          <input type="text" placeholder="unit i.e lb" name="unit" />
-          $<input type="number" placeholder="price i.e 5.50" name="price" />
+          </select></p>
+          <p>Add Description <input type="text" name="description" placeholder="description" /></p>
+          <p>Add Unit Amount <input type="text" placeholder="unit i.e lb" name="unit" /></p>
+          <p>Add a Price $<input type="number" placeholder="price i.e 5.50" name="price" /></p>
           <button>Submit</button>
+          <p><Link to="/profile">Return to Profile</Link></p>
         </form>
-        <p><Link to="/profile">Return to Profile</Link></p>
+        <section className="my-products">
         <ProductList products={this.props.user.products} />
+        </section>
       </section>
     )
   }

@@ -21,7 +21,7 @@ header {
       font-weight: 400;
       margin-right: 35px;
       text-shadow: -4px 4px #000;
-      color: $accent2;
+      color: $accent1;
       line-height: 70%;
       span {
         font-size: 3rem;
@@ -45,12 +45,12 @@ header {
 
   .header-logo:before {
     @include psuedo (-1, 0, 0, 0.1);
-    background: rgb(0, 0, 0);
+    background: $accent2;
   }
 
   .header-logo:after {
     @include psuedo (-2, 13px, 12px, 0.2);
-    background: $accent2;
+    background: $accent1;
     box-shadow: -5px 5px 10px rgb(124, 124, 124);
   }
 
@@ -71,7 +71,7 @@ header {
 
   .header-logo:hover:after {
     transform: translate(-15px, -10px);
-    background: #000;
+    background: $accent2;
   }
   .container {
     @include flexin();

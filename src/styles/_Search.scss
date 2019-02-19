@@ -44,9 +44,9 @@
     display: block;
     &:hover {
       cursor: pointer;
-      background: rgb(0, 0, 0);
+      background: $accent2;
       transform: scale(1.05);
-      color: $accent2;
+      color: $accent1;
     }
   }
 }

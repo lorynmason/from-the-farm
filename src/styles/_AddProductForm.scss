@@ -1,0 +1,52 @@
+.add-product {
+  display: flex;
+  font-family: $titleFont;
+  // justify-content: center;
+  // align-items: center;
+  h3 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -5px 5px 10px rgb(124, 124, 124);
+    height: 64.5vh;
+    button, p {
+      margin: 15px 150px;
+    }
+    input, select {
+      font-family: $titleFont;
+      font-size: 1rem;
+    }
+    h3 {
+      margin: 15px;
+    }
+  }
+  button {
+    all: unset;
+    font-family: $titleFont;
+    margin: 10px auto 0;
+    background: $accent1;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: whitesmoke;
+    box-shadow: -3px 3px 6px rgba(88, 88, 88, 0.664);
+    transition: all ease .5s;
+    border-radius: 5px;
+    display: block;
+    &:hover {
+      cursor: pointer;
+      background: $accent2;
+      transform: scale(1.05);
+      color: $accent1;
+    }
+  }
+  .table-container {
+    margin: 0 20px 0 50px;
+  }
+}

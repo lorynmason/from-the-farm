@@ -28,8 +28,11 @@ $mainFont: 'Source Sans Pro', sans-serif;
 
 //colors
 
-$accent1: rgb(2, 150, 150);
-$accent2: rgb(12, 192, 177);
+// $accent1: rgb(2, 150, 150);
+// $accent2: rgb(12, 192, 177);
+
+$accent1: rgb(48, 139, 36);
+$accent2: rgb(39, 39, 39);
 
 @import "Reset";
 @import "Header"; 
@@ -43,3 +46,4 @@ $accent2: rgb(12, 192, 177);
 @import "Message";
 @import "About";
 @import "Login";
+@import "AddProductForm";
