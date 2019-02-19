@@ -49,7 +49,7 @@ export class AddProductForm extends Component {
           </select>
           <input type="text" name="description" placeholder="description" />
           <input type="text" placeholder="unit i.e lb" name="unit" />
-          $<input type="number" placeholder="price i.e 5.50" name="price" />
+          $<input type="number" placeholder="price i.e 5.50" name="price" step=".01" />
           <button>Submit</button>
         </form>
         <p><Link to="/profile">Return to Profile</Link></p>
