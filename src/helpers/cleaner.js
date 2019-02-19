@@ -77,17 +77,17 @@ export const cleanUserProducts = (products) => {
 }
 
 export const cleanItems = (products) => {
+  console.log(products)
   const productNames = products.reduce((arr, product) => {
-    const productName = Object.keys(product)[0];
-    if(!arr.includes(productName)) {
-      arr.push(productName)
+    if(!arr.includes(product.name)) {
+      arr.push(product.name)
     }
     return arr     
   },[]);
 
   const productIds = products.reduce((arr, product, i) => {
-    if(!arr.includes(product[productNames[i]].item_id)) {
-      arr.push(product[productNames[i]].item_id)
+    if(!arr.includes(product.item_id)) {
+      arr.push(product.item_id)
     }
     return arr     
   },[]);

@@ -53,3 +53,23 @@ export const addItemList = (items) => {
     items
   }
 }
+
+export const vendorSearchResults = (results) => {
+  return {
+    type: 'VENDOR_SEARCH',
+    results
+  }
+}
+
+export const productSearchResults = (results) => {
+  return {
+    type: 'PRODUCT_SEARCH',
+    results
+  }
+}
+
+export const clearSearchResults = () => {
+  return {
+    type: 'CLEAR_SEARCH',
+  }
+}

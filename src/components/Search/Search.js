@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addProducts } from '../../actions';
+import { searchVendors } from '../../thunks/searchVendors'
 
 export class Search extends Component {
   constructor(){
@@ -19,8 +20,26 @@ export class Search extends Component {
   }
 
   sendSearch = (e) => {
+    const { productId, location, range } = this.state
+    let newRange = range
     e.preventDefault()
-    this.props.search(this.state)
+    const baseUrl = 'https://xpoll-be.herokuapp.com/api/v1/search'
+    let path;
+    if (!location) {
+      this.props.addMessage('error: please enter a search location')
+    } 
+    if (!range) {
+      newRange = "50"
+    } 
+    if (!productId) {
+      path = `?loc=${location}&range=${newRange}`
+    } else {
+      path = `?loc=${location}&range=${newRange}&item=${productId}`
+    }
+    this.props.searchVendors(baseUrl + path, productId)
+    this.setState({
+      location: ''
+    })
   }
 
   render() {
@@ -37,7 +56,7 @@ export class Search extends Component {
             <option value="">select a product</option>
               { productOptions }
             </select>
-            <input placeholder="location, address, zipcode" name="location"/>
+            <input placeholder="location, address, zipcode" name="location" value={this.state.location}/>
             <select id="radius-options" name="range">
               <option value="50">50 mile radius</option>
               <option value="100">100 mile radius</option>
@@ -62,7 +81,8 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-    addProductsToStore: (products) => dispatch(addProducts(products))
+    addProductsToStore: (products) => dispatch(addProducts(products)),
+    searchVendors: (url, id) => dispatch(searchVendors(url, id))
   }
 }
 
