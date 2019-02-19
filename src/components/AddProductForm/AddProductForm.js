@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { postItem } from '../../thunks/postItem';
 import { fetchUser } from '../../thunks/fetchUser';
 import { Link } from 'react-router-dom';
+import ProductList from '../ProductList/ProductList';
 
 export class AddProductForm extends Component {
   constructor() {
@@ -53,13 +54,15 @@ export class AddProductForm extends Component {
           <button>Submit</button>
         </form>
         <p><Link to="/profile">Return to Profile</Link></p>
+        <ProductList products={this.props.user.products} />
       </section>
     )
   }
 }
 
 export const mapStateToProps = (state) => ({
-  items: state.items
+  items: state.items,
+  user: state.user
 });
 
 export const mapDispatchToProps = (dispatch) => {
