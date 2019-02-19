@@ -30,8 +30,8 @@ export class Search extends Component {
 
     return (
       <section className="search">
-        <h3>Narrow Your Search</h3>
         <form className="search-form" onSubmit={this.sendSearch} onChange={this.handleChange}>
+        <h3>Narrow Your Search</h3>
           <div className="search-options">
             <select id="product-options" name="productId">
             <option value="">select a product</option>
