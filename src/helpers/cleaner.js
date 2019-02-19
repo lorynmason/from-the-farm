@@ -58,7 +58,7 @@ export const cleanUser = (data, token) => {
     img_url,
     products, 
     token,
-    id: data.id
+    id: parseInt(data.id)
   }
 }
 
@@ -78,15 +78,16 @@ export const cleanUserProducts = (products) => {
 
 export const cleanItems = (products) => {
   const productNames = products.reduce((arr, product) => {
-    if(!arr.includes(product.name)) {
-      arr.push(product.name)
+    const productName = Object.keys(product)[0];
+    if(!arr.includes(productName)) {
+      arr.push(productName)
     }
     return arr     
   },[]);
 
-  const productIds = products.reduce((arr, product) => {
-    if(!arr.includes(product.item_id)) {
-      arr.push(product.item_id)
+  const productIds = products.reduce((arr, product, i) => {
+    if(!arr.includes(product[productNames[i]].item_id)) {
+      arr.push(product[productNames[i]].item_id)
     }
     return arr     
   },[]);
