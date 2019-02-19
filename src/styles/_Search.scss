@@ -3,12 +3,19 @@
   .search-options {
     @include flexin();
   }
+  form {
+    box-shadow: -5px 5px 10px rgb(124, 124, 124);
+    width: 45vw;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
   h3 {
     font-family: $titleFont;
     font-size: 2rem;
     text-align: center;
     margin: -10px 0 10px;
     text-shadow: -2px 2px 3px rgb(131, 131, 131);
+    padding-top: 10px;
   }
   select, input {
     width: 160px;
