@@ -51,7 +51,11 @@ ShallowWrapper {
             >
               <i
                 className="fas fa-carrot"
-              />
+              >
+                <p>
+                  buy
+                </p>
+              </i>
             </Link>
             <Link
               replace={false}
@@ -59,7 +63,11 @@ ShallowWrapper {
             >
               <i
                 className="fas fa-user-circle"
-              />
+              >
+                <p>
+                  my profile
+                </p>
+              </i>
             </Link>
             <Link
               replace={false}
@@ -67,7 +75,11 @@ ShallowWrapper {
             >
               <i
                 className="fas fa-plus-circle"
-              />
+              >
+                <p>
+                  inventory
+                </p>
+              </i>
                
             </Link>
             <Link
@@ -76,7 +88,11 @@ ShallowWrapper {
             >
               <i
                 className="fas fa-sign-out-alt"
-              />
+              >
+                <p>
+                  sign out
+                </p>
+              </i>
             </Link>
           </div>
         </div>
@@ -118,7 +134,11 @@ ShallowWrapper {
             >
               <i
                 className="fas fa-carrot"
-              />
+              >
+                <p>
+                  buy
+                </p>
+              </i>
             </Link>
             <Link
               replace={false}
@@ -126,7 +146,11 @@ ShallowWrapper {
             >
               <i
                 className="fas fa-user-circle"
-              />
+              >
+                <p>
+                  my profile
+                </p>
+              </i>
             </Link>
             <Link
               replace={false}
@@ -134,7 +158,11 @@ ShallowWrapper {
             >
               <i
                 className="fas fa-plus-circle"
-              />
+              >
+                <p>
+                  inventory
+                </p>
+              </i>
                
             </Link>
             <Link
@@ -143,7 +171,11 @@ ShallowWrapper {
             >
               <i
                 className="fas fa-sign-out-alt"
-              />
+              >
+                <p>
+                  sign out
+                </p>
+              </i>
             </Link>
           </div>
         </div>,
@@ -183,7 +215,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-carrot"
-                />
+                >
+                  <p>
+                    buy
+                  </p>
+                </i>
               </Link>
               <Link
                 replace={false}
@@ -191,7 +227,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-user-circle"
-                />
+                >
+                  <p>
+                    my profile
+                  </p>
+                </i>
               </Link>
               <Link
                 replace={false}
@@ -199,7 +239,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-plus-circle"
-                />
+                >
+                  <p>
+                    inventory
+                  </p>
+                </i>
                  
               </Link>
               <Link
@@ -208,7 +252,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-sign-out-alt"
-                />
+                >
+                  <p>
+                    sign out
+                  </p>
+                </i>
               </Link>
             </div>,
           ],
@@ -301,7 +349,11 @@ ShallowWrapper {
                 >
                   <i
                     className="fas fa-carrot"
-                  />
+                  >
+                    <p>
+                      buy
+                    </p>
+                  </i>
                 </Link>,
                 <Link
                   replace={false}
@@ -309,7 +361,11 @@ ShallowWrapper {
                 >
                   <i
                     className="fas fa-user-circle"
-                  />
+                  >
+                    <p>
+                      my profile
+                    </p>
+                  </i>
                 </Link>,
                 <Link
                   replace={false}
@@ -317,7 +373,11 @@ ShallowWrapper {
                 >
                   <i
                     className="fas fa-plus-circle"
-                  />
+                  >
+                    <p>
+                      inventory
+                    </p>
+                  </i>
                    
                 </Link>,
                 <Link
@@ -326,7 +386,11 @@ ShallowWrapper {
                 >
                   <i
                     className="fas fa-sign-out-alt"
-                  />
+                  >
+                    <p>
+                      sign out
+                    </p>
+                  </i>
                 </Link>,
               ],
               "className": "menu",
@@ -340,7 +404,11 @@ ShallowWrapper {
                 "props": Object {
                   "children": <i
                     className="fas fa-carrot"
-                  />,
+                  >
+                    <p>
+                      buy
+                    </p>
+                  </i>,
                   "replace": false,
                   "to": "/buy",
                 },
@@ -350,10 +418,23 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "children": <p>
+                      buy
+                    </p>,
                     "className": "fas fa-carrot",
                   },
                   "ref": null,
-                  "rendered": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "buy",
+                    },
+                    "ref": null,
+                    "rendered": "buy",
+                    "type": "p",
+                  },
                   "type": "i",
                 },
                 "type": [Function],
@@ -365,7 +446,11 @@ ShallowWrapper {
                 "props": Object {
                   "children": <i
                     className="fas fa-user-circle"
-                  />,
+                  >
+                    <p>
+                      my profile
+                    </p>
+                  </i>,
                   "replace": false,
                   "to": "/profile",
                 },
@@ -375,10 +460,23 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "children": <p>
+                      my profile
+                    </p>,
                     "className": "fas fa-user-circle",
                   },
                   "ref": null,
-                  "rendered": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "my profile",
+                    },
+                    "ref": null,
+                    "rendered": "my profile",
+                    "type": "p",
+                  },
                   "type": "i",
                 },
                 "type": [Function],
@@ -391,7 +489,11 @@ ShallowWrapper {
                   "children": Array [
                     <i
                       className="fas fa-plus-circle"
-                    />,
+                    >
+                      <p>
+                        inventory
+                      </p>
+                    </i>,
                     " ",
                   ],
                   "replace": false,
@@ -404,10 +506,23 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
+                      "children": <p>
+                        inventory
+                      </p>,
                       "className": "fas fa-plus-circle",
                     },
                     "ref": null,
-                    "rendered": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "inventory",
+                      },
+                      "ref": null,
+                      "rendered": "inventory",
+                      "type": "p",
+                    },
                     "type": "i",
                   },
                   " ",
@@ -421,7 +536,11 @@ ShallowWrapper {
                 "props": Object {
                   "children": <i
                     className="fas fa-sign-out-alt"
-                  />,
+                  >
+                    <p>
+                      sign out
+                    </p>
+                  </i>,
                   "replace": false,
                   "to": "/",
                 },
@@ -431,10 +550,23 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "children": <p>
+                      sign out
+                    </p>,
                     "className": "fas fa-sign-out-alt",
                   },
                   "ref": null,
-                  "rendered": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "sign out",
+                    },
+                    "ref": null,
+                    "rendered": "sign out",
+                    "type": "p",
+                  },
                   "type": "i",
                 },
                 "type": [Function],
@@ -488,7 +620,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-carrot"
-                />
+                >
+                  <p>
+                    buy
+                  </p>
+                </i>
               </Link>
               <Link
                 replace={false}
@@ -496,7 +632,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-user-circle"
-                />
+                >
+                  <p>
+                    my profile
+                  </p>
+                </i>
               </Link>
               <Link
                 replace={false}
@@ -504,7 +644,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-plus-circle"
-                />
+                >
+                  <p>
+                    inventory
+                  </p>
+                </i>
                  
               </Link>
               <Link
@@ -513,7 +657,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-sign-out-alt"
-                />
+                >
+                  <p>
+                    sign out
+                  </p>
+                </i>
               </Link>
             </div>
           </div>
@@ -555,7 +703,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-carrot"
-                />
+                >
+                  <p>
+                    buy
+                  </p>
+                </i>
               </Link>
               <Link
                 replace={false}
@@ -563,7 +715,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-user-circle"
-                />
+                >
+                  <p>
+                    my profile
+                  </p>
+                </i>
               </Link>
               <Link
                 replace={false}
@@ -571,7 +727,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-plus-circle"
-                />
+                >
+                  <p>
+                    inventory
+                  </p>
+                </i>
                  
               </Link>
               <Link
@@ -580,7 +740,11 @@ ShallowWrapper {
               >
                 <i
                   className="fas fa-sign-out-alt"
-                />
+                >
+                  <p>
+                    sign out
+                  </p>
+                </i>
               </Link>
             </div>
           </div>,
@@ -620,7 +784,11 @@ ShallowWrapper {
                 >
                   <i
                     className="fas fa-carrot"
-                  />
+                  >
+                    <p>
+                      buy
+                    </p>
+                  </i>
                 </Link>
                 <Link
                   replace={false}
@@ -628,7 +796,11 @@ ShallowWrapper {
                 >
                   <i
                     className="fas fa-user-circle"
-                  />
+                  >
+                    <p>
+                      my profile
+                    </p>
+                  </i>
                 </Link>
                 <Link
                   replace={false}
@@ -636,7 +808,11 @@ ShallowWrapper {
                 >
                   <i
                     className="fas fa-plus-circle"
-                  />
+                  >
+                    <p>
+                      inventory
+                    </p>
+                  </i>
                    
                 </Link>
                 <Link
@@ -645,7 +821,11 @@ ShallowWrapper {
                 >
                   <i
                     className="fas fa-sign-out-alt"
-                  />
+                  >
+                    <p>
+                      sign out
+                    </p>
+                  </i>
                 </Link>
               </div>,
             ],
@@ -738,7 +918,11 @@ ShallowWrapper {
                   >
                     <i
                       className="fas fa-carrot"
-                    />
+                    >
+                      <p>
+                        buy
+                      </p>
+                    </i>
                   </Link>,
                   <Link
                     replace={false}
@@ -746,7 +930,11 @@ ShallowWrapper {
                   >
                     <i
                       className="fas fa-user-circle"
-                    />
+                    >
+                      <p>
+                        my profile
+                      </p>
+                    </i>
                   </Link>,
                   <Link
                     replace={false}
@@ -754,7 +942,11 @@ ShallowWrapper {
                   >
                     <i
                       className="fas fa-plus-circle"
-                    />
+                    >
+                      <p>
+                        inventory
+                      </p>
+                    </i>
                      
                   </Link>,
                   <Link
@@ -763,7 +955,11 @@ ShallowWrapper {
                   >
                     <i
                       className="fas fa-sign-out-alt"
-                    />
+                    >
+                      <p>
+                        sign out
+                      </p>
+                    </i>
                   </Link>,
                 ],
                 "className": "menu",
@@ -777,7 +973,11 @@ ShallowWrapper {
                   "props": Object {
                     "children": <i
                       className="fas fa-carrot"
-                    />,
+                    >
+                      <p>
+                        buy
+                      </p>
+                    </i>,
                     "replace": false,
                     "to": "/buy",
                   },
@@ -787,10 +987,23 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
+                      "children": <p>
+                        buy
+                      </p>,
                       "className": "fas fa-carrot",
                     },
                     "ref": null,
-                    "rendered": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "buy",
+                      },
+                      "ref": null,
+                      "rendered": "buy",
+                      "type": "p",
+                    },
                     "type": "i",
                   },
                   "type": [Function],
@@ -802,7 +1015,11 @@ ShallowWrapper {
                   "props": Object {
                     "children": <i
                       className="fas fa-user-circle"
-                    />,
+                    >
+                      <p>
+                        my profile
+                      </p>
+                    </i>,
                     "replace": false,
                     "to": "/profile",
                   },
@@ -812,10 +1029,23 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
+                      "children": <p>
+                        my profile
+                      </p>,
                       "className": "fas fa-user-circle",
                     },
                     "ref": null,
-                    "rendered": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "my profile",
+                      },
+                      "ref": null,
+                      "rendered": "my profile",
+                      "type": "p",
+                    },
                     "type": "i",
                   },
                   "type": [Function],
@@ -828,7 +1058,11 @@ ShallowWrapper {
                     "children": Array [
                       <i
                         className="fas fa-plus-circle"
-                      />,
+                      >
+                        <p>
+                          inventory
+                        </p>
+                      </i>,
                       " ",
                     ],
                     "replace": false,
@@ -841,10 +1075,23 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
+                        "children": <p>
+                          inventory
+                        </p>,
                         "className": "fas fa-plus-circle",
                       },
                       "ref": null,
-                      "rendered": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "inventory",
+                        },
+                        "ref": null,
+                        "rendered": "inventory",
+                        "type": "p",
+                      },
                       "type": "i",
                     },
                     " ",
@@ -858,7 +1105,11 @@ ShallowWrapper {
                   "props": Object {
                     "children": <i
                       className="fas fa-sign-out-alt"
-                    />,
+                    >
+                      <p>
+                        sign out
+                      </p>
+                    </i>,
                     "replace": false,
                     "to": "/",
                   },
@@ -868,10 +1119,23 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
+                      "children": <p>
+                        sign out
+                      </p>,
                       "className": "fas fa-sign-out-alt",
                     },
                     "ref": null,
-                    "rendered": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "sign out",
+                      },
+                      "ref": null,
+                      "rendered": "sign out",
+                      "type": "p",
+                    },
                     "type": "i",
                   },
                   "type": [Function],
