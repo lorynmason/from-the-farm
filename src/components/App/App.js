@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Buy from '../Buy/Buy';
 import AddProductForm from '../AddProductForm/AddProductForm';
-import { Header } from '../Header/Header';
+import Header from '../Header/Header';
 import '../../styles/main.scss';
 import { Switch, Route, withRouter, Redirect } from 'react-router';
 import Profile from '../Profile/Profile';
