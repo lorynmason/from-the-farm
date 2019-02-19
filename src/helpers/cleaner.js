@@ -77,7 +77,6 @@ export const cleanUserProducts = (products) => {
 }
 
 export const cleanItems = (products) => {
-  console.log(products)
   const productNames = products.reduce((arr, product) => {
     if(!arr.includes(product.name)) {
       arr.push(product.name)

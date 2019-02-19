@@ -8,7 +8,7 @@ describe('Buy', () => {
       vendors : [],
       products: []
     }
-    let wrapper = shallow(<Buy appState={state}/>)
+    let wrapper = shallow(<Buy appState={state} productSearchResults={[]} />)
     expect(wrapper).toMatchSnapshot()
   });
 })
