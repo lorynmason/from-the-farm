@@ -16,4 +16,19 @@ describe('ProductList', () => {
     let wrapper = shallow(<ProductList products={mockProducts} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  describe('mapStateToProps', () => {
+    it('should return a props object', () => {
+      const mockGlobalState = {
+        vendors: [{id: 1, name: 'Farm Team'}],
+        products: [{name: 'carrots', quantity: 'all'}],
+        user: {name: 'Mike'}
+      }
+
+      const expected = {products: [{name: 'carrots', quantity: 'all'}]}
+
+      const mappedProps = mapStateToProps(mockGlobalState);
+      expect(mappedProps).toEqual(expected);
+    });
+  });
 });
