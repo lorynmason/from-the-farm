@@ -86,8 +86,8 @@ export const cleanItems = (products) => {
   },[]);
 
   const productIds = products.reduce((arr, product, i) => {
-    if(!arr.includes(product[productNames[i]].item_id)) {
-      arr.push(product[productNames[i]].item_id)
+    if(!arr.includes(product.item_id)) {
+      arr.push(product.item_id)
     }
     return arr     
   },[]);
