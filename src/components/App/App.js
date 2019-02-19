@@ -65,7 +65,7 @@ class App extends Component {
           <Route path="/about" component={About}/>
           <Route path="/login" component={Login}/>
           <Route path="/buy" component={Buy} />
-          <Route path="/add-product" component={AddProductForm} />
+          <Route path="/add-product" render={() => this.props.user.name ? (<AddProductForm />) : (<Redirect to="/login" />)} />
           <Route path="/profile" render={() => this.props.user.name ? (<Profile />) : (<Redirect to="/login" />)} />
         </Switch>
       </div>
