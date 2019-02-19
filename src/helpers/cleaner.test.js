@@ -87,6 +87,7 @@ describe('cleanUser', () => {
           price: 1400,
           unit: "lb",
           user_id: 5,
+          vendorName: 'Basil Connection'
         },
         {
           description: "a lb of potatoes",
@@ -96,6 +97,7 @@ describe('cleanUser', () => {
           price: 170,
           unit: "lb",
           user_id: 5,
+          vendorName: 'Basil Connection'
         }
       ],
       token: "this is my token"
