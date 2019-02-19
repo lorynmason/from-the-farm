@@ -57,7 +57,8 @@ export const cleanUser = (data, token) => {
     zip, 
     img_url,
     products, 
-    token
+    token,
+    id: data.id
   }
 }
 
