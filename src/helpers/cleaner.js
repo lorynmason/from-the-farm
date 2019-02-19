@@ -42,8 +42,8 @@ export const cleanVendors = (vendors) => {
 }
 
 export const cleanUser = (data, token) => {
-  const products = cleanUserProducts(data.attributes.products)
   const { name, email, address, phone, bio, lat, long, city, state, zip, img_url } = data.attributes
+  const products = cleanUserProducts(data.attributes.products, name)
   return {
     name, 
     email, 
@@ -62,13 +62,14 @@ export const cleanUser = (data, token) => {
   }
 }
 
-export const cleanUserProducts = (products) => {
+export const cleanUserProducts = (products, vendor) => {
   const productArr = []
   products.reduce((obj, product) => {
     const itemName = Object.keys(product)[0];
     obj = {
       name: Object.keys(product)[0],
-      ...product[itemName]
+      ...product[itemName],
+      vendorName: vendor
     }
     productArr.push(obj);
     return obj
