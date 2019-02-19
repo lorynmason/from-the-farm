@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import * as userReducer from './user-reducer';
-import vendorReducer from './vendor-reducer';
-import productsReducer from './products-reducer';
+import * as userReducer from './userReducer';
+import vendorReducer from './vendorReducer';
+import productsReducer from './productsReducer';
 import messageReducer from './messageReducer';
 import itemsReducer from './itemsReducer';
 
