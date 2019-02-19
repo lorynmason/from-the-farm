@@ -20,39 +20,6 @@ class App extends Component {
     this.props.fetchVendors('https://xpoll-be.herokuapp.com/api/v1/vendors');
   }
 
-  search = async({ productId, location, range }) => {
-    const baseUrl = 'https://xpoll-be.herokuapp.com/api/v1/search'
-    let path;
-    if (!location) {
-      console.log('error: please enter a search location')
-      this.props.addMessage('error: please enter a search location')
-    } 
-    
-    if (!range) {
-      range = "50"
-    } 
-    
-    if (!productId) {
-      path = `?loc=${location}&range=${range}`
-    } else {
-      path = `?loc=${location}&range=${range}&item=${productId}`
-    }
-  
-    const response = await this.props.fetchVendors(baseUrl + path)
-    this.filterProducts(productId, response)
-  }
-
-  filterProducts = (id, response) => {
-    if (id) {
-      id = parseInt(id)
-      const newProducts = this.props.products.filter( product => {
-        return product.item_id === id
-      });
-      
-      this.props.addProductsToStore(newProducts);
-    }
-  }
-
   render() {
     const history = createBrowserHistory();
     return (
