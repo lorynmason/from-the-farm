@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import image from '../../styles/images/pig-logo.png'
+import { removeUser } from '../../actions';
+import { connect } from 'react-redux';
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <header>
       <div className="container">
@@ -14,10 +16,16 @@ export const Header = () => {
             <Link to="/buy"><i className="fas fa-carrot"><p>buy</p></i></Link>
             <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
             <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i> </Link>
-            <Link to="/"><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
+            <Link to="/" onClick={() => props.removeUser()}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
           </div>
         </div>
       </div>
     </header>
   )
 }
+
+export const mapDispatchToProps = (dispatch) => ({
+  removeUser: () => dispatch(removeUser())
+})
+
+export default connect(null, mapDispatchToProps)(Header);

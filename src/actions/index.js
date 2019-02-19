@@ -5,10 +5,9 @@ export const addUser = (user) => {
   }
 }
 
-export const removeUser = (id) => {
+export const removeUser = () => {
   return {
     type: 'REMOVE_USER',
-    id
   }
 }
 
