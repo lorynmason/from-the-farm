@@ -91,8 +91,18 @@ header {
         font-size: 3rem;
         cursor: pointer;
         transition: all ease .3s;
+        p {
+          color: black;
+          margin-left: 2px;
+          display: none;
+          font-size: 1rem;
+          letter-spacing: 0px;
+        }
         &:hover {
-          color: rgb(31, 143, 12);
+          color: $accent1;
+          p {
+            display: inline-block;
+          }
         }
       }
     }

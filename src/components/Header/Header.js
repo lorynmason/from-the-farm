@@ -11,10 +11,10 @@ export const Header = () => {
           <img id="logo" src={image} alt="from the farm cute pig logo"/>
           <p>menu<i className="fas fa-caret-right"></i></p>
           <div className="menu">
-            <Link to="/buy"><i className="fas fa-carrot"></i></Link>
-            <Link to="/profile"><i className="fas fa-user-circle"></i></Link>
-            <Link to="/add-product"><i className="fas fa-plus-circle"></i> </Link>
-            <Link to="/"><i className="fas fa-sign-out-alt"></i></Link>
+            <Link to="/buy"><i className="fas fa-carrot"><p>buy</p></i></Link>
+            <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
+            <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i> </Link>
+            <Link to="/"><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
           </div>
         </div>
       </div>
