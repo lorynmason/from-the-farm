@@ -136,13 +136,34 @@ describe('cleanUserProducts', () => {
 
 describe('cleanItems', () => {
   it('should take in an array of products and return an array with just names and ids', () => {
+    const mockProducts = [
+      {
+        "name": "Berries",
+        "id": 3,
+        "user_id": 5,
+        "item_id": 1,
+        "price": 1400,
+        "unit": "lb",
+        "description": "lb of berries"
+      },
+      {
+        "name": "Potatoes",
+        "id": 17,
+        "user_id": 5,
+        "item_id": 4,
+        "price": 170,
+        "unit": "lb",
+        "description": "a lb of potatoes"
+      }
+    ];
+
     const expected = [{
         name: "Berries",
-        id: 1},
+        id: 3},
       {name: "Potatoes",
-        id: 4}];
+        id: 17}];
 
-    const results = cleanItems(mockUser.attributes.products);
+    const results = cleanItems(mockProducts);
     expect(results).toEqual(expected);
   });
 });
