@@ -1,6 +1,6 @@
 header {
   width: 100vw;
-  height: 250px;
+  height: 230px;
   @include flexin();
   transition: ease all 1s;
   .header-logo {
@@ -8,7 +8,7 @@ header {
     padding-left: 100px;
     z-index: 2;
     width: 600px;
-    height: 200px;
+    height: 180px;
     top: 20px;
     line-height: 60px;
     transition: all .3s ease-in-out;
@@ -22,6 +22,7 @@ header {
       margin-right: 35px;
       text-shadow: -4px 4px #000;
       color: $accent2;
+      line-height: 70%;
       span {
         font-size: 3rem;
         display: block;
@@ -31,10 +32,11 @@ header {
       height: 200px;
       filter: invert(95%);
       margin-right: -40px;
+      padding-bottom: 10px;
     }
     p {
       color: whitesmoke;
-      margin:-160px -200px 0 100px;
+      margin:-150px -210px 0 100px;
       font-family: $titleFont;
       font-size: 1.2rem;
       letter-spacing: 5px;
@@ -49,6 +51,7 @@ header {
   .header-logo:after {
     @include psuedo (-2, 13px, 12px, 0.2);
     background: $accent2;
+    box-shadow: -5px 5px 10px rgb(124, 124, 124);
   }
 
   .header-logo:hover {
@@ -83,7 +86,7 @@ header {
       flex-direction: column;
       color: transparent;
       transition: color .3s ease-in; 
-      margin-top: 20px;   
+      margin-top: 35px;   
       i {    
         font-size: 3rem;
         cursor: pointer;
