@@ -24,7 +24,7 @@ export class AddProductForm extends Component {
     });
   }
 
-  handleSubmit = async(e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
     const price = this.state.price * 100;
     const url = 'https://xpoll-be.herokuapp.com/api/v1';

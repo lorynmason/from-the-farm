@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Switch, Route, withRouter, Redirect } from 'react-router';
 import Buy from '../Buy/Buy';
 import AddProductForm from '../AddProductForm/AddProductForm';
 import Header from '../Header/Header';
 import '../../styles/main.scss';
-import { Switch, Route, withRouter, Redirect } from 'react-router';
 import Profile from '../Profile/Profile';
-import { connect } from 'react-redux';
 import { fetchVendors } from '../../thunks/fetchVendors';
 import Message from '../Message/Message';
-import { About } from '../../components/About/About'
-import Login from '../../containers/Login/Login'
+import { About } from '../About/About';
+import Login from '../../containers/Login/Login';
 
-
- export class App extends Component {
+export class App extends Component {
   async componentDidMount() {
     this.props.fetchVendors('https://xpoll-be.herokuapp.com/api/v1/vendors');
   }
@@ -35,7 +34,7 @@ import Login from '../../containers/Login/Login'
   }
 }
 
-export const mapStateToProps = (state) => ({
+export const mapStateToProps = state => ({
   vendors: state.vendors,
   products: state.products,
   user: state.user,
@@ -44,8 +43,8 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-    fetchVendors: (url) => dispatch(fetchVendors(url)),
-  } 
-}
+    fetchVendors: url => dispatch(fetchVendors(url))
+  };
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
