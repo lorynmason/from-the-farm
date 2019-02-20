@@ -36,10 +36,14 @@
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "eslint": "5.12.0",
 =======
     "eslint": "^5.14.1",
 >>>>>>> Used built-in VSCode linter and made relevant changes
+=======
+    "eslint": "5.12.0",
+>>>>>>> Update snapshots
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
