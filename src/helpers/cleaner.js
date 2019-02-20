@@ -100,3 +100,29 @@ export const cleanItems = (products) => {
   });
 }
 
+export const filterSearchResults = (data, productId) => {
+  const ids = data.reduce((arr, result) => {
+    if(!arr.includes(result.id)) {
+      arr.push(result.id)
+    }
+    return arr
+  },[]);
+
+  const matches = ids.map(id => data.find(result => result.id === id));
+  let vendors = cleanVendors(matches);
+  let products = cleanProducts(matches);
+  vendors = vendors.map(vendor => vendor.id);
+
+  if(productId) {
+    products = products.filter(product => {
+      return product.item_id === parseInt(productId)
+    }).map(product => product.id)
+  } else {
+    products = products.map(product => product.id)
+  }
+
+  return {
+    vendors,
+    products
+  }
+}

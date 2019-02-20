@@ -21,7 +21,6 @@ export const postItem = (url, item, userToken) => {
       const newItem = results.data.attributes;
       dispatch(addMessage(`Successfully added ${newItem.name} at ${newItem.price} per ${newItem.unit}`));
     } catch(error) {
-      console.log(error)
       dispatch(hasErrored(error.message));
       dispatch(addMessage('Unable to add product'));
     }
