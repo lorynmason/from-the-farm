@@ -24,4 +24,12 @@
     grid-area: map;
     box-shadow: -5px 5px 10px rgb(124, 124, 124);
   }
+  .leaflet-tile-pane {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%) invert(100%);
+  }
+  .leaflet-marker-icon {
+    height: 70px;
+    filter: brightness(110%) saturate(150%) drop-shadow(2px 2px rgb(250, 93, 2)) ;
+  }
 }

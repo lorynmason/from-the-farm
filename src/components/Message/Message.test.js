@@ -44,7 +44,7 @@ describe('Message', () => {
     const mockDispatch = jest.fn()
     const mappedProps = mapDispatchToProps(mockDispatch)
   
-    it('calls dispatch with an addMessage thunk when addMessage is called', () => {
+    it('calls dispatch with addMessage when addMessage is called', () => {
       const expected = addMessage('You have a message');
       mappedProps.addMessage('You have a message')
       expect(mockDispatch).toHaveBeenCalledWith(expected)

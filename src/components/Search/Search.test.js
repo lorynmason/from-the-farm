@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme';
 import { addProducts } from '../../actions';
 
 describe.skip('Search', () => {
-  let wrapper = shallow(<Search items={[]} search={jest.fn()} />);
+  let wrapper = shallow(<Search items={[]} products={[]} addProductsToStore={jest.fn()} searchVendors={jest.fn()} />);
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
