@@ -15,7 +15,7 @@ describe('actions', () => {
 
   describe('removeUser', () => {
     it('should return an action with type REMOVE_USER', () => {
-      const expected = {type: 'REMOVE_USER', id: 2};
+      const expected = {type: 'REMOVE_USER'};
       const result = actions.removeUser(2);
       expect(result).toEqual(expected);
     });
