@@ -7,7 +7,7 @@ import { Switch, Route, withRouter, Redirect } from 'react-router';
 import Profile from '../Profile/Profile';
 import { createBrowserHistory } from 'history';
 import { connect } from 'react-redux';
-import { addUser, removeUser, addProducts, addMessage } from '../../actions';
+import { addUser, removeUser, addProducts, addMessage, isLoading } from '../../actions';
 import { fetchVendors } from '../../thunks/fetchVendors';
 import { Loading } from '../Loading/Loading'
 import Message from '../Message/Message';
@@ -43,7 +43,8 @@ class App extends Component {
 export const mapStateToProps = (state) => ({
   vendors: state.vendors,
   products: state.products,
-  user: state.user
+  user: state.user,
+  isLoading: state.isLoading
 });
 
 export const mapDispatchToProps = (dispatch) => {

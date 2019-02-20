@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import image from '../../styles/images/pig-logo.png'
-import { removeUser } from '../../actions';
+import { removeUser, isLoading, addMessage } from '../../actions';
 import { connect } from 'react-redux';
 
 export const Header = (props) => {
+  const clickBuy = () => {
+    props.isLoading(true)
+    setTimeout(() => {
+      props.isLoading(false)
+    }, 1000);
+  }
   return (
     <header>
       <div className="container">
@@ -13,7 +19,7 @@ export const Header = (props) => {
           <img id="logo" src={image} alt="from the farm cute pig logo"/>
           <p>menu<i className="fas fa-caret-right"></i></p>
           <div className="menu">
-            <Link to="/buy"><i className="fas fa-carrot"><p>buy</p></i></Link>
+            <Link to="/buy" onClick={clickBuy}><i className="fas fa-carrot"><p>buy</p></i></Link>
             <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
             <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i> </Link>
             <Link to="/" onClick={() => props.removeUser()}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
@@ -25,7 +31,9 @@ export const Header = (props) => {
 }
 
 export const mapDispatchToProps = (dispatch) => ({
-  removeUser: () => dispatch(removeUser())
+  removeUser: () => dispatch(removeUser()),
+  addMessage: (message) => dispatch(addMessage(message)),
+  isLoading: (bool) => dispatch(isLoading(bool))
 })
 
 export default connect(null, mapDispatchToProps)(Header);
