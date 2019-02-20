@@ -14,7 +14,6 @@ export const fetchUser = (url, token) => {
       const user = cleanUser(results.data, token);
       dispatch(addUser(user));
     } catch (error) {
-      console.log(error)
       dispatch(hasErrored(error.message));
     }
   }
