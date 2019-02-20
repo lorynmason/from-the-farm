@@ -1,5 +1,5 @@
 import React from 'react';
-import AddProductForm from './AddProductForm';
+import { AddProductForm } from './AddProductForm';
 import { shallow } from 'enzyme';
 
 describe('AddProductForm', () => {
@@ -29,8 +29,36 @@ describe('AddProductForm', () => {
     description: "a lb of broccoli",
     vendorName: "Lemon Sisters"}]
   }
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<AddProductForm postItem={mockFunc} fetchUser={mockFunc} items={items} user={user}/>)
+  })
+
   it('should match snapshot', () => {
-    let wrapper = shallow(<AddProductForm postItem={mockFunc} fetchUser={mockFunc} items={items} user={user}/>)
     expect(wrapper).toMatchSnapshot()
+  });
+
+  describe('handleChange', () => {
+    it('should update state when changes are made to form elements', () => {
+      expect(wrapper.state()).toEqual({
+        item_id: '',
+        description: '',
+        price: 0,
+        unit: ''
+      });
+
+      wrapper.find('.add-product-form').simulate('change', {'target': {name: 'item_id', value: '1'}});
+      wrapper.find('.add-product-form').simulate('change', {'target': {name: 'description', value: 'grapes'}});
+      wrapper.find('.add-product-form').simulate('change', {'target': {name: 'unit', value: 'lb'}});
+      wrapper.find('.add-product-form').simulate('change', {'target': {name: 'price', value: '50'}});
+
+      expect(wrapper.state()).toEqual({
+        item_id: '1',
+        description: 'grapes',
+        price: '50',
+        unit: 'lb'
+      });
+    });
   });
 })

@@ -161,9 +161,9 @@ describe('cleanItems', () => {
 
     const expected = [{
         name: "Berries",
-        id: 3},
+        id: 1},
       {name: "Potatoes",
-        id: 17}];
+        id: 4}];
 
     const results = cleanItems(mockProducts);
     expect(results).toEqual(expected);
