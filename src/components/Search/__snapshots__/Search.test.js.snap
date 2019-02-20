@@ -115,6 +115,13 @@ ShallowWrapper {
         <button>
           Search
         </button>
+        <p
+          id="reset"
+          onClick={[Function]}
+          type="button"
+        >
+          Reset
+        </p>
       </form>,
       "className": "search",
     },
@@ -200,6 +207,13 @@ ShallowWrapper {
           <button>
             Search
           </button>,
+          <p
+            id="reset"
+            onClick={[Function]}
+            type="button"
+          >
+            Reset
+          </p>,
         ],
         "className": "search-form",
         "onChange": [Function],
@@ -523,6 +537,20 @@ ShallowWrapper {
           "rendered": "Search",
           "type": "button",
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Reset",
+            "id": "reset",
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "Reset",
+          "type": "p",
+        },
       ],
       "type": "form",
     },
@@ -614,6 +642,13 @@ ShallowWrapper {
           <button>
             Search
           </button>
+          <p
+            id="reset"
+            onClick={[Function]}
+            type="button"
+          >
+            Reset
+          </p>
         </form>,
         "className": "search",
       },
@@ -699,6 +734,13 @@ ShallowWrapper {
             <button>
               Search
             </button>,
+            <p
+              id="reset"
+              onClick={[Function]}
+              type="button"
+            >
+              Reset
+            </p>,
           ],
           "className": "search-form",
           "onChange": [Function],
@@ -1021,6 +1063,20 @@ ShallowWrapper {
             "ref": null,
             "rendered": "Search",
             "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Reset",
+              "id": "reset",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": "Reset",
+            "type": "p",
           },
         ],
         "type": "form",
