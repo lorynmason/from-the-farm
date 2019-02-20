@@ -6,7 +6,10 @@ import { mockVendors } from '../../helpers/mockData'
 describe('Map', () => {
   it('should match snapshot', () => {
     let wrapper = shallow(<Mapp vendorSearchResults={[]} vendors={mockVendors}/>)
-    
+    expect(wrapper).toMatchSnapshot()
+  });
+  it('should match snapshot', () => {
+    let wrapper = shallow(<Mapp vendorSearchResults={mockVendors} vendors={mockVendors}/>)
     expect(wrapper).toMatchSnapshot()
   });
 });

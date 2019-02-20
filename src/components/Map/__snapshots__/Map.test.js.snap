@@ -398,3 +398,209 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`Map should match snapshot 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Mapp
+    vendorSearchResults={
+      Array [
+        Object {
+          "attributes": Object {
+            "account_type": "vendor",
+            "address": "4950 Beach Court",
+            "bio": "The WORLDS Freshest Basil",
+            "city": "denver",
+            "email": "helter_skelter@example.com",
+            "img_url": null,
+            "lat": 39.7861784,
+            "long": -105.0178452,
+            "name": "Basil Connection",
+            "phone": 2313414141,
+            "products": Array [
+              Object {
+                "Berries": Object {
+                  "description": "lb of berries",
+                  "id": 3,
+                  "item_id": 1,
+                  "price": 1400,
+                  "unit": "lb",
+                  "user_id": 5,
+                },
+              },
+              Object {
+                "Potatoes": Object {
+                  "description": "a lb of potatoes",
+                  "id": 17,
+                  "item_id": 4,
+                  "price": 170,
+                  "unit": "lb",
+                  "user_id": 5,
+                },
+              },
+            ],
+            "state": "CO",
+            "zip": 80221,
+          },
+          "id": "5",
+          "type": "user",
+        },
+      ]
+    }
+    vendors={
+      Array [
+        Object {
+          "attributes": Object {
+            "account_type": "vendor",
+            "address": "4950 Beach Court",
+            "bio": "The WORLDS Freshest Basil",
+            "city": "denver",
+            "email": "helter_skelter@example.com",
+            "img_url": null,
+            "lat": 39.7861784,
+            "long": -105.0178452,
+            "name": "Basil Connection",
+            "phone": 2313414141,
+            "products": Array [
+              Object {
+                "Berries": Object {
+                  "description": "lb of berries",
+                  "id": 3,
+                  "item_id": 1,
+                  "price": 1400,
+                  "unit": "lb",
+                  "user_id": 5,
+                },
+              },
+              Object {
+                "Potatoes": Object {
+                  "description": "a lb of potatoes",
+                  "id": 17,
+                  "item_id": 4,
+                  "price": 170,
+                  "unit": "lb",
+                  "user_id": 5,
+                },
+              },
+            ],
+            "state": "CO",
+            "zip": 80221,
+          },
+          "id": "5",
+          "type": "user",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "center": Array [
+        39.750614,
+        -104.996775,
+      ],
+      "children": Array [
+        <ForwardRef(Leaflet(TileLayer))
+          attribution="© <a href=\\"http://osm.org/copyright\\">OpenStreetMap</a> contributors"
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />,
+        Array [],
+      ],
+      "zoom": 11,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "attribution": "© <a href=\\"http://osm.org/copyright\\">OpenStreetMap</a> contributors",
+          "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "center": Array [
+          39.750614,
+          -104.996775,
+        ],
+        "children": Array [
+          <ForwardRef(Leaflet(TileLayer))
+            attribution="© <a href=\\"http://osm.org/copyright\\">OpenStreetMap</a> contributors"
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />,
+          Array [],
+        ],
+        "zoom": 11,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "attribution": "© <a href=\\"http://osm.org/copyright\\">OpenStreetMap</a> contributors",
+            "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
