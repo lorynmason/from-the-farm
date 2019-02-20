@@ -11,6 +11,12 @@ export const Header = (props) => {
       props.isLoading(false)
     }, 1000);
   }
+
+  const signout = () => {
+    props.removeUser()
+    props.addMessage('You are now signed-out')
+  }
+
   return (
     <header>
       <div className="container">
@@ -22,7 +28,7 @@ export const Header = (props) => {
             <Link to="/buy" onClick={clickBuy}><i className="fas fa-carrot"><p>buy</p></i></Link>
             <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
             <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i> </Link>
-            <Link to="/" onClick={() => props.removeUser()}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
+            <Link to="/" onClick={signout}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
           </div>
         </div>
       </div>

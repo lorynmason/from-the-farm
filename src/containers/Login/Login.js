@@ -18,7 +18,7 @@ export class Login extends Component {
     })
   }
 
-  sendLogin = (e) => {
+  handleSubmit = (e) => {
     e.preventDefault()
     this.props.loginUser('https://xpoll-be.herokuapp.com/api/v1/authentication', this.state)
   }
@@ -30,10 +30,10 @@ export class Login extends Component {
     }
 
     return (
-      <form className="login" onChange={this.handleChange} onSubmit={this.sendLogin}>
+      <form className="login" onChange={this.handleChange} onSubmit={this.handleSubmit}>
         <h3>Login</h3>
-        <input placeholder="username" name="email"/>
-        <input placeholder="password" name="password"/>        
+        <input placeholder="email" name="email" type="email" onChange={this.handleChange} value={this.state.email}/>
+        <input placeholder="password" name="password" type="password" onChange={this.handleChange} value={this.state.password}/>        
         <button>Login</button>
         {page}
       </form>

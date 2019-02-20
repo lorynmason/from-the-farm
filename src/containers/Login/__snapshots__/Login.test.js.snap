@@ -4,6 +4,7 @@ exports[`Login should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Login
+    loginUser={[MockFunction]}
     user={
       Object {
         "attributes": Object {
@@ -67,11 +68,17 @@ ShallowWrapper {
         </h3>,
         <input
           name="email"
-          placeholder="username"
+          onChange={[Function]}
+          placeholder="email"
+          type="email"
+          value=""
         />,
         <input
           name="password"
+          onChange={[Function]}
           placeholder="password"
+          type="password"
+          value=""
         />,
         <button>
           Login
@@ -101,7 +108,10 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "name": "email",
-          "placeholder": "username",
+          "onChange": [Function],
+          "placeholder": "email",
+          "type": "email",
+          "value": "",
         },
         "ref": null,
         "rendered": null,
@@ -113,7 +123,10 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "name": "password",
+          "onChange": [Function],
           "placeholder": "password",
+          "type": "password",
+          "value": "",
         },
         "ref": null,
         "rendered": null,
@@ -146,11 +159,17 @@ ShallowWrapper {
           </h3>,
           <input
             name="email"
-            placeholder="username"
+            onChange={[Function]}
+            placeholder="email"
+            type="email"
+            value=""
           />,
           <input
             name="password"
+            onChange={[Function]}
             placeholder="password"
+            type="password"
+            value=""
           />,
           <button>
             Login
@@ -180,7 +199,10 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "name": "email",
-            "placeholder": "username",
+            "onChange": [Function],
+            "placeholder": "email",
+            "type": "email",
+            "value": "",
           },
           "ref": null,
           "rendered": null,
@@ -192,7 +214,10 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "name": "password",
+            "onChange": [Function],
             "placeholder": "password",
+            "type": "password",
+            "value": "",
           },
           "ref": null,
           "rendered": null,
