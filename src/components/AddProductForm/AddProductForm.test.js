@@ -61,4 +61,25 @@ describe('AddProductForm', () => {
       });
     });
   });
+
+  describe('handleSubmit', () => {
+    it('should call postItem and fetchUser with the correct params on submit', () => {
+      const wrapper = shallow(<AddProductForm postItem={mockFunc} fetchUser={mockFunc} items={items} user={user}/>);
+      wrapper.setProps({postItem: jest.fn()});
+      wrapper.setProps({fetchUser: jest.fn()});
+
+      const { postItem } = wrapper.instance().props
+      const { fetchUser } = wrapper.instance().props
+
+      wrapper.find('.add-product-form').simulate('submit', {preventDefault: jest.fn()});
+
+      const url = 'https://xpoll-be.herokuapp.com/api/v1/vendor_items'
+      const item = {"description": "", "item_id": "", "price": 0, "unit": ""}
+      const token = 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE1NTA3MjM0OTZ9.az6Fs46yi1DL6u9J9cUWf3dt2aSbtsTHCNcTDGAQ-8k'
+      const url2 = "https://xpoll-be.herokuapp.com/api/v1/users/undefined"
+
+      expect(postItem).toHaveBeenCalledWith(url, item, token);
+      expect(fetchUser).toHaveBeenCalledWith(url2, token);
+    });
+  });
 })

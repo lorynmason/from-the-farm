@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 
-const Mapp = ({ vendors, vendorSearchResults }) => {
+export const Mapp = ({ vendors, vendorSearchResults }) => {
   const position = [39.750614, -104.996775]
   let vendorsToShow = vendors
   if(vendorSearchResults.length) {
