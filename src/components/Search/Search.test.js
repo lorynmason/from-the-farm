@@ -3,8 +3,11 @@ import { Search, mapStateToProps, mapDispatchToProps } from './Search';
 import { shallow, mount } from 'enzyme';
 import { addProducts } from '../../actions';
 
-describe.skip('Search', () => {
-  let wrapper = shallow(<Search items={[]} products={[]} addProductsToStore={jest.fn()} searchVendors={jest.fn()} />);
+describe('Search', () => {
+  let items = [{name: "Berries",
+  id: 1}, {name: "Eggs",
+  id: 11}]
+  let wrapper = shallow(<Search items={items} products={[]} addProductsToStore={jest.fn()} searchVendors={jest.fn()} addMessage={jest.fn()} />);
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
@@ -31,20 +34,13 @@ describe.skip('Search', () => {
   });
 
   describe('sendSearch', () => {
-    it('should call search with the correct params on submit', () => {
-      const wrapper = shallow(<Search products={[]} />);
-      wrapper.setProps({search: jest.fn()});
+    it.skip('should call search with the correct params on submit', () => {
+      wrapper.setProps({searchVendors: jest.fn()});
 
-      const { search } = wrapper.instance().props
-      wrapper.find('.search-form').simulate('submit', {preventDefault: jest.fn()});
+      const { searchVendors } = wrapper.instance().props
+      wrapper.find('.search-form').simulate('submit', {preventDefault: ()=> jest.fn()});
 
-      const expected = {
-        productId: '',
-        location: '',
-        range: ''
-      }
-
-      expect(search).toHaveBeenCalledWith(expected);
+      expect(searchVendors).toHaveBeenCalled();
     });
   });
 
