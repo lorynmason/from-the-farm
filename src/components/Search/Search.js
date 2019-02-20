@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addProducts, addMessage } from '../../actions';
+import { addProducts, addMessage, clearSearchResults } from '../../actions';
 import { searchVendors } from '../../thunks/searchVendors'
 
 export class Search extends Component {
@@ -43,6 +43,10 @@ export class Search extends Component {
     })
   }
 
+  reset = () => {
+    this.props.clearSearchResults()
+  }
+
   render() {
     const productOptions = this.props.items.map((item) => {
       return <option value={item.id} key={item.id}>{item.name}</option>
@@ -69,6 +73,7 @@ export class Search extends Component {
             </select>
           </div>
           <button>Search</button>
+          <p type="button" id="reset" onClick={this.reset}>Reset</p>
         </form>
       </section>
     )
@@ -84,7 +89,8 @@ export const mapDispatchToProps = (dispatch) => {
   return {
     addProductsToStore: (products) => dispatch(addProducts(products)),
     searchVendors: (url, id) => dispatch(searchVendors(url, id)),
-    addMessage: (message) => dispatch(addMessage(message))
+    addMessage: (message) => dispatch(addMessage(message)),
+    clearSearchResults: () => dispatch(clearSearchResults())
   }
 }
 

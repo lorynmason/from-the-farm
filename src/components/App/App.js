@@ -5,9 +5,7 @@ import Header from '../Header/Header';
 import '../../styles/main.scss';
 import { Switch, Route, withRouter, Redirect } from 'react-router';
 import Profile from '../Profile/Profile';
-import { createBrowserHistory } from 'history';
 import { connect } from 'react-redux';
-import { addUser, removeUser, addProducts, addMessage, isLoading } from '../../actions';
 import { fetchVendors } from '../../thunks/fetchVendors';
 import { Loading } from '../Loading/Loading'
 import Message from '../Message/Message';
@@ -27,7 +25,6 @@ import Login from '../../containers/Login/Login'
         <Message />
         <Switch>
           <Route exact path="/" component={Buy} />
-          <Route path="/loading" component={Loading}/>
           <Route path="/about" component={About}/>
           <Route path="/login" component={Login}/>
           <Route path="/buy" component={Buy} />
