@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addProducts } from '../../actions';
+import { addProducts, addMessage } from '../../actions';
 import { searchVendors } from '../../thunks/searchVendors'
 
 export class Search extends Component {
@@ -27,6 +27,7 @@ export class Search extends Component {
     let path;
     if (!location) {
       this.props.addMessage('error: please enter a search location')
+      return
     } 
     if (!range) {
       newRange = "50"
@@ -82,7 +83,8 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => {
   return {
     addProductsToStore: (products) => dispatch(addProducts(products)),
-    searchVendors: (url, id) => dispatch(searchVendors(url, id))
+    searchVendors: (url, id) => dispatch(searchVendors(url, id)),
+    addMessage: (message) => dispatch(addMessage(message))
   }
 }
 

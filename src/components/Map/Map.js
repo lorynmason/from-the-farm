@@ -1,10 +1,9 @@
 import React from 'react'
-import accessToken from '../../mapbox-accessToken.js';
 import { connect } from 'react-redux';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 
-const Mapp = ({ vendors, vendorSearchResults }) => {
+export const Mapp = ({ vendors, vendorSearchResults }) => {
   const position = [39.750614, -104.996775]
   let vendorsToShow = vendors
   if(vendorSearchResults.length) {
@@ -12,14 +11,14 @@ const Mapp = ({ vendors, vendorSearchResults }) => {
       return vendorSearchResults.includes(vendor.id) 
     })
   }
-
+  const customMarker = L.icon({ iconUrl:('https://www.svgrepo.com/show/7496/carrot.svg'), })
   const markers = vendorsToShow.map((vendor) => (
-    <Marker position={[vendor.lat, vendor.long]}>
+    <Marker position={[vendor.lat, vendor.long]} icon={customMarker}>
       <Popup>
-        <h3>${vendor.name}</h3>
-        <p>${vendor.address}</p>
-        <p>${vendor.phone}</p>
-        <p>${vendor.email}</p>
+        <h3>{vendor.name}</h3>
+        <p>{vendor.address}</p>
+        <p>{vendor.phone}</p>
+        <p>{vendor.email}</p>
       </Popup>
     </Marker>
   ));

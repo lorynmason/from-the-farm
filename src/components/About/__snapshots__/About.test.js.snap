@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <About />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="about"
+      >
+        <p>
+          From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+        </p>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <p>
+          From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+        </p>,
+        "className": "about",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+        },
+        "ref": null,
+        "rendered": "From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+        "type": "p",
+      },
+      "type": "div",
+    },
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="about"
+        >
+          <p>
+            From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+          </p>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p>
+            From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+          </p>,
+          "className": "about",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+          },
+          "ref": null,
+          "rendered": "From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+          "type": "p",
+        },
+        "type": "div",
+      },
+      "type": "main",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

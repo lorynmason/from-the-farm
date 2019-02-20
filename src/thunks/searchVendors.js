@@ -2,6 +2,7 @@ import { isLoading, hasErrored, vendorSearchResults, productSearchResults, addMe
 import { filterSearchResults } from '../helpers/cleaner'
 
 export const searchVendors = (url, productId) => {
+  console.log(url)
   return async (dispatch) => {
     try {
       dispatch(isLoading(true));
