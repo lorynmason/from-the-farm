@@ -76,5 +76,5 @@ describe('fetchUser', () => {
     await thunk(mockDispatch)
 
     expect(mockDispatch).toHaveBeenCalledWith(addUser(expected));
-  })
+  });
 });
