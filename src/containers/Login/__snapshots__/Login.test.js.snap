@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Login
+    user={
+      Object {
+        "attributes": Object {
+          "account_type": "vendor",
+          "address": "4950 Beach Court",
+          "bio": "The WORLDS Freshest Basil",
+          "city": "denver",
+          "email": "helter_skelter@example.com",
+          "img_url": null,
+          "lat": 39.7861784,
+          "long": -105.0178452,
+          "name": "Basil Connection",
+          "phone": 2313414141,
+          "products": Array [
+            Object {
+              "Berries": Object {
+                "description": "lb of berries",
+                "id": 3,
+                "item_id": 1,
+                "price": 1400,
+                "unit": "lb",
+                "user_id": 5,
+              },
+            },
+            Object {
+              "Potatoes": Object {
+                "description": "a lb of potatoes",
+                "id": 17,
+                "item_id": 4,
+                "price": 170,
+                "unit": "lb",
+                "user_id": 5,
+              },
+            },
+          ],
+          "state": "CO",
+          "zip": 80221,
+        },
+        "id": "5",
+        "type": "user",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Login
+        </h3>,
+        <input
+          name="email"
+          placeholder="username"
+        />,
+        <input
+          name="password"
+          placeholder="password"
+        />,
+        <button>
+          Login
+        </button>,
+        undefined,
+      ],
+      "className": "login",
+      "onChange": [Function],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Login",
+        },
+        "ref": null,
+        "rendered": "Login",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "email",
+          "placeholder": "username",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "password",
+          "placeholder": "password",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Login",
+        },
+        "ref": null,
+        "rendered": "Login",
+        "type": "button",
+      },
+      undefined,
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Login
+          </h3>,
+          <input
+            name="email"
+            placeholder="username"
+          />,
+          <input
+            name="password"
+            placeholder="password"
+          />,
+          <button>
+            Login
+          </button>,
+          undefined,
+        ],
+        "className": "login",
+        "onChange": [Function],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Login",
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "email",
+            "placeholder": "username",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "password",
+            "placeholder": "password",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Login",
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": "button",
+        },
+        undefined,
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
