@@ -15,13 +15,12 @@ import { About } from '../About/About'
 import Login from '../../containers/Login/Login'
 
 
-class App extends Component {
+ export class App extends Component {
   async componentDidMount() {
     this.props.fetchVendors('https://xpoll-be.herokuapp.com/api/v1/vendors');
   }
 
   render() {
-    const history = createBrowserHistory();
     return (
       <div className="App">
         <Header />
@@ -49,10 +48,7 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-    addUserToStore: (user) => dispatch(addUser(user)),
     fetchVendors: (url) => dispatch(fetchVendors(url)),
-    addProductsToStore: (products) => dispatch(addProducts(products)),
-    addMessage: (message) => dispatch(addMessage(message))
   } 
 }
 
