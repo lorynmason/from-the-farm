@@ -1,10 +1,10 @@
 import React from 'react';
-import Map from './Map';
+import { About } from './About';
 import { shallow } from 'enzyme';
 
-describe('Map', () => {
+describe('About', () => {
   it('should match snapshot', () => {
-    let wrapper = shallow(<Map />)
+    let wrapper = shallow(<About />)
     expect(wrapper).toMatchSnapshot()
   });
-});
+})

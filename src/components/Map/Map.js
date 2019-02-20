@@ -1,8 +1,6 @@
 import React from 'react'
-import accessToken from '../../mapbox-accessToken.js';
 import { connect } from 'react-redux';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
-import L from 'leaflet';
 
 const Mapp = ({ vendors, vendorSearchResults }) => {
   const position = [39.750614, -104.996775]
