@@ -1,12 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`header should match snapshot 1`] = `
+exports[`AddProductForm should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Header)
-    addMessage={[MockFunction]}
-    isLoading={[MockFunction]}
-    removeUser={[MockFunction]}
+  Symbol(enzyme.__unrendered__): <Connect(AddProductForm)
+    fetchUser={[MockFunction]}
+    items={
+      Array [
+        Object {
+          "id": 1,
+          "name": "Berries",
+        },
+        Object {
+          "id": 11,
+          "name": "Eggs",
+        },
+      ]
+    }
+    postItem={[MockFunction]}
+    user={
+      Object {
+        "address": "12000 E. 47th Ave",
+        "bio": "We Sell Lemons",
+        "city": "denver",
+        "email": "regular@email.com",
+        "img_url": null,
+        "lat": 39.7820535,
+        "long": -104.8503416,
+        "name": "Lemon Sisters",
+        "phone": "(231) 341-4141",
+        "products": Array [
+          Object {
+            "description": "a lb of broccoli",
+            "id": 9,
+            "item_id": 2,
+            "name": "Broccoli",
+            "price": 250,
+            "unit": "lb",
+            "user_id": 2,
+            "vendorName": "Lemon Sisters",
+          },
+        ],
+        "state": "CO",
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE1NTA3MjM0OTZ9.az6Fs46yi1DL6u9J9cUWf3dt2aSbtsTHCNcTDGAQ-8k",
+        "zip": 80239,
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
