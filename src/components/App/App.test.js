@@ -1,58 +1,57 @@
 import React from 'react';
-import App from './App';
-import { shallow } from 'enzyme'
+import { App, mapStateToProps, mapDispatchToProps } from './App';
+import { shallow } from 'enzyme';
+import { fetchVendors } from '../../thunks/fetchVendors';
+
+jest.mock('../../thunks/fetchVendors.js');
 
 describe('App', () => {
+  let wrapper;
+  let mockDispatch;
+  beforeEach(() => {
+    wrapper = shallow(<App fetchVendors={fetchVendors}/>);
+    mockDispatch = jest.fn();
+  });
+
   it('should match snapshot', () => {
-    let wrapper = shallow(<App />)
     expect(wrapper).toMatchSnapshot()
   });
 
-  it('should call fetchVendors with the correct params', () => {
+  it('should call fetchVendors with the correct params', async () => {
+    await wrapper.instance().componentDidMount();
 
-  });
-
-  describe('search', () => {
-    it('should return an error if there is no location', () => {
-
-    });
-
-    it('should call fetchVendors with a range of 50 if there is no range', () => {
-
-    });
-
-    it('should call fetch with a shorter path if there is no productId', () => {
-
-    });
-
-    it('should call filter products with the correct arguments', () => {
-
-    });
-  });
-
-  describe('filterProducts', () => {
-    it('should call addProductsToStore with the correct args if there is an id passed in', () => {
-
-    });
+    expect(fetchVendors).toHaveBeenCalledWith('https://xpoll-be.herokuapp.com/api/v1/vendors');
   });
 
   describe('mapStateToProps', () => {
     it('should return a props object', () => {
+      const mockGlobalState = {
+        vendors: [],
+        products: [],
+        user: {},
+        isLoading: false,
+        vendorSearchResults: [],
+        productSearchResults: []
+      }
 
+      const expected = {
+        vendors: [],
+        products: [],
+        user: {},
+        isLoading: false
+      }
+
+      const mappedProps = mapStateToProps(mockGlobalState);
+      expect(mappedProps).toEqual(expected);
     });
   });
 
   describe('mapDispatchToProps', () => {
-    it('should dispatch addUser with the correct args when addUserToStore is called', () => {
-
-    });
-
     it('should dispatch fetchVendors thunk with the correct args when fetchVendors is called', () => {
-
-    });
-
-    it('should dispatch addProducts with the correct args when addProductsToStore is called', () => {
-
-    });
+      const mockUrl = 'someplace.com';
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.fetchVendors(mockUrl);
+      expect(mockDispatch).toHaveBeenCalledWith(fetchVendors(mockUrl));
+    }); 
   });
 });

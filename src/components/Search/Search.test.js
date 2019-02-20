@@ -1,7 +1,10 @@
 import React from 'react';
 import { Search, mapStateToProps, mapDispatchToProps } from './Search';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { addProducts } from '../../actions';
+import { searchVendors } from '../../thunks/searchVendors';
+
+jest.mock('../../thunks/searchVendors.js');
 
 describe('Search', () => {
   let items = [{name: "Berries",
@@ -33,8 +36,8 @@ describe('Search', () => {
     });
   });
 
-  describe('sendSearch', () => {
-    it.skip('should call search with the correct params on submit', () => {
+  describe('handleSubmit', () => {
+    it('should call search with the correct params on submit', () => {
       wrapper.setProps({searchVendors: jest.fn()});
 
       const { searchVendors } = wrapper.instance().props

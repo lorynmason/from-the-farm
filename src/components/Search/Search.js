@@ -19,7 +19,7 @@ export class Search extends Component {
     })
   }
 
-  sendSearch = (e) => {
+  handleSubmit = (e) => {
     const { productId, location, range } = this.state
     let newRange = range
     e.preventDefault()
@@ -50,7 +50,7 @@ export class Search extends Component {
 
     return (
       <section className="search">
-        <form className="search-form" onSubmit={this.sendSearch} onChange={this.handleChange}>
+        <form className="search-form" onSubmit={this.handleSubmit} onChange={this.handleChange}>
         <h3>Narrow Your Search</h3>
           <div className="search-options">
             <select id="product-options" name="productId">
