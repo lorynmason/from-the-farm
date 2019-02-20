@@ -20,5 +20,4 @@ describe('header', () => {
       expect(mockDispatch).toHaveBeenCalledTimes(3);
     });
   });
-  
-})
+});
