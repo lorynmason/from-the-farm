@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { postItem } from '../../thunks/postItem';
 import { fetchUser } from '../../thunks/fetchUser';
+import { fetchVendors } from '../../thunks/fetchVendors';
 import { Link } from 'react-router-dom';
 import ProductList from '../ProductList/ProductList';
+import { Loading } from '../Loading/Loading';
 
 export class AddProductForm extends Component {
   constructor() {
@@ -22,12 +24,13 @@ export class AddProductForm extends Component {
     });
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = async(e) => {
     e.preventDefault();
     const price = this.state.price * 100;
     const url = 'https://xpoll-be.herokuapp.com/api/v1';
-    this.props.postItem(`${url}/vendor_items`, {...this.state, price}, this.props.user.token);
+    await this.props.postItem(`${url}/vendor_items`, {...this.state, price}, this.props.user.token);
     this.props.fetchUser(`${url}/users/${this.props.user.id}`, this.props.user.token)
+    this.props.fetchVendors(url+'/vendors')
     this.setState({
       item_id: '',
       description: '',
@@ -40,6 +43,9 @@ export class AddProductForm extends Component {
     const productOptions = this.props.items.map((item) => {
       return <option value={item.id} key={item.id}>{item.name}</option>
     });
+    if(this.props.isLoading) {
+      return (<Loading />)
+    }
 
     return (
       <section className="add-product">
@@ -65,13 +71,15 @@ export class AddProductForm extends Component {
 
 export const mapStateToProps = (state) => ({
   items: state.items,
-  user: state.user
+  user: state.user,
+  isLoading: state.isLoading
 });
 
 export const mapDispatchToProps = (dispatch) => {
   return {
     postItem: (url, item, token) => dispatch(postItem(url, item, token)),
-    fetchUser: (url, token) => dispatch(fetchUser(url, token))
+    fetchUser: (url, token) => dispatch(fetchUser(url, token)),
+    fetchVendors: (url) => dispatch(fetchVendors(url))
   }
 }
 

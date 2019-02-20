@@ -13,7 +13,7 @@ export const Mapp = ({ vendors, vendorSearchResults }) => {
   }
   const customMarker = L.icon({ iconUrl:('https://www.svgrepo.com/show/7496/carrot.svg'), })
   const markers = vendorsToShow.map((vendor) => (
-    <Marker position={[vendor.lat, vendor.long]} icon={customMarker}>
+    <Marker position={[vendor.lat, vendor.long]} icon={customMarker} key={vendor.id}>
       <Popup>
         <h3>{vendor.name}</h3>
         <p>{vendor.address}</p>
