@@ -1,9 +1,9 @@
 import React from 'react';
 import Map from '../Map/Map';
-import ProductList from '../ProductList/ProductList';
+import ProductList from '../../components/ProductList/ProductList';
 import Search from '../Search/Search';
 import { connect } from 'react-redux';
-import { Loading } from '../Loading/Loading';
+import { Loading } from '../../components/Loading/Loading';
 
 export const Buy = ({ productSearchResults, products, isLoading, history}) => {
  let productsToShow = products

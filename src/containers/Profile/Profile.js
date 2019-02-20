@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router';
-import ProductList from '../ProductList/ProductList';
+import ProductList from '../../components/ProductList/ProductList';
 import farmImage from '../../styles/images/farm.jpeg';
 import { connect } from 'react-redux';
 
