@@ -8,9 +8,7 @@ import '../../styles/main.scss';
 import Profile from '../Profile/Profile';
 import { fetchVendors } from '../../thunks/fetchVendors';
 import Message from '../Message/Message';
-import { About } from '../../components/About/About'
-import Login from '../../containers/Login/Login'
-import { About } from '../About/About';
+import { About } from '../../components/About/About';
 import Login from '../../containers/Login/Login';
 
 export class App extends Component {
