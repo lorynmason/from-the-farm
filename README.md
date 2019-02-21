@@ -42,10 +42,8 @@ The alternative to this business model is for retailers to buy directly from the
 
 <img width="500" alt="screen shot 2019-02-20 at 5 44 51 pm" src="https://user-images.githubusercontent.com/40005248/53135255-cbca0a80-3537-11e9-9cba-fa3e0fb5df7b.png">
 
-<img width="500" alt="screen shot 2019-02-17 at 6 19 18 pm" src="https://user-images.githubusercontent.com/40005248/53135286-e3a18e80-3537-11e9-89b2-d1d14d5aa1aa.png">
-
-<img width="500" alt="screen shot 2019-02-17 at 6 18 53 pm" src="https://user-images.githubusercontent.com/40005248/53135298-f320d780-3537-11e9-83c7-ea52b92ad891.png">
-
 <img width="500" alt="screen shot 2019-02-20 at 5 46 38 pm" src="https://user-images.githubusercontent.com/40005248/53135309-fddb6c80-3537-11e9-9bd7-2be95d4e6502.png">
 
 <img width="500" alt="screen shot 2019-02-20 at 5 45 24 pm" src="https://user-images.githubusercontent.com/40005248/53135318-02a02080-3538-11e9-98d5-46075065e900.png">
+
+
