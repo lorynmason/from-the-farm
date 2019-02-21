@@ -7,7 +7,7 @@ describe('actions', () => {
       const expected = {
         type: 'ADD_USER',
         user: {name: 'Pete', id: 5}
-      }
+      };
       const result = actions.addUser(mockUser);
       expect(result).toEqual(expected);
     });

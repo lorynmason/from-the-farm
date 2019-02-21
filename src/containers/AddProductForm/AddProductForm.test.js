@@ -82,4 +82,4 @@ describe('AddProductForm', () => {
       expect(fetchUser).toHaveBeenCalledWith(url2, token);
     });
   });
-})
+});
