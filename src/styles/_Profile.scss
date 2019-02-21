@@ -1,21 +1,17 @@
 .profile {
-  display: grid;
   width: 100vw;
   font-family: $titleFont; 
   @include flexin();
   .profile-card {
     box-shadow: -5px 5px 10px rgb(124, 124, 124);
-    @include flexin();
     flex-direction: column;
-    height: 64vh;
-    margin-top: 11px;
+    height: 65vh;
   }
   .vender-info {
     grid-area: info;
-    width: 50vw;
+    width: 45vw;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
     @media screen and (max-width: 1250px) {
       flex-direction: column;
       text-align: center;
@@ -24,35 +20,35 @@
       }        
     }
     #farm {
-      width: 300px;
+      width: 250px;
     }
     .contact-info {
-      margin-left: 50px;
+      margin: 15px 0 5px 50px;
       @media screen and (max-width: 1250px) {
         margin-left: 0;     
       }
     }
   }
   h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     grid-area: title;
     text-align: center;
     width: 100%;
-    margin: -20vh auto 30px; 
+    margin: 20px auto; 
   }
   h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    margin: 15px 0;
   }
   p {
     grid-area: bio;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: start;
     font-family: $mainFont;
     font-weight: 300;
     text-align: center;
+    margin-top: 10px;
   }
   .vender-products {
     grid-area: table;
