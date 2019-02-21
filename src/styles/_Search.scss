@@ -8,6 +8,9 @@
     width: 45vw;
     margin: 0 auto;
     padding-bottom: 10px;
+    @media screen  and (max-width: 1250px) {
+      
+    }
   }
   h3 {
     font-family: $titleFont;
@@ -51,9 +54,10 @@
   }
   #reset {
     color: $accent2;
-    margin: 5px 0;
+    margin: 5px 0 0;
     text-align: center;
     text-decoration: underline;
+    font-size: .8rem;
     &:hover {
       color: $accent1;
       cursor: pointer;
