@@ -2,14 +2,27 @@
   grid-area: search;
   .search-options {
     @include flexin();
+    @media screen  and (max-width: 870px) {
+      flex-direction: column;
+    }
   }
   form {
     box-shadow: -5px 5px 10px rgb(124, 124, 124);
     width: 45vw;
     margin: 0 auto;
     padding-bottom: 10px;
-    @media screen  and (max-width: 1250px) {
-      
+    @media screen  and (max-width: 1000px) {
+      width: 49vw;
+      select, input {
+        width: 150px;
+        height: 30px;
+        font-size: 1rem;
+        margin: 5px;
+      }      
+    }
+    @media screen  and (max-width: 870px) {
+      width: 73vw; 
+      margin: 0 auto 20px;
     }
   }
   h3 {

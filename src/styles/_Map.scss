@@ -23,6 +23,12 @@
     z-index: 1;
     grid-area: map;
     box-shadow: -5px 5px 10px rgb(124, 124, 124);
+    @media screen  and (max-width: 1000px) {
+      width: 49vw;
+    }
+    @media screen  and (max-width: 870px) {
+      width: 73vw;
+    }
   }
   .leaflet-tile-pane {
     -webkit-filter: grayscale(100%);

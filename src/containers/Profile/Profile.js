@@ -24,7 +24,7 @@ export class Profile extends Component {
             <h4>{phone}</h4>
           </div>
         </section>
-        <p>{bio}</p>
+        <p>{bio}Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.</p>
       </div>
           <section className="vender-products">
             <ProductList products={products} />

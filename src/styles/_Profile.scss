@@ -2,10 +2,17 @@
   width: 100vw;
   font-family: $titleFont; 
   @include flexin();
+  @media screen  and (max-width: 870px) {
+   flex-direction: column;
+  }
   .profile-card {
     box-shadow: -5px 5px 10px rgb(124, 124, 124);
-    flex-direction: column;
-    height: 65vh;
+    height: 66vh;
+    width: 45vw;
+    @media screen  and (max-width: 870px) {
+      width: 73vw;
+      height: 50vh;
+    }
   }
   .vender-info {
     grid-area: info;
@@ -19,6 +26,10 @@
         margin-left: 0;
       }        
     }
+    @media screen  and (max-width: 870px) {
+      flex-direction: row;
+      width: 73vw;
+    }
     #farm {
       width: 250px;
     }
@@ -26,6 +37,9 @@
       margin: 15px 0 5px 50px;
       @media screen and (max-width: 1250px) {
         margin-left: 0;     
+      }
+      @media screen  and (max-width: 870px) {
+        margin: 15px 0 5px 50px;        
       }
     }
   }
@@ -48,7 +62,8 @@
     font-family: $mainFont;
     font-weight: 300;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 20px 0;
+    text-align: left;
   }
   .vender-products {
     grid-area: table;
