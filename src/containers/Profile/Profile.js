@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import ProductList from '../../components/ProductList/ProductList';
+import { ProductList } from '../../components/ProductList/ProductList';
 import farmImage from '../../styles/images/farm.jpeg';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 export class Profile extends Component {
 
   render() {
-    const { name, bio, address, phone, email, city, state, id, products } = this.props.user 
+    const { name, bio, address, phone, email, city, state, products } = this.props.user 
     
     return (
       <section className="profile">
@@ -38,3 +39,16 @@ export const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps)(Profile);
+
+Profile.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string,
+    bio: PropTypes.string,
+    address: PropTypes.string,
+    phone: PropTypes.string,
+    email: PropTypes.string,
+    city: PropTypes.string,
+    state: PropTypes.string,
+    products: PropTypes.array
+  })
+}

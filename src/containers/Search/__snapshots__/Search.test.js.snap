@@ -49,6 +49,8 @@ ShallowWrapper {
           <select
             id="product-options"
             name="productId"
+            onChange={[Function]}
+            value=""
           >
             <option
               value=""
@@ -68,12 +70,15 @@ ShallowWrapper {
           </select>
           <input
             name="location"
+            onChange={[Function]}
             placeholder="location, address, zipcode"
             value=""
           />
           <select
             id="radius-options"
             name="range"
+            onChange={[Function]}
+            value=""
           >
             <option
               value="50"
@@ -141,6 +146,8 @@ ShallowWrapper {
             <select
               id="product-options"
               name="productId"
+              onChange={[Function]}
+              value=""
             >
               <option
                 value=""
@@ -160,12 +167,15 @@ ShallowWrapper {
             </select>
             <input
               name="location"
+              onChange={[Function]}
               placeholder="location, address, zipcode"
               value=""
             />
             <select
               id="radius-options"
               name="range"
+              onChange={[Function]}
+              value=""
             >
               <option
                 value="50"
@@ -241,6 +251,8 @@ ShallowWrapper {
               <select
                 id="product-options"
                 name="productId"
+                onChange={[Function]}
+                value=""
               >
                 <option
                   value=""
@@ -260,12 +272,15 @@ ShallowWrapper {
               </select>,
               <input
                 name="location"
+                onChange={[Function]}
                 placeholder="location, address, zipcode"
                 value=""
               />,
               <select
                 id="radius-options"
                 name="range"
+                onChange={[Function]}
+                value=""
               >
                 <option
                   value="50"
@@ -334,6 +349,8 @@ ShallowWrapper {
                 ],
                 "id": "product-options",
                 "name": "productId",
+                "onChange": [Function],
+                "value": "",
               },
               "ref": null,
               "rendered": Array [
@@ -382,6 +399,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "name": "location",
+                "onChange": [Function],
                 "placeholder": "location, address, zipcode",
                 "value": "",
               },
@@ -433,6 +451,8 @@ ShallowWrapper {
                 ],
                 "id": "radius-options",
                 "name": "range",
+                "onChange": [Function],
+                "value": "",
               },
               "ref": null,
               "rendered": Array [
@@ -576,6 +596,8 @@ ShallowWrapper {
             <select
               id="product-options"
               name="productId"
+              onChange={[Function]}
+              value=""
             >
               <option
                 value=""
@@ -595,12 +617,15 @@ ShallowWrapper {
             </select>
             <input
               name="location"
+              onChange={[Function]}
               placeholder="location, address, zipcode"
               value=""
             />
             <select
               id="radius-options"
               name="range"
+              onChange={[Function]}
+              value=""
             >
               <option
                 value="50"
@@ -668,6 +693,8 @@ ShallowWrapper {
               <select
                 id="product-options"
                 name="productId"
+                onChange={[Function]}
+                value=""
               >
                 <option
                   value=""
@@ -687,12 +714,15 @@ ShallowWrapper {
               </select>
               <input
                 name="location"
+                onChange={[Function]}
                 placeholder="location, address, zipcode"
                 value=""
               />
               <select
                 id="radius-options"
                 name="range"
+                onChange={[Function]}
+                value=""
               >
                 <option
                   value="50"
@@ -768,6 +798,8 @@ ShallowWrapper {
                 <select
                   id="product-options"
                   name="productId"
+                  onChange={[Function]}
+                  value=""
                 >
                   <option
                     value=""
@@ -787,12 +819,15 @@ ShallowWrapper {
                 </select>,
                 <input
                   name="location"
+                  onChange={[Function]}
                   placeholder="location, address, zipcode"
                   value=""
                 />,
                 <select
                   id="radius-options"
                   name="range"
+                  onChange={[Function]}
+                  value=""
                 >
                   <option
                     value="50"
@@ -861,6 +896,8 @@ ShallowWrapper {
                   ],
                   "id": "product-options",
                   "name": "productId",
+                  "onChange": [Function],
+                  "value": "",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -909,6 +946,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "name": "location",
+                  "onChange": [Function],
                   "placeholder": "location, address, zipcode",
                   "value": "",
                 },
@@ -960,6 +998,8 @@ ShallowWrapper {
                   ],
                   "id": "radius-options",
                   "name": "range",
+                  "onChange": [Function],
+                  "value": "",
                 },
                 "ref": null,
                 "rendered": Array [

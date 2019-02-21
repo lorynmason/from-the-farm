@@ -1,9 +1,10 @@
 import React from 'react';
 import Map from '../Map/Map';
-import ProductList from '../../components/ProductList/ProductList';
+import { ProductList } from '../../components/ProductList/ProductList';
 import Search from '../Search/Search';
 import { connect } from 'react-redux';
 import { Loading } from '../../components/Loading/Loading';
+import PropTypes from 'prop-types';
 
 export const Buy = ({ productSearchResults, products, isLoading, history}) => {
  let productsToShow = products
@@ -31,3 +32,9 @@ export const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps)(Buy);
+
+Buy.propTypes = {
+  products: PropTypes.array,
+  productSearchResults: PropTypes.array,
+  isLoading: PropTypes.bool
+}

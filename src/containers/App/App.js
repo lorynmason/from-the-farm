@@ -10,6 +10,7 @@ import { fetchVendors } from '../../thunks/fetchVendors';
 import Message from '../Message/Message';
 import { About } from '../../components/About/About';
 import Login from '../../containers/Login/Login';
+import PropTypes from 'prop-types';
 
 export class App extends Component {
   async componentDidMount() {
@@ -34,12 +35,9 @@ export class App extends Component {
   }
 }
 
-export const mapStateToProps = state => ({
-  vendors: state.vendors,
-  products: state.products,
-  user: state.user,
-  isLoading: state.isLoading
-});
+export const mapStateToProps = (state) => ({
+  user: state.user
+})
 
 export const mapDispatchToProps = (dispatch) => {
   return {
@@ -48,3 +46,8 @@ export const mapDispatchToProps = (dispatch) => {
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+
+App.propTypes = {
+  user: PropTypes.object,
+  fetchVendors: PropTypes.func
+}

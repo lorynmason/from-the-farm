@@ -1,5 +1,6 @@
 import React from 'react';
 import Product from '../Product/Product';
+import PropTypes from 'prop-types';
 
 export const ProductList = ({ products }) => {
   const productsToReturn = products.map((product) => {
@@ -25,4 +26,6 @@ export const ProductList = ({ products }) => {
   )
 }
 
-export default ProductList;
+ProductList.propTypes = {
+  products: PropTypes.array
+}
