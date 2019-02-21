@@ -3,6 +3,14 @@
   grid-area: table;
   margin: 10px 20px 0 50px;
   box-shadow: -5px 5px 10px rgb(124, 124, 124);
+  @media screen  and (max-width: 1000px) {
+    width: 47vw;
+    margin: 0 5px 0 20px;
+  }
+  @media screen  and (max-width: 870px) {
+    margin: 10px auto;
+    width: 73vw;
+  }
 }
 
 table {
@@ -15,7 +23,7 @@ table {
     display: block;
     width: 100%;
     overflow: auto;
-    height: 59.5vh;
+    height: 62vh;
   }
 
   thead tr {
@@ -33,6 +41,9 @@ table {
   th, td {
     padding: 5px;
     width: calc(43vw/4);
+    @media screen  and (max-width: 870px) {
+      width: calc(73vw/4);
+    }
     height: 30px;
     text-align: center;
     vertical-align: middle;

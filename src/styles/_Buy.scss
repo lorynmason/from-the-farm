@@ -6,4 +6,12 @@
   grid-template-areas: 
     "search table"
     "map table";
+    @media screen  and (max-width: 870px) {
+      grid-template-columns: 100vw;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: 
+        "search"
+        "map"
+        "table";
+    }
 }
