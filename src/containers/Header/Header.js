@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import image from '../../styles/images/pig-logo.png'
 import { removeUser, isLoading, addMessage } from '../../actions';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 export const Header = (props) => {
   const clickBuy = () => {
@@ -13,8 +14,8 @@ export const Header = (props) => {
   }
 
   const signout = () => {
-    props.removeUser()
-    props.addMessage('You are now signed-out')
+    props.removeUser();
+    props.addMessage('You are now signed-out');
   }
 
   return (
@@ -33,13 +34,19 @@ export const Header = (props) => {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 export const mapDispatchToProps = (dispatch) => ({
   removeUser: () => dispatch(removeUser()),
   addMessage: (message) => dispatch(addMessage(message)),
   isLoading: (bool) => dispatch(isLoading(bool))
-})
+});
 
 export default connect(null, mapDispatchToProps)(Header);
+
+Header.propTypes = {
+  removeUser: PropTypes.func,
+  addMessage: PropTypes.func,
+  isLoading: PropTypes.func
+}

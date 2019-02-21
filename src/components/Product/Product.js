@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Product extends Component {
 
@@ -18,3 +19,14 @@ class Product extends Component {
 }
 
 export default Product;
+
+Product.propTypes = {
+  product: PropTypes.shape({
+    name: PropTypes.string,
+    price: PropTypes.number,
+    unit: PropTypes.string,
+    description: PropTypes.string,
+    vendorName: PropTypes.string,
+    item_id: PropTypes.number
+  })
+}

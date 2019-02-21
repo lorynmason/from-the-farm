@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
+import PropTypes from 'prop-types';
 
 export const Mapp = ({ vendors, vendorSearchResults }) => {
   const position = [39.750614, -104.996775]
@@ -40,3 +41,8 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps)(Mapp);
+
+Mapp.propTypes = {
+  vendors: PropTypes.array,
+  vendorSearchResults: PropTypes.array
+}

@@ -4,8 +4,9 @@ import { postItem } from '../../thunks/postItem';
 import { fetchUser } from '../../thunks/fetchUser';
 import { fetchVendors } from '../../thunks/fetchVendors';
 import { Link } from 'react-router-dom';
-import ProductList from '../../components/ProductList/ProductList';
+import { ProductList } from '../../components/ProductList/ProductList';
 import { Loading } from '../../components/Loading/Loading';
+import PropTypes from 'prop-types';
 
 export class AddProductForm extends Component {
   constructor() {
@@ -84,3 +85,12 @@ export const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddProductForm);
+
+AddProductForm.propTypes = {
+  items: PropTypes.array,
+  user: PropTypes.object,
+  isLoading: PropTypes.bool,
+  postItem: PropTypes.func,
+  fetchUser: PropTypes.func,
+  fetchVendors: PropTypes.func
+}

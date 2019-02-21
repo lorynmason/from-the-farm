@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addProducts, addMessage, clearSearchResults } from '../../actions';
-import { searchVendors } from '../../thunks/searchVendors'
+import { searchVendors } from '../../thunks/searchVendors';
+import PropTypes from 'prop-types';
 
 export class Search extends Component {
   constructor(){
@@ -57,12 +58,12 @@ export class Search extends Component {
         <form className="search-form" onSubmit={this.handleSubmit} onChange={this.handleChange}>
         <h3>Narrow Your Search</h3>
           <div className="search-options">
-            <select id="product-options" name="productId">
+            <select id="product-options" name="productId" value={this.state.productId} onChange={this.handleChange}>
             <option value="">select a product</option>
               { productOptions }
             </select>
-            <input placeholder="location, address, zipcode" name="location" value={this.state.location}/>
-            <select id="radius-options" name="range">
+            <input placeholder="location, address, zipcode" name="location" value={this.state.location} onChange={this.handleChange}/>
+            <select id="radius-options" name="range" value={this.state.range} onChange={this.handleChange}>
               <option value="50">50 mile radius</option>
               <option value="100">100 mile radius</option>
               <option value="150">150 mile radius</option>
@@ -95,3 +96,12 @@ export const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
+
+Search.propTypes = {
+  products: PropTypes.array,
+  items: PropTypes.array,
+  addProductsToStore: PropTypes.func,
+  searchVendors: PropTypes.func,
+  addMessage: PropTypes.func,
+  clearSearchResults: PropTypes.func
+}

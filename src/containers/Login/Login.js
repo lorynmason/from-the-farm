@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { loginUser } from '../../thunks/loginUser';
 import { Redirect } from 'react-router';
+import PropTypes from 'prop-types';
 
 export class Login extends Component {
   constructor(){
@@ -47,6 +48,11 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   loginUser: (url, state) => dispatch(loginUser(url, state))
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
+
+Login.propTypes = {
+  user: PropTypes.object,
+  loginUser: PropTypes.func
+}

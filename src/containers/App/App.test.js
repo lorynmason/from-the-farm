@@ -35,10 +35,7 @@ describe('App', () => {
       }
 
       const expected = {
-        vendors: [],
-        products: [],
-        user: {},
-        isLoading: false
+        user: {}
       }
 
       const mappedProps = mapStateToProps(mockGlobalState);
