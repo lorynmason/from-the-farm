@@ -1,6 +1,6 @@
 header {
   width: 100vw;
-  height: 230px;
+  height: 190px;
   @include flexin();
   transition: ease all 1s;
   .header-logo {
@@ -8,18 +8,18 @@ header {
     padding-left: 100px;
     z-index: 2;
     width: 600px;
-    height: 180px;
+    height: 150px;
     top: 20px;
     line-height: 60px;
     transition: all .3s ease-in-out;
     @include flexin();
     h1 {
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-family: $titleFont;
       width: 100px;
       text-align: center;
       font-weight: 400;
-      margin-right: 35px;
+      margin-right: 20px;
       text-shadow: -4px 4px #000;
       color: $accent1;
       line-height: 70%;
@@ -29,16 +29,16 @@ header {
       }
     }
     img {
-      height: 200px;
+      height: 175px;
       filter: invert(95%);
-      margin-right: -40px;
+      margin-right: -30px;
       padding-bottom: 10px;
     }
     p {
       color: whitesmoke;
-      margin:-150px -210px 0 100px;
+      margin:-133px -410px 0 100px;
       font-family: $titleFont;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       letter-spacing: 5px;
     }
   }
@@ -76,19 +76,19 @@ header {
   .container {
     @include flexin();
     flex-direction: column;
-    margin-left: 46.5px;    
+    margin-left: 60px;    
     .menu {
       a {
         all: unset;
       }
-      padding-left: 240px;
+      padding-left: 440px;
       @include flexin();
       flex-direction: column;
       color: transparent;
       transition: color .3s ease-in; 
-      margin-top: 35px;   
+      margin-top: 60px;   
       i {    
-        font-size: 3rem;
+        font-size: 2.5rem;
         cursor: pointer;
         transition: all ease .3s;
         p {
