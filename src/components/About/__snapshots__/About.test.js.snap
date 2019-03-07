@@ -22,7 +22,16 @@ ShallowWrapper {
         className="about"
       >
         <p>
-          From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+          from the farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+        </p>
+        <p>
+          Please note that from the farm is still in the development phase, which means all data currently on the site is a placeholder, and doesn't represent real producers or products.
+        </p>
+        <p>
+          If you'd like to contribute code or find out more information about from the farm please visit: 
+          <a>
+            https://github.com/lorynmason/from-the-farm
+          </a>
         </p>
       </div>,
     },
@@ -32,23 +41,76 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <p>
-          From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
-        </p>,
+        "children": Array [
+          <p>
+            from the farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+          </p>,
+          <p>
+            Please note that from the farm is still in the development phase, which means all data currently on the site is a placeholder, and doesn't represent real producers or products.
+          </p>,
+          <p>
+            If you'd like to contribute code or find out more information about from the farm please visit: 
+            <a>
+              https://github.com/lorynmason/from-the-farm
+            </a>
+          </p>,
+        ],
         "className": "about",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "from the farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+          },
+          "ref": null,
+          "rendered": "from the farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+          "type": "p",
         },
-        "ref": null,
-        "rendered": "From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
-        "type": "p",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Please note that from the farm is still in the development phase, which means all data currently on the site is a placeholder, and doesn't represent real producers or products.",
+          },
+          "ref": null,
+          "rendered": "Please note that from the farm is still in the development phase, which means all data currently on the site is a placeholder, and doesn't represent real producers or products.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "If you'd like to contribute code or find out more information about from the farm please visit: ",
+              <a>
+                https://github.com/lorynmason/from-the-farm
+              </a>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "If you'd like to contribute code or find out more information about from the farm please visit: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "https://github.com/lorynmason/from-the-farm",
+              },
+              "ref": null,
+              "rendered": "https://github.com/lorynmason/from-the-farm",
+              "type": "a",
+            },
+          ],
+          "type": "p",
+        },
+      ],
       "type": "div",
     },
     "type": "main",
@@ -63,7 +125,16 @@ ShallowWrapper {
           className="about"
         >
           <p>
-            From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+            from the farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+          </p>
+          <p>
+            Please note that from the farm is still in the development phase, which means all data currently on the site is a placeholder, and doesn't represent real producers or products.
+          </p>
+          <p>
+            If you'd like to contribute code or find out more information about from the farm please visit: 
+            <a>
+              https://github.com/lorynmason/from-the-farm
+            </a>
           </p>
         </div>,
       },
@@ -73,23 +144,76 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <p>
-            From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
-          </p>,
+          "children": Array [
+            <p>
+              from the farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.
+            </p>,
+            <p>
+              Please note that from the farm is still in the development phase, which means all data currently on the site is a placeholder, and doesn't represent real producers or products.
+            </p>,
+            <p>
+              If you'd like to contribute code or find out more information about from the farm please visit: 
+              <a>
+                https://github.com/lorynmason/from-the-farm
+              </a>
+            </p>,
+          ],
           "className": "about",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "from the farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+            },
+            "ref": null,
+            "rendered": "from the farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
+            "type": "p",
           },
-          "ref": null,
-          "rendered": "From the Farm is a community based effort to break the traditional food supply chain and connect Farmers and Producers directly to Restaurants and Markets.",
-          "type": "p",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Please note that from the farm is still in the development phase, which means all data currently on the site is a placeholder, and doesn't represent real producers or products.",
+            },
+            "ref": null,
+            "rendered": "Please note that from the farm is still in the development phase, which means all data currently on the site is a placeholder, and doesn't represent real producers or products.",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "If you'd like to contribute code or find out more information about from the farm please visit: ",
+                <a>
+                  https://github.com/lorynmason/from-the-farm
+                </a>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "If you'd like to contribute code or find out more information about from the farm please visit: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "https://github.com/lorynmason/from-the-farm",
+                },
+                "ref": null,
+                "rendered": "https://github.com/lorynmason/from-the-farm",
+                "type": "a",
+              },
+            ],
+            "type": "p",
+          },
+        ],
         "type": "div",
       },
       "type": "main",
