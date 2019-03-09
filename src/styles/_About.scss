@@ -1,7 +1,10 @@
 .about {
   font-size: 2rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $mainFont;
+  text-align: center;
+  font-weight: 300;
   p {
-    margin: 0 20vw;
+    margin: 40px auto;
+    width: 650px;
   }
 }

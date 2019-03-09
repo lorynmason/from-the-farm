@@ -23,7 +23,7 @@ export class App extends Component {
         <Header />
         <Message />
         <Switch>
-          <Route exact path="/" component={Buy} />
+          <Route exact path="/" component={About} />
           <Route path="/about" component={About}/>
           <Route path="/login" component={Login}/>
           <Route path="/buy" component={Buy} />
