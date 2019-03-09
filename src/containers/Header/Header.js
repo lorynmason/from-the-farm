@@ -20,18 +20,17 @@ export const Header = (props) => {
 
   return (
     <header>
-      <div className="container">
-        <div className="header-logo">
-          <h1>from<span>the</span>farm</h1>
-          <img id="logo" src={image} alt="from the farm cute pig logo"/>
-          <p>menu<i className="fas fa-caret-right"></i></p>
+      <div className="header-logo">
+        <h1>from the farm</h1>
+        <img id="logo" src={image} alt="from the farm cute pig logo"/>
+        <p>menu<i className="fas fa-caret-down"></i>
           <div className="menu">
             <Link to="/buy" onClick={clickBuy}><i className="fas fa-carrot"><p>buy</p></i></Link>
             <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
             <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i> </Link>
             <Link to="/" onClick={signout}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
           </div>
-        </div>
+        </p>
       </div>
     </header>
   );
