@@ -11,7 +11,6 @@ import Message from '../Message/Message';
 import { About } from '../../components/About/About';
 import Login from '../../containers/Login/Login';
 import PropTypes from 'prop-types';
-import NewUser from '../NewUser/NewUser'
 
 export class App extends Component {
   async componentDidMount() {
@@ -27,7 +26,6 @@ export class App extends Component {
           <Route exact path="/" component={About} />
           <Route path="/about" component={About}/>
           <Route path="/login" component={Login}/>
-          <Route path="/signup" component={NewUser}/>
           <Route path="/buy" component={Buy} />
           <Route path="/add-product" render={() => this.props.user.name ? (<AddProductForm />) : (<Redirect to="/login" />)} />
           <Route path="/profile" render={() => this.props.user.name ? (<Profile />) : (<Redirect to="/login" />)} />
