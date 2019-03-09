@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { loginUser } from '../../thunks/loginUser';
+import { postUser } from '../../thunks/postUser';
 import { Redirect } from 'react-router';
 import PropTypes from 'prop-types';
+import ReactFilestack from 'react-filestack';
+import { apikey } from '../../apikey';
 
 export class Login extends Component {
   constructor(){
@@ -18,6 +21,7 @@ export class Login extends Component {
       state: '',
       phone: '',
       zip: '',
+      bio: '',
       img_url: '',
       newUser: false
     }
@@ -44,9 +48,25 @@ export class Login extends Component {
 
   handleSignup = (e) => {
     e.preventDefault()
-    const { email, password } = this.state
-    this.props.loginUser('https://xpoll-be.herokuapp.com/api/v1/authentication', { email, 
-    password })
+    this.props.postUser('https://xpoll-be.herokuapp.com/api/v1/registration', this.state)
+  }
+
+  basicOptions = {
+    accept: 'image/*',
+    fromSources: ['local_file_system'],
+    maxSize: 1024 * 1024,
+    maxFiles: 1,
+  }
+
+  onSuccess = (result) => {
+    console.error(result.filesUploaded[0].url); 
+    this.setState({
+      img_url: result.filesUploaded[0].url
+    })   
+  }
+
+  onError = (error) => {
+    console.error('error', error);
   }
 
   render() {
@@ -60,12 +80,21 @@ export class Login extends Component {
           <h3>Sign Up</h3>
           <input placeholder="Company Name" name="name" type="text" onChange={this.handleChange} value={this.state.name}/>
           <input placeholder="Email" name="email" type="email" onChange={this.handleChange} value={this.state.email}/>
-          <input placeholder="Adress" name="adress" type="text" onChange={this.handleChange} value={this.state.address}/>
+          <input placeholder="Address" name="address" type="text" onChange={this.handleChange} value={this.state.address}/>
           <input placeholder="City" name="city" type="text" onChange={this.handleChange} value={this.state.city}/>
           <input placeholder="State" name="state" type="text" onChange={this.handleChange} value={this.state.state}/>
           <input placeholder="Zip Code" name="zip" type="text" onChange={this.handleChange} value={this.state.zip}/>
           <input placeholder="Phone Number" name="phone" type="text" onChange={this.handleChange} value={this.state.phone}/>
           <input placeholder="Company Bio" name="bio" type="text" onChange={this.handleChange} value={this.state.bio}/>
+          <p>Add a profile picture (optional)</p>
+          <ReactFilestack
+            apikey={apikey}
+            buttonText="Upload Photo"
+            buttonClass="upload"
+            options={this.basicOptions}
+            onSuccess={this.onSuccess}
+            onError={this.onError}
+          />
           <input placeholder="Password" name="password" type="password" onChange={this.handleChange} value={this.state.password}/>
           <input placeholder="Confirm Password" name="password_confirmation" type="password" onChange={this.handleChange} value={this.state.confirmPassword}/>        
           <button>Sign Up</button>
@@ -97,7 +126,8 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  loginUser: (url, state) => dispatch(loginUser(url, state))
+  loginUser: (url, state) => dispatch(loginUser(url, state)),
+  postUser: (url, state) => dispatch(postUser(url, state))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
