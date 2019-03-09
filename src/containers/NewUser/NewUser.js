@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ReactFilestack from 'react-filestack'
-
-const apiKey = "A0tWrl1fcQ6qhdO568TLoz"
-
+import { apikey } from '../../apikey'
 
 const NewUser = () => {
   const basicOptions = {
@@ -13,7 +11,7 @@ const NewUser = () => {
   }
 
   const onSuccess = (result) => {
-    console.error('win', result, result.filesUploaded.map(file => file.url));    
+    console.error(result.filesUploaded[0].url);    
   }
   const onError = (error) => {
     console.error('error', error);
@@ -21,7 +19,7 @@ const NewUser = () => {
 
   return (
     <ReactFilestack
-      apikey={apiKey}
+      apikey={apikey}
       buttonText="Upload Photo"
       buttonClass="ui medium button gray"
       options={basicOptions}
