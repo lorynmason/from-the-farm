@@ -83,6 +83,12 @@ ShallowWrapper {
         <button>
           Login
         </button>,
+        <p
+          className="create-account"
+          onClick={[Function]}
+        >
+          Click here to create an account
+        </p>,
         undefined,
       ],
       "className": "login",
@@ -143,6 +149,19 @@ ShallowWrapper {
         "rendered": "Login",
         "type": "button",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Click here to create an account",
+          "className": "create-account",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Click here to create an account",
+        "type": "p",
+      },
       undefined,
     ],
     "type": "form",
@@ -174,6 +193,12 @@ ShallowWrapper {
           <button>
             Login
           </button>,
+          <p
+            className="create-account"
+            onClick={[Function]}
+          >
+            Click here to create an account
+          </p>,
           undefined,
         ],
         "className": "login",
@@ -233,6 +258,19 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Login",
           "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Click here to create an account",
+            "className": "create-account",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Click here to create an account",
+          "type": "p",
         },
         undefined,
       ],
