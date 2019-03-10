@@ -1,4 +1,4 @@
-import { isLoading, hasErrored } from '../actions';
+import { isLoading, hasErrored, addMessage } from '../actions';
 import { fetchUser } from './fetchUser'
 
 export const loginUser = (url, state) => {
@@ -21,8 +21,10 @@ export const loginUser = (url, state) => {
       dispatch(isLoading(false))
       const results = await response.json();
       dispatch(fetchUser(`https://xpoll-be.herokuapp.com/api/v1/users/${results.user.id}`, results.auth_token)) 
+      dispatch(addMessage('You now logged in'));
     } catch (error) {
       dispatch(hasErrored(error.message));
+      dispatch(addMessage('Login error'));
     }
   }
 }

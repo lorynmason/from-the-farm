@@ -9,8 +9,12 @@
   align-items: center;
   font-family: $titleFont;
   font-size: 1.3rem;
+  position: relative;
+  z-index: 100;
+  margin-top: -50px;
 }
 
 .message {
+  margin-top: -50px;
   height: 55px;
 }
