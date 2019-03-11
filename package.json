@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "filestack-react": "^2.0.2",
     "history": "^4.7.2",
     "leaflet": "^1.4.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
+    "react-filestack": "^0.9.7",
     "react-leaflet": "^2.2.1",
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
