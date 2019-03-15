@@ -124,7 +124,6 @@ nav {
     z-index: 12;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
     transition-duration: 400ms;
-    // transform: scale(1.1,1.1) translate3d(0,0,0);
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -144,7 +143,6 @@ nav {
   .menu-open:checked+.menu-open-button{
     transition-timing-function:linear;
     transition-duration:200ms;
-    // transform:scale(0.8,0.8) translate3d(0,0,0);
   }
   .menu-open:checked~.nav-list{
     display: inline-block;
