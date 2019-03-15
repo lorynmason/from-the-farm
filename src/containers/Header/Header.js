@@ -33,10 +33,12 @@ export const Header = (props) => {
             <span className="hamburger hamburger-2"></span>
             <span className="hamburger hamburger-3"></span>
           </label>
-          <Link to="/buy" onClick={clickBuy}><i className="fas fa-carrot"><p>buy</p></i></Link>
-          <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
-          <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i></Link>
-          <Link to="/" onClick={signout}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
+          <div className="nav-list">
+            <Link to="/buy" onClick={clickBuy}><i className="fas fa-carrot"><p>buy</p></i></Link>
+            <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
+            <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i></Link>
+            <Link to="/" onClick={signout}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
+          </div>
       </nav>
     </header>
   );

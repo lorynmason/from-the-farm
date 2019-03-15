@@ -64,23 +64,43 @@ nav {
   input {
     display: none;
   }
-  a {
-    text-align: center;
-    position: relative;
-    top: 190px;
+  .nav-list {
+    position: absolute;
+    top: 98px;
+    left: -32px;
     transform: translate3d(0,0,0);
     transition: transform ease-out 200ms;
-    background: blueviolet;
-    color: white;
-    height: 80px;
-    width: 80px;
+    background: rgba(25, 201, 69, 0.856);
+    z-index: 12;
+    display: none;
+    box-shadow: -4px 0px 8px rgb(124, 124, 124);
+  }
+  a {
+    text-align: center;
+    color: $accent2;
+    height: 74px;
+    width: 74px;
     @include flexin();
     text-decoration: none;
-    z-index: 2;
-    display: none;
+    border: 3px solid rgba(25, 201, 69, 0.856);
+    i {
+      font-size: 2.5rem;
+      p {
+        font-size: .9rem;
+        color: transparent;
+      }
+    }
+    &:hover {
+      background: $accent2;
+      color: $accent1;
+      border: 3px solid $accent1;
+      p {
+        color: $accent1;
+      }
+    }
   }
   .hamburger{
-    height: 5px;
+    height: 3px;
     width: 30px;
     background: $accent1;
     display: block;
@@ -89,22 +109,22 @@ nav {
   }
   .menu-open:checked+.menu-open-button{
     .hamburger-1{
-      transform:translate3d(0,0,0) rotate(45deg) translate(8px, 8px);
-      width: 50px; 
+      transform:translate3d(0,0,0) rotate(45deg) translate(6px, 6px);
+      width: 60px; 
     }
     .hamburger-2{
       opacity: 0;
     }
     .hamburger-3{
-      transform:translate3d(0,0,0) rotate(-45deg) translate(8px, -8px);
-      width: 50px; 
+      transform:translate3d(0,0,0) rotate(-45deg) translate(6px, -6px);
+      width: 60px; 
     }
   }
   .menu-open-button{
-    z-index: 2;
+    z-index: 12;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
     transition-duration: 400ms;
-    transform: scale(1.1,1.1) translate3d(0,0,0);
+    // transform: scale(1.1,1.1) translate3d(0,0,0);
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -116,6 +136,7 @@ nav {
     background: $accent2;
     @include flexin();
     flex-direction: column;
+    box-shadow: -5px 5px 10px rgb(124, 124, 124);
   }
   .menu-open-button:hover{
     transform:scale(1.1,1.1) translate3d(0,0,0);
@@ -123,9 +144,18 @@ nav {
   .menu-open:checked+.menu-open-button{
     transition-timing-function:linear;
     transition-duration:200ms;
-    transform:scale(0.8,0.8) translate3d(0,0,0);
+    // transform:scale(0.8,0.8) translate3d(0,0,0);
   }
-  .menu-open:checked~a{
+  .menu-open:checked~.nav-list{
     display: inline-block;
+  }
+  .menu-open:checked+.menu-open-button{
+    width: 80px;
+    height: 80px;
+    margin: -2px 0 0 8px;
+    box-shadow: -5px 0px 10px rgb(124, 124, 124);
+    &:hover {
+      transform: scale(1);
+    }
   }
 }
