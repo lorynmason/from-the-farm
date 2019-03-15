@@ -20,7 +20,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "REACT_APP_API_KEY=A0tWrl1fcQ6qhdO568TLoz react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

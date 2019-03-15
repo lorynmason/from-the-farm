@@ -5,7 +5,6 @@ import { postUser } from '../../thunks/postUser';
 import { Redirect } from 'react-router';
 import PropTypes from 'prop-types';
 import ReactFilestack from 'react-filestack';
-import { apikey } from '../../apikey';
 
 export class Login extends Component {
   constructor(){
@@ -88,7 +87,7 @@ export class Login extends Component {
           <input placeholder="Company Bio" name="bio" type="text" onChange={this.handleChange} value={this.state.bio}/>
           <p>Add a profile picture (optional)</p>
           <ReactFilestack
-            apikey={apikey}
+            apikey={process.env.REACT_APP_API_KEY}
             buttonText="Upload Photo"
             buttonClass="upload"
             options={this.basicOptions}

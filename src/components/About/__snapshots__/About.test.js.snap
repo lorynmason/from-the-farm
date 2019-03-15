@@ -29,7 +29,9 @@ ShallowWrapper {
         </p>
         <p>
           If you'd like to contribute code or find out more information about from the farm please visit: 
-          <a>
+          <a
+            href="https://github.com/lorynmason/from-the-farm"
+          >
             https://github.com/lorynmason/from-the-farm
           </a>
         </p>
@@ -50,7 +52,9 @@ ShallowWrapper {
           </p>,
           <p>
             If you'd like to contribute code or find out more information about from the farm please visit: 
-            <a>
+            <a
+              href="https://github.com/lorynmason/from-the-farm"
+            >
               https://github.com/lorynmason/from-the-farm
             </a>
           </p>,
@@ -88,7 +92,9 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "If you'd like to contribute code or find out more information about from the farm please visit: ",
-              <a>
+              <a
+                href="https://github.com/lorynmason/from-the-farm"
+              >
                 https://github.com/lorynmason/from-the-farm
               </a>,
             ],
@@ -102,6 +108,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "https://github.com/lorynmason/from-the-farm",
+                "href": "https://github.com/lorynmason/from-the-farm",
               },
               "ref": null,
               "rendered": "https://github.com/lorynmason/from-the-farm",
@@ -132,7 +139,9 @@ ShallowWrapper {
           </p>
           <p>
             If you'd like to contribute code or find out more information about from the farm please visit: 
-            <a>
+            <a
+              href="https://github.com/lorynmason/from-the-farm"
+            >
               https://github.com/lorynmason/from-the-farm
             </a>
           </p>
@@ -153,7 +162,9 @@ ShallowWrapper {
             </p>,
             <p>
               If you'd like to contribute code or find out more information about from the farm please visit: 
-              <a>
+              <a
+                href="https://github.com/lorynmason/from-the-farm"
+              >
                 https://github.com/lorynmason/from-the-farm
               </a>
             </p>,
@@ -191,7 +202,9 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "If you'd like to contribute code or find out more information about from the farm please visit: ",
-                <a>
+                <a
+                  href="https://github.com/lorynmason/from-the-farm"
+                >
                   https://github.com/lorynmason/from-the-farm
                 </a>,
               ],
@@ -205,6 +218,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "https://github.com/lorynmason/from-the-farm",
+                  "href": "https://github.com/lorynmason/from-the-farm",
                 },
                 "ref": null,
                 "rendered": "https://github.com/lorynmason/from-the-farm",
