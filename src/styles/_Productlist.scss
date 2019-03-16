@@ -1,7 +1,7 @@
 .table-container {
   width: 43vw;
   grid-area: table;
-  margin: 10px 20px 0 50px;
+  margin: 0 20px 0 50px;
   box-shadow: -5px 5px 10px rgb(124, 124, 124);
   @media screen  and (max-width: 1000px) {
     width: 47vw;
@@ -12,7 +12,6 @@
     width: 73vw;
   }
 }
-
 table {
   width: 100%;
   table-layout: fixed;
@@ -23,21 +22,18 @@ table {
     display: block;
     width: 100%;
     overflow: auto;
-    height: 62vh;
+    height: 63vh;
   }
-
   thead tr {
     display: block;
     background: $accent2;
     color: whitesmoke;
     font-weight: bold;
   }
-
   thead {
     background: $accent2;
     color:#fff;
   }
-
   th, td {
     padding: 5px;
     width: calc(43vw/4);
@@ -49,7 +45,7 @@ table {
     vertical-align: middle;
   }
   tr:nth-child(even) { 
-    background: rgba(48, 139, 36, 0.288); 
+    background:rgba(57, 131, 180, 0.322);
   }
   td {
     border: .5px solid rgba(228, 227, 227, 0.363);

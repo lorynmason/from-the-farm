@@ -14,7 +14,7 @@ $mainFont: 'Source Sans Pro', sans-serif;
   content: '';
   display: block;
   width: 600px;
-  height: 150px;
+  height: 100px;
   transform: translate($t1, $t2);
   transition: all .5s ease-in-out;
   box-shadow: 2px 2px 4px 0px rgba(0,0,0,$a);
@@ -27,14 +27,7 @@ $mainFont: 'Source Sans Pro', sans-serif;
 }
 
 //colors
-
-// $accent1: rgb(2, 150, 150);
-// $accent2: rgb(12, 192, 177);
-
-// $accent1: rgb(48, 139, 36);
-// $accent1: rgb(9, 196, 108);
-$accent1: rgb(6, 161, 45);
-
+$accent1: rgb(57, 131, 180);
 $accent2: rgb(39, 39, 39);
 
 @import "Reset";

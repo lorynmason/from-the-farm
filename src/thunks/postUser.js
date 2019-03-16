@@ -26,11 +26,9 @@ export const postUser = (url, state) => {
         })
       });
       if (!response.ok) {
-        console.log('error')
         throw Error(response.statusText);
       }
       dispatch(isLoading(false))
-      console.log(results)
       const results = await response.json();
       dispatch(fetchUser(`https://xpoll-be.herokuapp.com/api/v1/users/${results.user.id}`, results.auth_token)) 
     } catch (error) {

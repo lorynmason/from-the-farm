@@ -20,19 +20,26 @@ export const Header = (props) => {
 
   return (
     <header>
-      <div className="container">
-        <div className="header-logo">
-          <h1>from<span>the</span>farm</h1>
-          <img id="logo" src={image} alt="from the farm cute pig logo"/>
-          <p>menu<i className="fas fa-caret-right"></i></p>
-          <div className="menu">
+      <div className="header-logo">
+      <Link to="/" onClick={clickBuy} title="Click to go to Home Page">
+        <h1>from the farm</h1>
+        <img id="logo" src={image} alt="from the farm cute pig logo"/>
+      </Link>
+      </div>
+      <nav className="menu">
+        <input type="checkbox" href="#" className="menu-open" name="menu-open" id="menu-open"/>
+          <label className="menu-open-button" htmlFor="menu-open">
+            <span className="hamburger hamburger-1"></span>
+            <span className="hamburger hamburger-2"></span>
+            <span className="hamburger hamburger-3"></span>
+          </label>
+          <div className="nav-list">
             <Link to="/buy" onClick={clickBuy}><i className="fas fa-carrot"><p>buy</p></i></Link>
             <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
-            <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i> </Link>
+            <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i></Link>
             <Link to="/" onClick={signout}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
           </div>
-        </div>
-      </div>
+      </nav>
     </header>
   );
 }

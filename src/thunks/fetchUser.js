@@ -11,6 +11,7 @@ export const fetchUser = (url, token) => {
       }
       dispatch(isLoading(false))
       const results = await response.json();
+      console.log(results)
       const user = cleanUser(results.data, token);
       dispatch(addUser(user));
     } catch (error) {

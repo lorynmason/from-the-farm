@@ -2,114 +2,159 @@ header {
   width: 100vw;
   height: 190px;
   @include flexin();
-  transition: ease all 1s;
   .header-logo {
     position: absolute;
-    padding-left: 100px;
     z-index: 2;
     width: 600px;
-    height: 150px;
+    height: 100px;
     top: 20px;
     line-height: 60px;
     transition: all .3s ease-in-out;
-    @include flexin();
-    h1 {
-      font-size: 4rem;
-      font-family: $titleFont;
-      width: 100px;
-      text-align: center;
-      font-weight: 400;
-      margin-right: 20px;
-      text-shadow: -4px 4px #000;
-      color: $accent1;
-      line-height: 70%;
-      span {
-        font-size: 3rem;
-        display: block;
-      }
-    }
-    img {
-      height: 175px;
-      filter: invert(95%);
-      margin-right: -30px;
-      padding-bottom: 10px;
-    }
-    p {
-      color: whitesmoke;
-      margin:-133px -410px 0 100px;
-      font-family: $titleFont;
-      font-size: 1.1rem;
-      letter-spacing: 5px;
-    }
-  }
-
-  .header-logo:before {
-    @include psuedo (-1, 0, 0, 0.1);
-    background: $accent2;
-  }
-
-  .header-logo:after {
-    @include psuedo (-2, 13px, 12px, 0.2);
-    background: $accent1;
-    box-shadow: -5px 5px 10px rgb(124, 124, 124);
-  }
-
-  .header-logo:hover {
-    transform: translate(13px, 12px);
-    h1 {
-      color: white;
-    }
-    img {
-      filter: drop-shadow(-4px 4px white) invert(95%);
-    }
-  }
-
-  .header-logo:hover:before {
-    background: $accent1;
-    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
-  }
-
-  .header-logo:hover:after {
-    transform: translate(-15px, -10px);
-    background: $accent2;
-  }
-  .container {
-    @include flexin();
-    flex-direction: column;
-    margin-left: 60px;    
-    .menu {
-      a {
-        all: unset;
-      }
-      padding-left: 440px;
+    a {
       @include flexin();
-      flex-direction: column;
-      color: transparent;
-      transition: color .3s ease-in; 
-      margin-top: 60px;   
-      i {    
-        font-size: 2.5rem;
-        cursor: pointer;
-        transition: all ease .3s;
-        p {
-          color: black;
-          margin-left: 2px;
-          display: none;
-          font-size: 1rem;
-          letter-spacing: 0px;
-        }
-        &:hover {
-          color: $accent1;
-          p {
-            display: inline-block;
-          }
-        }
+      text-decoration: none;
+      h1 {
+        font-size: 4.5rem;
+        font-family: $titleFont;
+        font-weight: 400;
+        text-shadow: -4px 4px #000;
+        color: $accent1;
+      }
+      img {
+        height: 100px;
+        filter: invert(95%);
+      }
+    }
+    &:before {
+      @include psuedo (-1, 0, 0, 0.1);
+      background: $accent2;
+    }
+    &:after {
+      @include psuedo (-2, 13px, 12px, 0.2);
+      background: $accent1;
+      box-shadow: -5px 5px 10px rgb(124, 124, 124);
+    }
+    &:hover {
+      transform: translate(13px, 12px);
+      h1 {
+        color: white;
+      }
+      img {
+        filter: drop-shadow(-2px 3px white) invert(95%);
+      }
+    }
+    &:hover:before {
+      background: $accent1;
+      box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
+    }
+  
+    &:hover:after {
+      transform: translate(-15px, -10px);
+      background: $accent2;
+    } 
+  }
+}
+
+nav {
+  position: absolute;
+  top: -7px;
+  left: 40px;
+  @include flexin();
+  flex-direction: column;
+  input {
+    display: none;
+  }
+  .nav-list {
+    position: absolute;
+    top: 98px;
+    left: -26px;
+    transform: translate3d(0,0,0);
+    background: rgba(57, 131, 180, 0.904);
+    z-index: 12;
+    display: none;
+    box-shadow: -4px 0px 8px rgb(124, 124, 124);
+    transition: transform 1s ease-in-out;
+  }
+  a {
+    text-align: center;
+    color: $accent2;
+    height: 74px;
+    width: 74px;
+    @include flexin();
+    text-decoration: none;
+    border: 3px solid rgba(57, 131, 180, 0.904);
+    i {
+      font-size: 2.5rem;
+      p {
+        font-size: .9rem;
+        color: transparent;
       }
     }
     &:hover {
-      .menu {
-        color: #000;
+      background: $accent2;
+      color: $accent1;
+      border: 3px solid $accent1;
+      p {
+        color: $accent1;
       }
     }
-  } 
+  }
+  .hamburger{
+    height: 3px;
+    width: 30px;
+    background: $accent1;
+    display: block;
+    margin: 3px 0;
+    transition:transform .5s;
+  }
+  .menu-open:checked+.menu-open-button{
+    .hamburger-1{
+      transform:translate3d(0,0,0) rotate(45deg) translate(6px, 6px);
+      width: 60px; 
+    }
+    .hamburger-2{
+      opacity: 0;
+    }
+    .hamburger-3{
+      transform:translate3d(0,0,0) rotate(-45deg) translate(6px, -6px);
+      width: 60px; 
+    }
+  }
+  .menu-open-button{
+    z-index: 12;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition-duration: 400ms;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 10px;
+    top: 20px;
+    text-align: center;
+    line-height: 80px;
+    transition: transform ease-out 200ms;
+    background: $accent2;
+    @include flexin();
+    flex-direction: column;
+    box-shadow: -5px 5px 10px rgb(124, 124, 124);
+  }
+  .menu-open-button:hover{
+    transform:scale(1.1,1.1) translate3d(0,0,0);
+  }
+  .menu-open:checked+.menu-open-button{
+    transition-timing-function:linear;
+    transition-duration:1s;
+  }
+  .menu-open:checked~.nav-list{
+    display: inline-block;
+  }
+  .menu-open:checked+.menu-open-button{
+    width: 80px;
+    height: 80px;
+    margin: -2px 0 0 14px;
+    box-shadow: -5px 0px 10px rgb(124, 124, 124);
+    &:hover {
+      transform: scale(1);
+    }
+  }
 }
