@@ -14,7 +14,7 @@ header {
       @include flexin();
       text-decoration: none;
       h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
         font-family: $titleFont;
         font-weight: 400;
         text-shadow: -4px 4px #000;
@@ -67,10 +67,10 @@ nav {
   .nav-list {
     position: absolute;
     top: 98px;
-    left: -32px;
+    left: -26px;
     transform: translate3d(0,0,0);
     transition: transform ease-out 200ms;
-    background: rgba(25, 201, 69, 0.856);
+    background: rgba(57, 131, 180, 0.904);
     z-index: 12;
     display: none;
     box-shadow: -4px 0px 8px rgb(124, 124, 124);
@@ -82,7 +82,7 @@ nav {
     width: 74px;
     @include flexin();
     text-decoration: none;
-    border: 3px solid rgba(25, 201, 69, 0.856);
+    border: 3px solid rgba(57, 131, 180, 0.904);
     i {
       font-size: 2.5rem;
       p {
@@ -128,6 +128,7 @@ nav {
     width: 60px;
     height: 60px;
     position: absolute;
+    margin-left: 10px;
     top: 20px;
     text-align: center;
     line-height: 80px;
@@ -150,7 +151,7 @@ nav {
   .menu-open:checked+.menu-open-button{
     width: 80px;
     height: 80px;
-    margin: -2px 0 0 8px;
+    margin: -2px 0 0 14px;
     box-shadow: -5px 0px 10px rgb(124, 124, 124);
     &:hover {
       transform: scale(1);
