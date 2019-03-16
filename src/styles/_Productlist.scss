@@ -12,7 +12,6 @@
     width: 73vw;
   }
 }
-
 table {
   width: 100%;
   table-layout: fixed;
@@ -25,19 +24,16 @@ table {
     overflow: auto;
     height: 63vh;
   }
-
   thead tr {
     display: block;
     background: $accent2;
     color: whitesmoke;
     font-weight: bold;
   }
-
   thead {
     background: $accent2;
     color:#fff;
   }
-
   th, td {
     padding: 5px;
     width: calc(43vw/4);
