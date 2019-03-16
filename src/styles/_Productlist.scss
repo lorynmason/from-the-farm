@@ -1,7 +1,7 @@
 .table-container {
   width: 43vw;
   grid-area: table;
-  margin: 10px 20px 0 50px;
+  margin: 0 20px 0 50px;
   box-shadow: -5px 5px 10px rgb(124, 124, 124);
   @media screen  and (max-width: 1000px) {
     width: 47vw;
@@ -23,7 +23,7 @@ table {
     display: block;
     width: 100%;
     overflow: auto;
-    height: 62vh;
+    height: 63vh;
   }
 
   thead tr {
