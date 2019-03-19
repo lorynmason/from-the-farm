@@ -7,11 +7,13 @@ import PropTypes from 'prop-types';
 export const Profile = ({ user, vendors, allProducts, location }) => {
   let profile = null
   let profileProducts
+  let picture = user.img_url ? user.img_url : farmImage
   let { name, bio, address, phone, email, city, state, products } = user
   if (location.pathname !== 'myprofile') {
     const id = location.pathname.split('/')[2]
     profile = vendors.find(vendor => vendor.id === parseInt(id)) 
-    profileProducts = allProducts.filter( products => products.user_id === parseInt(id))
+    profileProducts = allProducts.filter(products => products.user_id === parseInt(id))
+    picture = profile ? profile.img_url : farmImage
   } 
   return (
     <section className="profile">
@@ -19,7 +21,7 @@ export const Profile = ({ user, vendors, allProducts, location }) => {
       <h3>{profile ? profile.name : name}</h3>
       <section className="vender-info">
         <div className="img-container">
-          <img id="farm" src={user.img_url ? user.img_url : farmImage} alt="Farm"/>
+          <img id="farm" src={picture} alt="Farm"/>
         </div>
         <div className="contact-info">
           <h4>{profile ? profile.address : address}</h4>

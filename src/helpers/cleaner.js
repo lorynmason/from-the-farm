@@ -24,7 +24,7 @@ export const cleanProducts = (vendors) => {
 
 export const cleanVendors = (vendors) => {
   return vendors.map( vendor => {
-    const { name, address, state, city, phone, email, lat, long, bio } = vendor.attributes
+    const { name, address, state, city, phone, email, lat, long, bio, img_url } = vendor.attributes
     const formattedNum = formatPhoneNumber(phone)
     return {
       name,
@@ -36,7 +36,8 @@ export const cleanVendors = (vendors) => {
       email,
       lat,
       long, 
-      id: parseInt(vendor.id)
+      id: parseInt(vendor.id),
+      img_url
     }
   })
 }
