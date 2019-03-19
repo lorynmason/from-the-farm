@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 
 export const Mapp = ({ vendors, vendorSearchResults }) => {
   const position = [39.750614, -104.996775]
@@ -16,7 +18,7 @@ export const Mapp = ({ vendors, vendorSearchResults }) => {
   const markers = vendorsToShow.map((vendor) => (
     <Marker position={[vendor.lat, vendor.long]} icon={customMarker} key={vendor.id}>
       <Popup>
-        <h3>{vendor.name}</h3>
+        <h3><Link to={`/profile/${vendor.id}`} >{vendor.name}</Link></h3>
         <p>{vendor.address}</p>
         <p>{vendor.phone}</p>
         <p>{vendor.email}</p>
