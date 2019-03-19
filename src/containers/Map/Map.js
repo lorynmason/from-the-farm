@@ -5,7 +5,6 @@ import L from 'leaflet';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-
 export const Mapp = ({ vendors, vendorSearchResults }) => {
   const position = [39.750614, -104.996775]
   let vendorsToShow = vendors

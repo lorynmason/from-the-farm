@@ -19,7 +19,7 @@ export const Profile = ({ user, vendors, allProducts, location }) => {
       <h3>{profile ? profile.name : name}</h3>
       <section className="vender-info">
         <div className="img-container">
-          <img id="farm" src={farmImage} alt="Farm"/>
+          <img id="farm" src={user.img_url ? user.img_url : farmImage} alt="Farm"/>
         </div>
         <div className="contact-info">
           <h4>{profile ? profile.address : address}</h4>
