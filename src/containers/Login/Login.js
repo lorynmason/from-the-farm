@@ -71,7 +71,7 @@ export class Login extends Component {
   render() {
     let page;
     if (this.props.user.name) {
-      page = <Redirect to='/profile' />
+      page = <Redirect to='/myprofile' />
     }
     if (this.state.newUser) {
       return (

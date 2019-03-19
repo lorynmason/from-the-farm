@@ -3,10 +3,12 @@ import Product from '../Product/Product';
 import PropTypes from 'prop-types';
 
 export const ProductList = ({ products }) => {
-  const productsToReturn = products.map((product) => {
-    return <Product product={product} key={product.id} />
-  });
-
+  let productsToReturn;
+  if (products) {
+    productsToReturn = products.map((product) => {
+      return <Product product={product} key={product.id} />
+    });
+  }
   return (
     <section className="table-container">
       <table className="product-list">

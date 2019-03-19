@@ -35,7 +35,7 @@ export const Header = (props) => {
           </label>
           <div className="nav-list">
             <Link to="/buy" onClick={clickBuy}><i className="fas fa-carrot"><p>buy</p></i></Link>
-            <Link to="/profile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
+            <Link to="/myprofile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
             <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i></Link>
             <Link to="/" onClick={signout}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
           </div>
