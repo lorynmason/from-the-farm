@@ -84,7 +84,7 @@ ShallowWrapper {
             </Link>
             <Link
               replace={false}
-              to="/profile"
+              to="/myprofile"
             >
               <i
                 className="fas fa-user-circle"
@@ -244,7 +244,7 @@ ShallowWrapper {
               </Link>
               <Link
                 replace={false}
-                to="/profile"
+                to="/myprofile"
               >
                 <i
                   className="fas fa-user-circle"
@@ -378,7 +378,7 @@ ShallowWrapper {
                 </Link>,
                 <Link
                   replace={false}
-                  to="/profile"
+                  to="/myprofile"
                 >
                   <i
                     className="fas fa-user-circle"
@@ -474,7 +474,7 @@ ShallowWrapper {
                     </p>
                   </i>,
                   "replace": false,
-                  "to": "/profile",
+                  "to": "/myprofile",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -665,7 +665,7 @@ ShallowWrapper {
               </Link>
               <Link
                 replace={false}
-                to="/profile"
+                to="/myprofile"
               >
                 <i
                   className="fas fa-user-circle"
@@ -825,7 +825,7 @@ ShallowWrapper {
                 </Link>
                 <Link
                   replace={false}
-                  to="/profile"
+                  to="/myprofile"
                 >
                   <i
                     className="fas fa-user-circle"
@@ -959,7 +959,7 @@ ShallowWrapper {
                   </Link>,
                   <Link
                     replace={false}
-                    to="/profile"
+                    to="/myprofile"
                   >
                     <i
                       className="fas fa-user-circle"
@@ -1055,7 +1055,7 @@ ShallowWrapper {
                       </p>
                     </i>,
                     "replace": false,
-                    "to": "/profile",
+                    "to": "/myprofile",
                   },
                   "ref": null,
                   "rendered": Object {

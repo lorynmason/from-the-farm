@@ -60,7 +60,11 @@ ShallowWrapper {
             render={[Function]}
           />
           <Route
-            path="/profile"
+            path="/myprofile"
+            render={[Function]}
+          />
+          <Route
+            path="/profile/:id"
             render={[Function]}
           />
         </Switch>,
@@ -115,7 +119,11 @@ ShallowWrapper {
               render={[Function]}
             />,
             <Route
-              path="/profile"
+              path="/myprofile"
+              render={[Function]}
+            />,
+            <Route
+              path="/profile/:id"
               render={[Function]}
             />,
           ],
@@ -188,7 +196,19 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "path": "/profile",
+              "path": "/myprofile",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/profile/:id",
               "render": [Function],
             },
             "ref": null,
@@ -233,7 +253,11 @@ ShallowWrapper {
               render={[Function]}
             />
             <Route
-              path="/profile"
+              path="/myprofile"
+              render={[Function]}
+            />
+            <Route
+              path="/profile/:id"
               render={[Function]}
             />
           </Switch>,
@@ -288,7 +312,11 @@ ShallowWrapper {
                 render={[Function]}
               />,
               <Route
-                path="/profile"
+                path="/myprofile"
+                render={[Function]}
+              />,
+              <Route
+                path="/profile/:id"
                 render={[Function]}
               />,
             ],
@@ -361,7 +389,19 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "path": "/profile",
+                "path": "/myprofile",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/profile/:id",
                 "render": [Function],
               },
               "ref": null,
