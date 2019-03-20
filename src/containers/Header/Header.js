@@ -21,7 +21,7 @@ export const Header = (props) => {
   return (
     <header>
       <div className="header-logo">
-      <Link to="/" onClick={clickBuy} title="Click to go to Home Page">
+      <Link to="/buy" onClick={clickBuy} title="Click to go to Buy Page">
         <h1>from the farm</h1>
         <img id="logo" src={image} alt="from the farm cute pig logo"/>
       </Link>
@@ -37,6 +37,8 @@ export const Header = (props) => {
             <Link to="/buy" onClick={clickBuy}><i className="fas fa-carrot"><p>buy</p></i></Link>
             <Link to="/myprofile"><i className="fas fa-user-circle"><p>my profile</p></i></Link>
             <Link to="/add-product"><i className="fas fa-plus-circle"><p>inventory</p></i></Link>
+            <Link to="/about"><i className="fas fa-tractor"><p>about</p></i></Link>
+            <Link to="/login"><i className="fas fa-sign-in-alt"><p>login</p></i></Link>
             <Link to="/" onClick={signout}><i className="fas fa-sign-out-alt"><p>sign out</p></i></Link>
           </div>
       </nav>

@@ -29,8 +29,8 @@ ShallowWrapper {
           <Link
             onClick={[Function]}
             replace={false}
-            title="Click to go to Home Page"
-            to="/"
+            title="Click to go to Buy Page"
+            to="/buy"
           >
             <h1>
               from the farm
@@ -107,6 +107,30 @@ ShallowWrapper {
               </i>
             </Link>
             <Link
+              replace={false}
+              to="/about"
+            >
+              <i
+                className="fas fa-tractor"
+              >
+                <p>
+                  about
+                </p>
+              </i>
+            </Link>
+            <Link
+              replace={false}
+              to="/login"
+            >
+              <i
+                className="fas fa-sign-in-alt"
+              >
+                <p>
+                  login
+                </p>
+              </i>
+            </Link>
+            <Link
               onClick={[Function]}
               replace={false}
               to="/"
@@ -133,8 +157,8 @@ ShallowWrapper {
           "children": <Link
             onClick={[Function]}
             replace={false}
-            title="Click to go to Home Page"
-            to="/"
+            title="Click to go to Buy Page"
+            to="/buy"
           >
             <h1>
               from the farm
@@ -165,8 +189,8 @@ ShallowWrapper {
             ],
             "onClick": [Function],
             "replace": false,
-            "title": "Click to go to Home Page",
-            "to": "/",
+            "title": "Click to go to Buy Page",
+            "to": "/buy",
           },
           "ref": null,
           "rendered": Array [
@@ -263,6 +287,30 @@ ShallowWrapper {
                 >
                   <p>
                     inventory
+                  </p>
+                </i>
+              </Link>
+              <Link
+                replace={false}
+                to="/about"
+              >
+                <i
+                  className="fas fa-tractor"
+                >
+                  <p>
+                    about
+                  </p>
+                </i>
+              </Link>
+              <Link
+                replace={false}
+                to="/login"
+              >
+                <i
+                  className="fas fa-sign-in-alt"
+                >
+                  <p>
+                    login
                   </p>
                 </i>
               </Link>
@@ -397,6 +445,30 @@ ShallowWrapper {
                   >
                     <p>
                       inventory
+                    </p>
+                  </i>
+                </Link>,
+                <Link
+                  replace={false}
+                  to="/about"
+                >
+                  <i
+                    className="fas fa-tractor"
+                  >
+                    <p>
+                      about
+                    </p>
+                  </i>
+                </Link>,
+                <Link
+                  replace={false}
+                  to="/login"
+                >
+                  <i
+                    className="fas fa-sign-in-alt"
+                  >
+                    <p>
+                      login
                     </p>
                   </i>
                 </Link>,
@@ -551,6 +623,90 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "children": <i
+                    className="fas fa-tractor"
+                  >
+                    <p>
+                      about
+                    </p>
+                  </i>,
+                  "replace": false,
+                  "to": "/about",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <p>
+                      about
+                    </p>,
+                    "className": "fas fa-tractor",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "about",
+                    },
+                    "ref": null,
+                    "rendered": "about",
+                    "type": "p",
+                  },
+                  "type": "i",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <i
+                    className="fas fa-sign-in-alt"
+                  >
+                    <p>
+                      login
+                    </p>
+                  </i>,
+                  "replace": false,
+                  "to": "/login",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <p>
+                      login
+                    </p>,
+                    "className": "fas fa-sign-in-alt",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "login",
+                    },
+                    "ref": null,
+                    "rendered": "login",
+                    "type": "p",
+                  },
+                  "type": "i",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <i
                     className="fas fa-sign-out-alt"
                   >
                     <p>
@@ -610,8 +766,8 @@ ShallowWrapper {
             <Link
               onClick={[Function]}
               replace={false}
-              title="Click to go to Home Page"
-              to="/"
+              title="Click to go to Buy Page"
+              to="/buy"
             >
               <h1>
                 from the farm
@@ -688,6 +844,30 @@ ShallowWrapper {
                 </i>
               </Link>
               <Link
+                replace={false}
+                to="/about"
+              >
+                <i
+                  className="fas fa-tractor"
+                >
+                  <p>
+                    about
+                  </p>
+                </i>
+              </Link>
+              <Link
+                replace={false}
+                to="/login"
+              >
+                <i
+                  className="fas fa-sign-in-alt"
+                >
+                  <p>
+                    login
+                  </p>
+                </i>
+              </Link>
+              <Link
                 onClick={[Function]}
                 replace={false}
                 to="/"
@@ -714,8 +894,8 @@ ShallowWrapper {
             "children": <Link
               onClick={[Function]}
               replace={false}
-              title="Click to go to Home Page"
-              to="/"
+              title="Click to go to Buy Page"
+              to="/buy"
             >
               <h1>
                 from the farm
@@ -746,8 +926,8 @@ ShallowWrapper {
               ],
               "onClick": [Function],
               "replace": false,
-              "title": "Click to go to Home Page",
-              "to": "/",
+              "title": "Click to go to Buy Page",
+              "to": "/buy",
             },
             "ref": null,
             "rendered": Array [
@@ -844,6 +1024,30 @@ ShallowWrapper {
                   >
                     <p>
                       inventory
+                    </p>
+                  </i>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/about"
+                >
+                  <i
+                    className="fas fa-tractor"
+                  >
+                    <p>
+                      about
+                    </p>
+                  </i>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/login"
+                >
+                  <i
+                    className="fas fa-sign-in-alt"
+                  >
+                    <p>
+                      login
                     </p>
                   </i>
                 </Link>
@@ -978,6 +1182,30 @@ ShallowWrapper {
                     >
                       <p>
                         inventory
+                      </p>
+                    </i>
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/about"
+                  >
+                    <i
+                      className="fas fa-tractor"
+                    >
+                      <p>
+                        about
+                      </p>
+                    </i>
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/login"
+                  >
+                    <i
+                      className="fas fa-sign-in-alt"
+                    >
+                      <p>
+                        login
                       </p>
                     </i>
                   </Link>,
@@ -1120,6 +1348,90 @@ ShallowWrapper {
                       },
                       "ref": null,
                       "rendered": "inventory",
+                      "type": "p",
+                    },
+                    "type": "i",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <i
+                      className="fas fa-tractor"
+                    >
+                      <p>
+                        about
+                      </p>
+                    </i>,
+                    "replace": false,
+                    "to": "/about",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <p>
+                        about
+                      </p>,
+                      "className": "fas fa-tractor",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "about",
+                      },
+                      "ref": null,
+                      "rendered": "about",
+                      "type": "p",
+                    },
+                    "type": "i",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <i
+                      className="fas fa-sign-in-alt"
+                    >
+                      <p>
+                        login
+                      </p>
+                    </i>,
+                    "replace": false,
+                    "to": "/login",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <p>
+                        login
+                      </p>,
+                      "className": "fas fa-sign-in-alt",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "login",
+                      },
+                      "ref": null,
+                      "rendered": "login",
                       "type": "p",
                     },
                     "type": "i",
