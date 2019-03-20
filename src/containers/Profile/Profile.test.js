@@ -13,8 +13,11 @@ describe('Profile', () => {
     state: 'St',
     id: 2
   }
+  const mockLocation = {
+    pathname: 'myprofile'
+  }
   it('should match the snapshot with no products', () => {
-    const wrapper = shallow(<Profile user={mockUser} products={[]} />);
+    const wrapper = shallow(<Profile user={mockUser} products={[]} location={mockLocation}/>);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -24,7 +27,7 @@ describe('Profile', () => {
       {name: 'lettuce', id: 5}
     ]
 
-    const wrapper = shallow(<Profile user={mockUser} products={mockProducts} />);
+    const wrapper = shallow(<Profile user={mockUser} products={mockProducts} location={mockLocation}/>);
     expect(wrapper).toMatchSnapshot();
   });
 });

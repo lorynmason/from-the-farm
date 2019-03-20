@@ -28,7 +28,8 @@ export class App extends Component {
           <Route path="/login" component={Login}/>
           <Route path="/buy" component={Buy} />
           <Route path="/add-product" render={() => this.props.user.name ? (<AddProductForm />) : (<Redirect to="/login" />)} />
-          <Route path="/profile" render={() => this.props.user.name ? (<Profile />) : (<Redirect to="/login" />)} />
+          <Route path="/myprofile" render={(match) => this.props.user.name ? (<Profile location={match.location}/>) : (<Redirect to="/login" />)} />
+          <Route path="/profile/:id" render={(match) => <Profile location={match.location}/>} />
         </Switch>
       </div>
     );

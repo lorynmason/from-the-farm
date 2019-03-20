@@ -11,6 +11,7 @@
     width: 45vw;
     margin: 0 auto;
     padding-bottom: 10px;
+    background: $accent2;
     @media screen  and (max-width: 1000px) {
       width: 49vw;
       select, input {
@@ -30,8 +31,9 @@
     font-size: 2rem;
     text-align: center;
     margin: -10px 0 10px;
-    text-shadow: -2px 2px 3px rgb(131, 131, 131);
+    text-shadow: -3px 3px 3px rgb(3, 3, 3);
     padding-top: 10px;
+    color: $accent1;
   }
   select, input {
     width: 160px;
@@ -54,23 +56,23 @@
     font-size: 1.3rem;
     font-weight: 500;
     color: whitesmoke;
-    box-shadow: -3px 3px 6px rgba(88, 88, 88, 0.664);
+    box-shadow: -3px 3px 6px rgba(7, 7, 7, 0.664);
     transition: all ease .5s;
     border-radius: 5px;
     display: block;
     &:hover {
       cursor: pointer;
-      background: $accent2;
+      background: whitesmoke;
       transform: scale(1.05);
       color: $accent1;
     }
   }
   #reset {
-    color: $accent2;
+    color: $accent1;
     margin: 5px 0 0;
     text-align: center;
     text-decoration: underline;
-    font-size: .8rem;
+    font-size: .9rem;
     &:hover {
       color: $accent1;
       cursor: pointer;

@@ -23,6 +23,7 @@ header {
       img {
         height: 100px;
         filter: invert(95%);
+        transition: filter linear .1s;
       }
     }
     &:before {
@@ -38,9 +39,14 @@ header {
       transform: translate(13px, 12px);
       h1 {
         color: white;
+        text-shadow: -2px 2px #000;
+        // color: $accent2;
+        // text-shadow: none;
       }
       img {
-        filter: drop-shadow(-2px 3px white) invert(95%);
+        filter: drop-shadow(-1px 2px white) invert(95%);
+        // filter: none;
+        // filter: invert(95%);
       }
     }
     &:hover:before {
@@ -78,11 +84,11 @@ nav {
   a {
     text-align: center;
     color: $accent2;
-    height: 74px;
-    width: 74px;
+    height: 80px;
+    width: 80px;
     @include flexin();
     text-decoration: none;
-    border: 3px solid rgba(57, 131, 180, 0.904);
+    // border: 3px solid rgba(57, 131, 180, 0.904);
     i {
       font-size: 2.5rem;
       p {
@@ -93,7 +99,7 @@ nav {
     &:hover {
       background: $accent2;
       color: $accent1;
-      border: 3px solid $accent1;
+      // border: 3px solid $accent1;
       p {
         color: $accent1;
       }
@@ -122,8 +128,8 @@ nav {
   }
   .menu-open-button{
     z-index: 12;
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition-duration: 400ms;
+    // transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    // transition-duration: .1s;
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -132,7 +138,7 @@ nav {
     top: 20px;
     text-align: center;
     line-height: 80px;
-    transition: transform ease-out 200ms;
+    // transition: all ease-out 400ms;
     background: $accent2;
     @include flexin();
     flex-direction: column;
@@ -143,7 +149,7 @@ nav {
   }
   .menu-open:checked+.menu-open-button{
     transition-timing-function:linear;
-    transition-duration:1s;
+    transition-duration:.1s;
   }
   .menu-open:checked~.nav-list{
     display: inline-block;

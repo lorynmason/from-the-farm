@@ -71,7 +71,7 @@ export class Login extends Component {
   render() {
     let page;
     if (this.props.user.name) {
-      page = <Redirect to='/profile' />
+      page = <Redirect to='/myprofile' />
     }
     if (this.state.newUser) {
       return (
@@ -87,7 +87,7 @@ export class Login extends Component {
           <input placeholder="Company Bio" name="bio" type="text" onChange={this.handleChange} value={this.state.bio}/>
           <p>Add a profile picture (optional)</p>
           <ReactFilestack
-            apikey={process.env.REACT_APP_API_KEY}
+            apikey={process.env.REACT_APP_API_KEY || "A0tWrl1fcQ6qhdO568TLoz"}
             buttonText="Upload Photo"
             buttonClass="upload"
             options={this.basicOptions}

@@ -55,7 +55,8 @@ describe('cleanVendors', () => {
       email: 'helter_skelter@example.com',
       lat: 39.7861784,
       long: -105.0178452,
-      id: 5
+      id: 5,
+      img_url: null
     }]
 
     const result = cleanVendors(mockVendors);

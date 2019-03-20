@@ -4,6 +4,11 @@ exports[`Profile should match the snapshot with no products 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Profile
+    location={
+      Object {
+        "pathname": "myprofile",
+      }
+    }
     products={Array []}
     user={
       Object {
@@ -72,7 +77,7 @@ ShallowWrapper {
           </section>
           <p>
             A common pants wearer
-            Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
+             Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
           </p>
         </div>,
         <section
@@ -127,7 +132,7 @@ ShallowWrapper {
             </section>,
             <p>
               A common pants wearer
-              Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
+               Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
             </p>,
           ],
           "className": "profile-card",
@@ -301,13 +306,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "A common pants wearer",
-                "Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
+                " Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
               ],
             },
             "ref": null,
             "rendered": Array [
               "A common pants wearer",
-              "Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
+              " Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
             ],
             "type": "p",
           },
@@ -385,7 +390,7 @@ ShallowWrapper {
             </section>
             <p>
               A common pants wearer
-              Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
+               Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
             </p>
           </div>,
           <section
@@ -440,7 +445,7 @@ ShallowWrapper {
               </section>,
               <p>
                 A common pants wearer
-                Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
+                 Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
               </p>,
             ],
             "className": "profile-card",
@@ -614,13 +619,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "A common pants wearer",
-                  "Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
+                  " Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
                 ],
               },
               "ref": null,
               "rendered": Array [
                 "A common pants wearer",
-                "Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
+                " Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
               ],
               "type": "p",
             },
@@ -674,7 +679,6 @@ ShallowWrapper {
       },
     },
   },
-  Symbol(enzyme.__childContext__): null,
 }
 `;
 
@@ -682,6 +686,11 @@ exports[`Profile should match the snapshot with products 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Profile
+    location={
+      Object {
+        "pathname": "myprofile",
+      }
+    }
     products={
       Array [
         Object {
@@ -761,7 +770,7 @@ ShallowWrapper {
           </section>
           <p>
             A common pants wearer
-            Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
+             Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
           </p>
         </div>,
         <section
@@ -816,7 +825,7 @@ ShallowWrapper {
             </section>,
             <p>
               A common pants wearer
-              Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
+               Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
             </p>,
           ],
           "className": "profile-card",
@@ -990,13 +999,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "A common pants wearer",
-                "Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
+                " Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
               ],
             },
             "ref": null,
             "rendered": Array [
               "A common pants wearer",
-              "Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
+              " Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
             ],
             "type": "p",
           },
@@ -1074,7 +1083,7 @@ ShallowWrapper {
             </section>
             <p>
               A common pants wearer
-              Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
+               Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
             </p>
           </div>,
           <section
@@ -1129,7 +1138,7 @@ ShallowWrapper {
               </section>,
               <p>
                 A common pants wearer
-                Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
+                 Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.
               </p>,
             ],
             "className": "profile-card",
@@ -1303,13 +1312,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "A common pants wearer",
-                  "Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
+                  " Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
                 ],
               },
               "ref": null,
               "rendered": Array [
                 "A common pants wearer",
-                "Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
+                " Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.",
               ],
               "type": "p",
             },
@@ -1363,6 +1372,5 @@ ShallowWrapper {
       },
     },
   },
-  Symbol(enzyme.__childContext__): null,
 }
 `;
