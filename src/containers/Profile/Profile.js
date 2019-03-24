@@ -7,13 +7,13 @@ import PropTypes from 'prop-types';
 export const Profile = ({ user, vendors, allProducts, location }) => {
   let profile = null
   let profileProducts
-  let picture = user.img_url ? user.img_url : farmImage
+  let picture = user && user.img_url ? user.img_url : farmImage
   let { name, bio, address, phone, email, city, state, products } = user
-  if (location.pathname !== 'myprofile') {
+  if (location.pathname !== '/myprofile') {
     const id = location.pathname.split('/')[2]
     profile = vendors.find(vendor => vendor.id === parseInt(id)) 
     profileProducts = allProducts.filter(products => products.user_id === parseInt(id))
-    picture = profile ? profile.img_url : farmImage
+    picture = profile && profile.img_url ? profile.img_url : farmImage
   } 
   return (
     <section className="profile">
@@ -30,7 +30,7 @@ export const Profile = ({ user, vendors, allProducts, location }) => {
           <h4>{profile ? profile.phone : phone}</h4>
         </div>
       </section>
-      <p>{bio} Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.</p>
+      <p>{profile ? profile.bio : bio} Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. House hen chinchillas in barn livestock cat hogs chicks trucks. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robin.</p>
     </div>
         <section className="vender-products">
           <ProductList products={profile ? profileProducts : products} />

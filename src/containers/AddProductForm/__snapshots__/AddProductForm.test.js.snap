@@ -127,7 +127,7 @@ ShallowWrapper {
           <p>
             <Link
               replace={false}
-              to="/profile"
+              to="/myprofile"
             >
               Return to Profile
             </Link>
@@ -224,7 +224,7 @@ ShallowWrapper {
             <p>
               <Link
                 replace={false}
-                to="/profile"
+                to="/myprofile"
               >
                 Return to Profile
               </Link>
@@ -476,7 +476,7 @@ ShallowWrapper {
             "props": Object {
               "children": <Link
                 replace={false}
-                to="/profile"
+                to="/myprofile"
               >
                 Return to Profile
               </Link>,
@@ -489,7 +489,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Return to Profile",
                 "replace": false,
-                "to": "/profile",
+                "to": "/myprofile",
               },
               "ref": null,
               "rendered": "Return to Profile",
@@ -623,7 +623,7 @@ ShallowWrapper {
             <p>
               <Link
                 replace={false}
-                to="/profile"
+                to="/myprofile"
               >
                 Return to Profile
               </Link>
@@ -720,7 +720,7 @@ ShallowWrapper {
               <p>
                 <Link
                   replace={false}
-                  to="/profile"
+                  to="/myprofile"
                 >
                   Return to Profile
                 </Link>
@@ -972,7 +972,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/profile"
+                  to="/myprofile"
                 >
                   Return to Profile
                 </Link>,
@@ -985,7 +985,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "Return to Profile",
                   "replace": false,
-                  "to": "/profile",
+                  "to": "/myprofile",
                 },
                 "ref": null,
                 "rendered": "Return to Profile",

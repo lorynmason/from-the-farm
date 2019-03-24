@@ -60,7 +60,7 @@ export class AddProductForm extends Component {
           <p>Add Unit Amount <input type="text" placeholder="unit i.e lb" name="unit" onChange={this.handleChange}/></p>
           <p>Add a Price $<input type="number" placeholder="price i.e 5.50" name="price" onChange={this.handleChange}/></p>
           <button>Submit</button>
-          <p><Link to="/profile">Return to Profile</Link></p>
+          <p><Link to="/myprofile">Return to Profile</Link></p>
         </form>
         <section className="my-products">
         <ProductList products={this.props.user.products} />
