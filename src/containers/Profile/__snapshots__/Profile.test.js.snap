@@ -4,12 +4,12 @@ exports[`Profile should match the snapshot with no products 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Profile
+    allProducts={Array []}
     location={
       Object {
-        "pathname": "myprofile",
+        "pathname": "/myprofile",
       }
     }
-    products={Array []}
     user={
       Object {
         "address": "1234 Here St.",
@@ -22,6 +22,7 @@ ShallowWrapper {
         "state": "St",
       }
     }
+    vendors={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -688,7 +689,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Profile
     location={
       Object {
-        "pathname": "myprofile",
+        "pathname": "/myprofile",
       }
     }
     products={
