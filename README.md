@@ -36,11 +36,10 @@ The alternative to this business model is for retailers to buy directly from the
 
 ### Finished Design
 
-<img width="500" alt="screen shot 2019-02-20 at 5 44 51 pm" src="https://user-images.githubusercontent.com/40005248/53135255-cbca0a80-3537-11e9-9cba-fa3e0fb5df7b.png">
+<img width="500" alt="Screen Shot 2019-03-25 at 3 29 09 PM" src="https://user-images.githubusercontent.com/40005248/54955464-fc280e80-4f12-11e9-81c6-62d62e99885c.png">
 
-<img width="500" alt="screen shot 2019-02-20 at 5 46 38 pm" src="https://user-images.githubusercontent.com/40005248/53135309-fddb6c80-3537-11e9-9bd7-2be95d4e6502.png">
+<img width="500" alt="Screen Shot 2019-03-25 at 3 29 45 PM" src="https://user-images.githubusercontent.com/40005248/54955470-03e7b300-4f13-11e9-9f20-69577370270c.png">
 
-<img width="500" alt="screen shot 2019-02-20 at 5 45 24 pm" src="https://user-images.githubusercontent.com/40005248/53135318-02a02080-3538-11e9-98d5-46075065e900.png">
 
 ![gif screenshot](/src/styles/images/chrome-capturev2-1.gif)
 
