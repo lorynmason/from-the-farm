@@ -42,6 +42,6 @@ The alternative to this business model is for retailers to buy directly from the
 
 <img width="500" alt="screen shot 2019-02-20 at 5 45 24 pm" src="https://user-images.githubusercontent.com/40005248/53135318-02a02080-3538-11e9-98d5-46075065e900.png">
 
-![gif screenshot](/src/styles/images/chrome-capture2.gif)
+![gif screenshot](/src/styles/images/chrome-capturev2-1.gif)
 
-![gif screenshot](/src/styles/images/chrome-capture.gif)
+![gif screenshot](/src/styles/images/chrome-capturev2-2.gif)
