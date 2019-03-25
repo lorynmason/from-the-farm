@@ -1,6 +1,6 @@
 # from the farm
 
-from the farm is a community based effort to break the traditional food supply chain and connect farmers and producers directly to restaurants and markets.
+from the farm is a community based effort to break the traditional food supply chain. It connects farmers and other producers directly to retailers and restaurants, which cuts out the middleman distributors. Our aim is to make farm-to-table more feasible!
 
 ### Install and Setup
 backend repo can be found [here](https://github.com/DanHutch/crosspoll_be)
@@ -13,10 +13,6 @@ $ npm install
 
 $ npm start
 ````
-
-### Abstract
-
-
 
 ### The Problem We're Solving
 
